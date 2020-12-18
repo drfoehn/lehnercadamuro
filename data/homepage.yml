@@ -301,8 +301,8 @@ rezept:
   enable: true
   title: "Rezeptbestellung"
   form:
-    method: "POST"
-    action: "#"
+    method: "post"
+    action: "mailto:janne.cadamuro@gmail.com"
     full_name: "Vor- und Nachname"
     birth: "Geburtsdatum"
     med_name: "Medikamentenname"
@@ -310,24 +310,11 @@ rezept:
     med_size: "Packungsgröße (Anzahl der Tabletten pro Packung)"
     med_amount: "Anzahl Packungen"
     message: "Falls sie uns noch einen Kommentar mitschicken möchten, können sie diesen hier eingeben"
+    datenschutz: "Ich habe die Datenschutzbestimmungen zur Kenntnis genommen und mir ist bewusst, dass die Übermittlung meiner Angaben unverschlüsselt erfolgt."
 
   button:
     icon: "icon-mail-fill"
-    btnText: "Rezeptbestelölung abschicken"
-
-
-
-
-  phone:
-    title: "Phone Number"
-    number: "+41 (44) 505 10 99"
-  email:
-    title: "Email"
-    email: '<a href="mailto:team@radity.com">team@radity.com</a>'
-  address:
-    title: "Address"
-    address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
-
+    btnText: "Rezeptbestellung abschicken"
 
 
 
