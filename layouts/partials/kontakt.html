@@ -1,0 +1,43 @@
+{{ if .Site.Data.homepage.kontakt.enable }}
+<section class="section rad-animation-group pb-0" id="kontakt">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>{{ .Site.Data.homepage.kontakt.title }}</h2>
+        <p class="lead">
+          {{ .Site.Data.homepage.kontakt.content | safeHTML }}
+        </p>
+        <!--
+          <a
+          href="{{ .Site.Data.homepage.kontakt.button.URL | absURL }}"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          <i class="{{ .Site.Data.homepage.kontakt.button.icon }}"></i>
+          {{ .Site.Data.homepage.kontakt.button.btnText }}
+        </a>
+        -->
+      </div>
+
+<!-- Google Maps -->
+      <div class="col-12 col-md-6 my-auto my-auto">
+
+        {{ .Site.Data.homepage.kontakt.mapembed | safeHTML }}
+      </div>
+
+<!-- Image
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="{{ .Site.Data.homepage.kontakt.image.x | absURL }}"
+          data-srcset="{{ .Site.Data.homepage.kontakt.image.x | absURL }} 1x, {{ .Site.Data.homepage.kontakt.image._2x | absURL }} 2x"
+          alt="Kontakt"
+        />
+      </div>
+      -->
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,30 @@
+{{ if .Site.Data.homepage.kontakt.enable }}
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>{{ .Site.Data.homepage.kontakt.title }}</h2>
+                <div class="row pt-2 pt-md-4">
+                    {{ range .Site.Data.homepage.kontakt.items }}
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">{{ .year }}</div>
+                            <div class="education__title">{{ .university }}</div>
+                            <div class="education__degree">
+                            <h4>{{ .Site.Data.homepage.kontakt.phone.title }}</h4>
+                            <span>{{ .Site.Data.homepage.kontakt.phone.number }}</span>
+                            <h4>{{ .Site.Data.homepage.kontakt.email.title }}</h4>
+                            <span>{{ .Site.Data.homepage.kontakt.email.email | safeHTML }}</span>
+                            <h4>{{ .Site.Data.homepage.kontakt.address.title }}</h4>
+                            <span>{{ .Site.Data.homepage.kontakt.address.address | safeHTML }}</span>
+                                {{ .degree }}
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

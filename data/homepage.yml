@@ -1,0 +1,485 @@
+# showcase
+showcase:
+  enable: true
+  title: "Gemeinschaftspraxis"
+  title2: "Dr. Lehner & Dr. Cadamuro"
+  subtitle: "Ärztinnen für Allgemeinmedizin"
+  subtitle2: "Alle Kassen"
+  description: "Wir nehmen uns Zeit für Sie!"
+  image:
+    x: "img/startseite/start.png"
+    _2x: "img/showcase/showcase@2x.png"
+  imageMobile:
+    x: "img/showcase/showcase-mobile.jpg"
+
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Contact"
+    URL: "https://radity.com/en/contact/"
+
+
+
+# ordinationszeiten
+ordinationszeiten:
+  enable: true
+  title: "Ordinationszeiten"
+  content: '<p class="lead">
+  <table>
+  <tr>
+    <td>Montag</td>
+    <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td>
+    <td>Dr. Cadamuro</td>
+  </tr>
+  <tr>
+    <td>Dienstag</td>
+    <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td>
+    <td>Dr. Cadamuro</td>
+  </tr>
+  <tr>
+    <td>Mittwoch</td>
+    <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td>
+    <td>Dr. Lehner</td>
+  </tr>
+  <tr>
+    <td>Donnerstag</td>
+    <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td>
+    <td>Dr. Lehner</td>
+  </tr>
+  <tr>
+    <td>Freitag</td>
+    <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td>
+    <td>Dr. Lehner oder Dr. Cadamuro</td>
+  </tr>
+
+</table>
+    </p>'
+
+  image:
+    x: "img/startseite/open.png"
+    _2x: "img/who-am-i/user-picture@2x.png"
+
+# kontakt
+kontakt:
+  enable: true
+  title: "Kontakt"
+  content: '<p class="lead">
+            <table style="valign:middle">
+            <tbody>
+            <tr>
+              <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/tel.png" alt="Telefon" width="40" height="40"></td>
+              <td>0662-123456</td>
+            </tr>
+            <tr>
+              <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/fax.png" alt="Fax" width="40" height="40"></td>
+              <td>0662-7890123</td>
+            </tr>
+            <tr>
+              <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/mail.png" alt="Mail" width="40" height="40"></td>
+              <td>praxis (a) dr-katharina-lehner.at</td>
+            </tr>
+            <tr>
+              <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/map.png" alt="Adresse" width="40" height="40"></td>
+              <td>Moosstrasse 96 <br />5020 Salzburg</td>
+            </tr>
+          </tbody>
+          </table>
+    </p>'
+
+  mapembed: '<p class="lead">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.2227561422364!2d13.020569415875833!3d47.77712848417512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4776904d317e8e31%3A0xed043c3d85ad2fac!2sDr.med.univ.%20Katharina%20Lehner!5e0!3m2!1sde!2sat!4v1608095359423!5m2!1sde!2sat" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</p>'
+
+  image:
+    x: "img/startseite/kontakt.png"
+    _2x: "img/who-am-i/user-picture@2x.png"
+
+
+
+# leistungen
+leistungen:
+  enable: true
+  title: "Unsere Leistungen"
+  description: "Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives."
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/company/radity/"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Download My Resume"
+    URL: "#"
+  image:
+    x: "img/startseite/leistung.png"
+    _2x: "img/who-am-i/user-picture@2x.png"
+
+  items:
+    - heading: "Routineleistungen"
+
+    - leistung: "Hausärztliche Abklärung im akuten Krankheitsfall"
+    - leistung: "Betreuung und Therapiemanagement bei chronischen Erkrankungen"
+    - leistung: "Infusionstherapie bei akuter Symptomatik (zB Schmerzen)"
+    - leistung: "Vorsorge- / Gesundenuntersuchungen"
+    - leistung: "Mutter-Kind-Pass Untersuchungen"
+    - leistung: "Führerscheinuntersuchungen"
+    - leistung: "Impfberatung, Impfungen"
+    - leistung: "Erstellen von Patientenverfügungen"
+    - leistung: "EKG (Elektrokardiogramm)"
+    - leistung: "   "
+    - heading: "Zusatz- / Privatleistungen"
+
+    - zusatzleistung: "Präoperative Untersuchung (zur Operationsfreigabe)"
+    - zusatzleistung: "Therapie Aktiv - Diabetes im Griff"
+    - beschreibung: "Dieses von uns zur Verfügung gestelltes Angebot stellt sicher, dass Typ-2-Diabetiker optimal versorgt und behandelt werden.
+Mehr Information erhalten sie auf therapie.aktiv"
+    - zusatzleistung: "Akupunktur"
+    - beschreibung: "Dr. Lehner"
+    - zusatzleistung: "Laserakupunktur"
+    - beschreibung: "Dr. Lehner"
+    - zusatzleistung: "Untersuchung <i>Sporttauglichkeit-Neu</i>"
+    - beschreibung: Tauglichkeitsuntersuchung für alle Sportvereine
+    - zusatzleistung: "Rundum Gesund: Ein Service der Hausärzte und der Ärztekammer Salzburg"
+    - beschreibung: "Nähere Informationen finden sie auf der Homepage der Ärztekammer Salzburg"
+
+
+
+
+
+
+# Termin
+termin:
+  enable: true
+  title: "Terminvereinbarung"
+  content: '<p class="lead">
+
+<h5>Terminvereinbarung zu Ordinationszeiten</h5>
+Ihre telefonische Voranmeldung nehmen wir gerne zu folgenden Zeiten entgegen:<br />
+<b>Montag, Mittwoch und Freitag von 10.00 - 13.00 Uhr.</b>
+<br /><br />
+
+<h5>Hausbesuche</h5>
+Zu folgenden Zeiten ist es möglich einen Termin für einen Hausbesuche anzumelden:<br />
+<b>Montag, Mittwoch und Freitags von 8.00 - 11.00 Uhr.</b>
+<br /><br />
+
+<h5>Wochenende und Feiertage</h5>
+Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum
+des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten.<br /><br />
+<a href="https://www.notdienst141.at/" target="_blank">Huasärztliches Notdienstzentrum</a><br />
+<i>Telefon:</i> 141<br />
+<i>Öffnungszeiten:</i> <br />täglich von 19.00 – 23.00 Uhr<br />
+Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr
+<br /><br />
+
+<h5>Notfälle</h5>
+Bei dringenden medizinischen Notfällen erreichen
+Sie uns über das Rote Kreuz
+Telefonnummer: 141
+
+
+    </p>'
+
+
+  image:
+    x: "img/startseite/termin.png"
+    _2x: "img/who-am-i/user-picture@2x.png"
+
+
+
+# Team
+team:
+  enable: true
+  title: "Unser Team"
+  items:
+    - name: "Dr. Katharina Lehner"
+      position: "Ärztin für Allgemeinmedizin"
+      content: ""
+      diplom1: Diplom der ÖÄK für Notfallmedizin
+      diplom2: Diplom der ÖÄK für Akupunktur
+      diplom3: Diplom der ÖÄK für Manuelle Medizin
+      diplom4: Fortbildungsdiplom der ÖÄK"
+
+      diplom: Diplom der ÖÄK für Notfallmedizin
+      diplom: Diplom der ÖÄK für Akupunktur
+
+      image:
+        x: "img/team/team_katharina.png"
+        _2x: ""
+
+    - name: "Dr. Evelin Cadamuro"
+      position: "Ärztin für Allgemeinmedizin"
+      content: ""
+      diplom1: Diplom der ÖÄK für Notfallmedizin
+      diplom2: Diplom der ÖÄK für Ernährungsmedizin
+      diplom3: Diplom der ÖÄK für Psychosoziale Medizin I
+      diplom4: Diplom der ÖÄK für Psychosoziale Medizin II
+      diplom5: Fortbildungsdiplom der ÖÄK
+
+      image:
+        x: "img/team/team_eve.png"
+        _2x: ""
+
+    - name: "Andrea Falkenstätter"
+      position: "Ordinationsassistentin"
+      content: "Bla"
+      image:
+        x: "img/team/team_andrea.png"
+        _2x: ""
+
+    - name: "Gisi"
+      position: "Ordinationsassistentin"
+      content: "bla"
+      image:
+        x: "img/team/team_gisi.png"
+        _2x: ""
+
+    - name: "Elisabeth Hager"
+      position: "Ordinationsassistentin"
+      content: "bla"
+      image:
+        x: "img/team/team_elisabeth.png"
+        _2x: ""
+
+    - name: "Vanessa Zuchristian"
+      position: "Ordinationsassistentin"
+      content: "Derzeit in Mütterkarenz"
+      image:
+        x: "img/team/team_vanessa.png"
+        _2x: ""
+
+
+
+# Ordination - slideshow-quelle: https://www.w3schools.com/howto/howto_js_slideshow.asp
+ordination:
+  enable: true
+  title: "Die Ordination"
+  content: '<p class="lead">
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/ordination/behandl_1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/ordination/behandl_2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/ordination/empfang.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    </p>'
+
+
+  image:
+    x: "img/icon/kontakt.png"
+    _2x: ""
+
+
+
+
+# Rezept
+rezept:
+  enable: true
+  title: "Rezeptbestellung"
+  form:
+    method: "POST"
+    action: "#"
+    full_name: "Full Name"
+    email: "Email Address"
+    message: "Type Your Message Here"
+  phone:
+    title: "Phone Number"
+    number: "+41 (44) 505 10 99"
+  email:
+    title: "Email"
+    email: '<a href="mailto:team@radity.com">team@radity.com</a>'
+  address:
+    title: "Address"
+    address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Send Message"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# experience
+experience:
+  enable: true
+  title: "Experience"
+  description: "Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives."
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/company/radity/"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Download My Resume"
+    URL: "#"
+
+  items:
+    - title: "Sr. Front-End Developer"
+      company: "Radity"
+      duration: "Feb 2011 - Sep 2019"
+
+    - title: "Sr. Front-End Developer"
+      company: "Textic"
+      duration: "Apr 2010 - Jan 2011"
+
+    - title: "Jr. Front-End Developer"
+      company: "Cyberse"
+      duration: "Jun 2009 - Mar 2010"
+
+# Client & Work
+client_and_work:
+  title: "Clients & Works"
+  enable: true
+
+  clients:
+    - logo:
+        x: "img/clients/asgardia.png"
+        _2x: "img/clients/asgardia@2x.png"
+      alt: "Asgardia"
+
+    - logo:
+        x: "img/clients/earth-2.png"
+        _2x: "img/clients/earth-2@2x.png"
+      alt: "Earth 2.0"
+
+    - logo:
+        x: "img/clients/goldline.png"
+        _2x: "img/clients/goldline@2x.png"
+      alt: "Goldline"
+
+    - logo:
+        x: "img/clients/kanba.png"
+        _2x: "img/clients/kanba@2x.png"
+      alt: "Kanba"
+
+    - logo:
+        x: "img/clients/zoo-tv.png"
+        _2x: "img/clients/zoo-tv@2x.png"
+      alt: "Zoo"
+
+    - logo:
+        x: "img/clients/ztos.png"
+        _2x: "img/clients/ztos@2x.png"
+      alt: "Ztos"
+
+  works:
+    - title: "Radity Finance - UI Kit"
+      description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "#"
+      image:
+        x: "img/works/radity-finance.jpg"
+        _2x: "img/works/radity-finance@2x.jpg"
+      is_even: true
+
+    - title: "Swiss Fintech Website"
+      description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "#"
+      image:
+        x: "img/works/swissfintech.jpg"
+        _2x: "img/works/swissfintech@2x.jpg"
+      is_even: false
+
+    - title: "Robo Advisor"
+      description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "#"
+      image:
+        x: "img/works/robo-advisor.jpg"
+        _2x: "img/works/robo-advisor@2x.jpg"
+      is_even: true
+
+# testimonial
+testimonial:
+  enable: true
+  title: "Testimonials"
+  items:
+    - name: "Daniel Jordan"
+      position: "Phonet, CEO"
+      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
+      image:
+        x: "img/testimonials/daniel-jordan.jpg"
+        _2x: "img/testimonials/daniel-jordan@2x.jpg"
+
+    - name: "Jonathan Peters"
+      position: "Textic, CEO"
+      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
+      image:
+        x: "img/testimonials/jonathan-peters.jpg"
+        _2x: "img/testimonials/jonathan-peters@2x.jpg"
+
+    - name: "Antonio Willis"
+      position: "Cyberse, CEO"
+      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
+      image:
+        x: "img/testimonials/antonio-willis.jpg"
+        _2x: "img/testimonials/antonio-willis@2x.jpg"
+
+
+
+# newsletter
+newsletter:
+  enable: true
+  title: "Newsletter subscription"
+  success_message: "Successfully subscribed"
+  error_message: "Error while subscribing."
+  note: "We'll never share your email with anyone else."

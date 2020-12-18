@@ -1,0 +1,1005 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.79.0" />
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+
+
+
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+
+<link rel="stylesheet" href="css/main.css"/>
+
+<link rel="stylesheet" href="css/rad-icons.css"/>
+
+<link rel="stylesheet" href="css/custom.css"/>
+
+
+
+    
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="">
+        <span>Dr. Lehner</span>
+        <span>Dr. Cadamuro</span>
+        
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#ordinationszeiten"
+              >ORDINATIONSZEITEN</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#kontakt"
+              >KONTAKT</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#leistungen"
+              >LEISTUNGEN</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#termin"
+              >TERMIN</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#rezept"
+              >REZEPT</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#team"
+              >TEAM</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#ordination"
+              >DIE ORDINATION</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="img/startseite/start.png"
+      data-srcset="img/startseite/start.png 1x, img/showcase/showcase@2x.png 2x"
+      alt=""
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          Gemeinschaftspraxis
+          <br />
+          Dr. Lehner &amp; Dr. Cadamuro
+          <br />
+          <span>
+            Ärztinnen für Allgemeinmedizin
+          <br />
+          <br />
+            Alle Kassen
+          </span
+          >
+        </h1>
+        <p class="lead">
+          Wir nehmen uns Zeit für Sie!
+        </p>
+        
+      </div>
+    
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="img/showcase/showcase-mobile.jpg"
+      alt=""
+    />
+  </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group pb-0" id="ordinationszeiten">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="ordinationszeiten__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="img/startseite/open.png"
+          data-srcset="img/startseite/open.png 1x, img/who-am-i/user-picture@2x.png 2x"
+          alt="Ordinationszeiten"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Ordinationszeiten</h2>
+        <p class="lead">
+          <p class="lead"> <table> <tr> <td>Montag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Cadamuro</td> </tr> <tr> <td>Dienstag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Cadamuro</td> </tr> <tr> <td>Mittwoch</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Lehner</td> </tr> <tr> <td>Donnerstag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Lehner</td> </tr> <tr> <td>Freitag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Lehner oder Dr. Cadamuro</td> </tr>
+</table> </p>
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group pb-0" id="kontakt">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Kontakt</h2>
+        <p class="lead">
+          <p class="lead"> <table style="valign:middle"> <tbody> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/tel.png" alt="Telefon" width="40" height="40"></td> <td>0662-123456</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/fax.png" alt="Fax" width="40" height="40"></td> <td>0662-7890123</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/mail.png" alt="Mail" width="40" height="40"></td> <td>praxis (a) dr-katharina-lehner.at</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/map.png" alt="Adresse" width="40" height="40"></td> <td>Moosstrasse 96 <br />5020 Salzburg</td> </tr> </tbody> </table> </p>
+        </p>
+        
+      </div>
+
+
+      <div class="col-12 col-md-6 my-auto my-auto">
+
+        <p class="lead"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.2227561422364!2d13.020569415875833!3d47.77712848417512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4776904d317e8e31%3A0xed043c3d85ad2fac!2sDr.med.univ.%20Katharina%20Lehner!5e0!3m2!1sde!2sat!4v1608095359423!5m2!1sde!2sat" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </p>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+	
+	
+<section id="leistungen" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+            <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                
+                <div class="leistung">
+                    <div class="experience__title">Routineleistungen</div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung">Hausärztliche Abklärung im akuten Krankheitsfall</div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung">Betreuung und Therapiemanagement bei chronischen Erkrankungen</div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung">Infusionstherapie bei akuter Symptomatik (zB Schmerzen)</div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung">Vorsorge- / Gesundenuntersuchungen</div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung">Mutter-Kind-Pass Untersuchungen</div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung">Führerscheinuntersuchungen</div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung">Impfberatung, Impfungen</div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung">Erstellen von Patientenverfügungen</div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung">EKG (Elektrokardiogramm)</div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title">Zusatz- / Privatleistungen</div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung">Präoperative Untersuchung (zur Operationsfreigabe)</div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung">Therapie Aktiv - Diabetes im Griff</div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung">Dieses von uns zur Verfügung gestelltes Angebot stellt sicher, dass Typ-2-Diabetiker optimal versorgt und behandelt werden. Mehr Information erhalten sie auf therapie.aktiv</div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung">Akupunktur</div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung">Dr. Lehner</div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung">Laserakupunktur</div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung">Dr. Lehner</div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung">Untersuchung <i>Sporttauglichkeit-Neu</i></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung">Tauglichkeitsuntersuchung für alle Sportvereine</div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung">Rundum Gesund: Ein Service der Hausärzte und der Ärztekammer Salzburg</div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="experience__title"></div>
+                    <div class="leistung__leistung"></div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung">Nähere Informationen finden sie auf der Homepage der Ärztekammer Salzburg</div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-sm-6">
+                <h2>Unsere Leistungen</h2>
+                <p class="lead">
+                    Over 15&#43; years of experience working with companies from all over the world. I design &amp; develop digital products to help businesses and improve people&#39;s lives.
+                </p>
+                <p class="lead">
+                  <div class="col-12 col-md-6">
+                    <img
+                      class="lozad img-responsive image-right-overflow"
+                      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                      data-src="img/startseite/leistung.png"
+                      data-srcset="img/startseite/leistung.png 1x, img/who-am-i/user-picture@2x.png 2x"
+                      alt="Unsere Leistungen"
+                    />
+                  </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group pb-0" id="termin">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Terminvereinbarung</h2>
+        <p class="lead">
+          <p class="lead">
+<h5>Terminvereinbarung zu Ordinationszeiten</h5> Ihre telefonische Voranmeldung nehmen wir gerne zu folgenden Zeiten entgegen:<br /> <b>Montag, Mittwoch und Freitag von 10.00 - 13.00 Uhr.</b> <br /><br />
+<h5>Hausbesuche</h5> Zu folgenden Zeiten ist es möglich einen Termin für einen Hausbesuche anzumelden:<br /> <b>Montag, Mittwoch und Freitags von 8.00 - 11.00 Uhr.</b> <br /><br />
+<h5>Wochenende und Feiertage</h5> Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten.<br /><br /> <a href="https://www.notdienst141.at/" target="_blank">Huasärztliches Notdienstzentrum</a><br /> <i>Telefon:</i> 141<br /> <i>Öffnungszeiten:</i> <br />täglich von 19.00 – 23.00 Uhr<br /> Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr <br /><br />
+<h5>Notfälle</h5> Bei dringenden medizinischen Notfällen erreichen Sie uns über das Rote Kreuz Telefonnummer: 141
+
+</p>
+        </p>
+        
+      </div>
+      <div class="about__profile-picture col-8 col-md-4">
+        <img
+          class="lozad img-responsive image-right-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="img/startseite/termin.png"
+          data-srcset="img/startseite/termin.png 1x, img/who-am-i/user-picture@2x.png 2x"
+          alt="termin"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group section--border-bottom">
+    <div class="container">
+        <h2 class="rad-fade-down">Unser Team</h2>
+        <div class="row row--padded mb-0 rad-fade-down">
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="img/team/team_katharina.png"
+                         data-srcset="img/team/team_katharina.png 1x,  2x"
+                         alt="Dr. Katharina Lehner"/>
+                    <div class="testimonial__author-info">
+                        <h4>Dr. Katharina Lehner</h4>
+                        <span>Ärztin für Allgemeinmedizin</span>
+                    </div>
+                </div>
+                <p>
+                    
+                </p>
+                <p>
+                    Diplom der ÖÄK für Notfallmedizin<br />
+                    Diplom der ÖÄK für Akupunktur<br />
+                    Diplom der ÖÄK für Manuelle Medizin<br />
+                    Fortbildungsdiplom der ÖÄK&#34;<br />
+                    <br />
+                </p>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="img/team/team_eve.png"
+                         data-srcset="img/team/team_eve.png 1x,  2x"
+                         alt="Dr. Evelin Cadamuro"/>
+                    <div class="testimonial__author-info">
+                        <h4>Dr. Evelin Cadamuro</h4>
+                        <span>Ärztin für Allgemeinmedizin</span>
+                    </div>
+                </div>
+                <p>
+                    
+                </p>
+                <p>
+                    Diplom der ÖÄK für Notfallmedizin<br />
+                    Diplom der ÖÄK für Ernährungsmedizin<br />
+                    Diplom der ÖÄK für Psychosoziale Medizin I<br />
+                    Diplom der ÖÄK für Psychosoziale Medizin II<br />
+                    Fortbildungsdiplom der ÖÄK<br />
+                </p>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="img/team/team_andrea.png"
+                         data-srcset="img/team/team_andrea.png 1x,  2x"
+                         alt="Andrea Falkenstätter"/>
+                    <div class="testimonial__author-info">
+                        <h4>Andrea Falkenstätter</h4>
+                        <span>Ordinationsassistentin</span>
+                    </div>
+                </div>
+                <p>
+                    Bla
+                </p>
+                <p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </p>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="img/team/team_gisi.png"
+                         data-srcset="img/team/team_gisi.png 1x,  2x"
+                         alt="Gisi"/>
+                    <div class="testimonial__author-info">
+                        <h4>Gisi</h4>
+                        <span>Ordinationsassistentin</span>
+                    </div>
+                </div>
+                <p>
+                    bla
+                </p>
+                <p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </p>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="img/team/team_elisabeth.png"
+                         data-srcset="img/team/team_elisabeth.png 1x,  2x"
+                         alt="Elisabeth Hager"/>
+                    <div class="testimonial__author-info">
+                        <h4>Elisabeth Hager</h4>
+                        <span>Ordinationsassistentin</span>
+                    </div>
+                </div>
+                <p>
+                    bla
+                </p>
+                <p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </p>
+            </div>
+            
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="img/team/team_vanessa.png"
+                         data-srcset="img/team/team_vanessa.png 1x,  2x"
+                         alt="Vanessa Zuchristian"/>
+                    <div class="testimonial__author-info">
+                        <h4>Vanessa Zuchristian</h4>
+                        <span>Ordinationsassistentin</span>
+                    </div>
+                </div>
+                <p>
+                    Derzeit in Mütterkarenz
+                </p>
+                <p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group pb-0" id="ordination">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Die Ordination</h2>
+        <p class="lead">
+          <p class="lead"> <div class="slideshow-container">
+<!-- Full-width images with number and caption text --> <div class="mySlides fade"> <div class="numbertext">1 / 3</div> <img src="img/ordination/behandl_1.jpg" style="width:100%"> <div class="text">Caption Text</div> </div>
+<div class="mySlides fade"> <div class="numbertext">2 / 3</div> <img src="img/ordination/behandl_2.jpg" style="width:100%"> <div class="text">Caption Two</div> </div>
+<div class="mySlides fade"> <div class="numbertext">3 / 3</div> <img src="img/ordination/empfang.jpg" style="width:100%"> <div class="text">Caption Three</div> </div>
+<!-- Next and previous buttons --> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div> <br>
+<!-- The dots/circles --> <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div>
+<script> var slideIndex = 0; showSlides();
+function showSlides() { var i; var slides = document.getElementsByClassName("mySlides"); for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; } slideIndex++; if (slideIndex > slides.length) {slideIndex = 1} slides[slideIndex-1].style.display = "block"; setTimeout(showSlides, 2000); // Change image every 2 seconds } </script> </p>
+        </p>
+        
+    </div>
+  </div>
+</section>
+
+
+	
+	
+<section id="rezept" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2>Rezeptbestellung</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="" id="full_name"
+                                       placeholder="Full Name"/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="" id="email"
+                                       placeholder="Email Address"/>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="" id="message"
+                                          cols="30" rows="3" placeholder="Type Your Message Here"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="icon-mail-fill"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <h4>Phone Number</h4>
+                    <span>&#43;41 (44) 505 10 99</span>
+                    <h4>Email</h4>
+                    <span><a href="mailto:team@radity.com">team@radity.com</a></span>
+                    <h4>Address</h4>
+                    <span>Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section class="section section--cta">
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2>Newsletter subscription</h2>
+      <div class="rad-subscription-group">
+        <form id="rad-subscription" action="">
+          <input
+            id="rad-subscription-email"
+            type="email"
+            class="form-control"
+            aria-describedby="emailHelp"
+            placeholder="Email Address..."
+            aria-label="Email Address"
+          />
+          <button type="submit" id="rad-subscription-submit" class="btn btn-light btn-rounded">
+            Sign Up
+          </button>
+        </form>
+        <div id="rad-subscription-success" class="d-none">
+          <p class="lead">Successfully subscribed</p>
+        </div>
+        <div id="rad-subscription-fail" class="d-none">
+          <p>Error while subscribing.</p>
+        </div>
+        <script src="/js/subscription.js"></script>
+      </div>
+      <small id="emailHelp" class="form-text text-muted"
+        >We&#39;ll never share your email with anyone else.</small
+      >
+    </div>
+  </div>
+</div>
+</section>
+
+
+	
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
+        © Raditian. All rights reserved    |    Impressum
+      </div>
+    </div>
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="">ABOUT</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="">PORTFOLIO</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="">CONTACT</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="footer__right">
+      <a href="https://radity.com/"
+        ><img
+          src="img/general/design-and-code-radity.png"
+          srcset="img/general/design-and-code-radity.png 1x, img/general/design-and-code-radity@2x.png 2x"
+          alt="Design &amp; Code - Radity"
+      /></a>
+    </div>
+  </div>
+</footer>
+
+    <script src='js/rad-animations.js'></script>
+<script src='js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='js/library/bootstrap.min.js'></script>
+<script src='js/sticky-header.js'></script>
+<script src='js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>

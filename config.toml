@@ -1,0 +1,94 @@
+baseURL = ""
+languageCode = "de-de"
+theme = "simple_red"
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/main.css"
+  [[params.plugins.css]]
+  URL = "css/rad-icons.css"
+  [[params.plugins.css]]
+  URL = "css/custom.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/rad-animations.js"
+  [[params.plugins.js]]
+  URL = "js/sticky-header.js"
+  [[params.plugins.js]]
+  URL = "js/library/fontfaceobserver.js"
+
+
+# navigation
+[menu]
+
+  [[menu.header]]
+  name = "Ordinationszeiten"
+  URL = "#ordinationszeiten"
+  weight = 1
+
+  [[menu.header]]
+  name = "Kontakt"
+  URL = "#kontakt"
+  weight = 2
+
+  [[menu.header]]
+  name = "Leistungen"
+  URL = "#leistungen"
+  weight = 3
+
+  [[menu.header]]
+  name = "Termin"
+  URL = "#termin"
+  weight = 4
+
+  [[menu.header]]
+  name = "Rezept"
+  URL = "#rezept"
+  weight = 5
+
+  [[menu.header]]
+  name = "Team"
+  URL = "#team"
+  weight = 6
+
+  [[menu.header]]
+  name = "Die Ordination"
+  URL = "#ordination"
+  weight = 7
+
+  [[menu.footer]]
+  name = "About"
+  URL = "#about"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Portfolio"
+  URL = "#portfolio"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Contact"
+  URL = "#contact"
+  weight = 4
+
+
+[params]
+
+  sections = ["showcase", "ordinationszeiten", "kontakt", "leistungen", "termin", "team", "ordination", "rezept", "newsletter"]
+
+  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+
+  [params.logo]
+    text1 = "Dr. Lehner"
+    text2 = "Dr. Cadamuro"
+
+  [params.footer]
+      copyright = "© Raditian. All rights reserved    |    Impressum"
+      [params.footer.radity_logo]
+        x = "img/general/design-and-code-radity.png"
+        _2x = "img/general/design-and-code-radity@2x.png"
+        alt = "Design & Code - Radity"
