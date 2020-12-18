@@ -78,7 +78,7 @@ theme = "simple_red"
 
 [params]
 
-  sections = ["showcase", "ordinationszeiten", "kontakt", "leistungen", "termin", "team", "ordination", "rezept", "newsletter"]
+  sections = ["showcase", "ordinationszeiten", "kontakt", "leistungen", "termin", "team", "ordination", "rezept"]
 
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 
