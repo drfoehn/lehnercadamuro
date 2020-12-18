@@ -4,72 +4,130 @@
         <div class="contact">
             <h2>{{ .Site.Data.homepage.rezept.title }}</h2>
             <div class="row pt-2">
-                <div class="col-12 col-lg-7">
+                <div class="col-12">
                     <form action="{{ .Site.Data.homepage.rezept.form.action }}" method="{{ .Site.Data.homepage.rezept.form.method }}">
                         <div class="row">
-                            <div class="col-12 col-sm-6">
+                            <div class="col-12">
                                 <input type="text" name="" id="full_name"
                                        placeholder="{{ .Site.Data.homepage.rezept.form.full_name }}"/>
                             </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" name="" id="email"
-                                       placeholder="{{ .Site.Data.homepage.rezept.form.email }}"/>
-                            </div>
-                        </div>
-                        <div class="row pt-4">
                             <div class="col-12">
-                                <textarea name="" id="message"
-                                          cols="30" rows="3" placeholder="{{ .Site.Data.homepage.rezept.form.message }}"></textarea>
+                                <input type="text" name="" id="birth"
+                                       placeholder="{{ .Site.Data.homepage.rezept.form.birth }}"/>
                             </div>
                         </div>
 
-                          <div class="tg-wrap">
-                            <table>
-                              <thead>
-                                <tr>
-                                  <th>Medikamentenname</th>
-                                  <th>Dosierung<br>(mg, ml, ...)</th>
-                                  <th>Packungsgröße<br>(Anzahl der Tabletten pro Packung)</th>
-                                  <th>Packungsanzahl</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                </tr>
-                              </tbody>
-                            </table>
+                        <p></p>
+                        <h4>Medikament #1</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" name="" id="med_name"
+                                       placeholder="{{ .Site.Data.homepage.rezept.form.med_name }}"/>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="" id="med_dosis"
+                                       placeholder="{{ .Site.Data.homepage.rezept.form.med_dose }}"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                              <input type="text" name="" id="med_size"
+                                     placeholder="{{ .Site.Data.homepage.rezept.form.med_size }}"/>
+                            </div>
+                            <div class="col-6">
+                              <input type="text" name="" id="med_amount"
+                                     placeholder="{{ .Site.Data.homepage.rezept.form.med_amount }}"/>
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <h4>Medikament #2</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" name="" id="med_name"
+                                       placeholder="{{ .Site.Data.homepage.rezept.form.med_name }}"/>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="" id="med_dosis"
+                                       placeholder="{{ .Site.Data.homepage.rezept.form.med_dose }}"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                              <input type="text" name="" id="med_size"
+                                     placeholder="{{ .Site.Data.homepage.rezept.form.med_size }}"/>
+                            </div>
+                            <div class="col-6">
+                              <input type="text" name="" id="med_amount"
+                                     placeholder="{{ .Site.Data.homepage.rezept.form.med_amount }}"/>
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <h4>Medikament #3</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" name="" id="med_name"
+                                       placeholder="{{ .Site.Data.homepage.rezept.form.med_name }}"/>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="" id="med_dosis"
+                                       placeholder="{{ .Site.Data.homepage.rezept.form.med_dose }}"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                              <input type="text" name="" id="med_size"
+                                     placeholder="{{ .Site.Data.homepage.rezept.form.med_size }}"/>
+                            </div>
+                            <div class="col-6">
+                              <input type="text" name="" id="med_amount"
+                                     placeholder="{{ .Site.Data.homepage.rezept.form.med_amount }}"/>
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <h4>Medikament #4</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" name="" id="med_name"
+                                       placeholder="{{ .Site.Data.homepage.rezept.form.med_name }}"/>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="" id="med_dosis"
+                                       placeholder="{{ .Site.Data.homepage.rezept.form.med_dose }}"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                              <input type="text" name="" id="med_size"
+                                     placeholder="{{ .Site.Data.homepage.rezept.form.med_size }}"/>
+                            </div>
+                            <div class="col-6">
+                              <input type="text" name="" id="med_amount"
+                                     placeholder="{{ .Site.Data.homepage.rezept.form.med_amount }}"/>
+                            </div>
+                        </div>
+
+                      </div>
+
+                      <p></p>
+
+                      <div class="row pt-4">
+                          <div class="col-12">
+                              <textarea name="" id="message"
+                                        cols="100" rows="3" placeholder="{{ .Site.Data.homepage.rezept.form.message }}"></textarea>
                           </div>
+                      </div>
 
-                        <div class="row pt-4">
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="{{ .Site.Data.homepage.rezept.button.icon }}"></i>
-                                    {{ .Site.Data.homepage.rezept.button.btnText }}
-                                </button>
-                            </div>
-                        </div>
+                      <div class="row pt-4">
+                          <div class="col-12">
+                              <button type="submit" class="btn btn-primary">
+                                  <i class="{{ .Site.Data.homepage.rezept.button.icon }}"></i>
+                                  {{ .Site.Data.homepage.rezept.button.btnText }}
+                              </button>
+                          </div>
+                      </div>
                     </form>
                 </div>
                 <!--
