@@ -17,14 +17,17 @@
           <br />
           {{ .Site.Data.homepage.showcase.title2 }}
           <br />
+          {{ .Site.Data.homepage.showcase.title3 }}
+          <br />
           <span>
             {{ .Site.Data.homepage.showcase.subtitle }}
           <br />
           <br />
-            {{ .Site.Data.homepage.showcase.subtitle2 }}
-          </span
-          >
+          </span>
         </h1>
+        <div class="showcase__subtitle2">
+          {{ .Site.Data.homepage.showcase.subtitle2 }}
+        </div>
         <p class="lead">
           {{ .Site.Data.homepage.showcase.description | safeHTML }}
         </p>

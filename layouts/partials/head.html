@@ -20,6 +20,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
+<!-- Slideshow -->
 <script type="text/javascript">
   var slideIndex = 1;
 showSlides(slideIndex);
@@ -50,11 +51,39 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+<!-- End Slideshow -->
 
 <!-- endinject -->
 
 <title>{{ .Site.Data.homepage.head.title }}</title>
 <style>
+/*custom CSS*/
+
+.container{
+  padding-top:24px;
+}
+
+.display-1{
+    font-family:"Amatic SC"
+}
+
+
+.showcase__subtitle2
+{
+  font-size:25px;
+  font-weight:600;
+  line-height:normal;
+  color: #e93e34 !important;
+  }
+  @media (min-width:992px)
+  {
+    .showcase__subtitle2{
+      font-size:30px
+      }
+ }
+
+
+
     /* Fade In animation triggering after font load or 3s timeout */
     .rad-fade-in {
         will-change: opacity, transform;

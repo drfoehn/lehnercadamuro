@@ -27,6 +27,36 @@
 </script>
 
 
+<script type="text/javascript">
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 
 
@@ -332,18 +362,21 @@
         <h1 class="display-1">
           Gemeinschaftspraxis
           <br />
-          Dr. Lehner &amp; Dr. Cadamuro
+          Dr. Katharina Lehner &amp;
+          <br />
+          Dr. Evelin Cadamuro
           <br />
           <span>
             Ärztinnen für Allgemeinmedizin
           <br />
           <br />
-            Alle Kassen
-          </span
-          >
+          </span>
         </h1>
+        <div class="showcase__subtitle2">
+          Alle Kassen
+        </div>
         <p class="lead">
-          Wir nehmen uns Zeit für Sie!
+          
         </p>
         
       </div>
@@ -422,161 +455,161 @@
             <div class="col-12 col-sm-6 mt-5 mt-sm-0">
                 
                 <div class="leistung">
-                    <div class="experience__title">Routineleistungen</div>
+                    <div class="leistung__title">Routineleistungen</div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung">Hausärztliche Abklärung im akuten Krankheitsfall</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung">Betreuung und Therapiemanagement bei chronischen Erkrankungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung">Infusionstherapie bei akuter Symptomatik (zB Schmerzen)</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung">Vorsorge- / Gesundenuntersuchungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung">Mutter-Kind-Pass Untersuchungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung">Führerscheinuntersuchungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung">Impfberatung, Impfungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung">Erstellen von Patientenverfügungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung">EKG (Elektrokardiogramm)</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title">Zusatz- / Privatleistungen</div>
+                    <div class="leistung__title">Zusatz- / Privatleistungen</div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Präoperative Untersuchung (zur Operationsfreigabe)</div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Therapie Aktiv - Diabetes im Griff</div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Dieses von uns zur Verfügung gestelltes Angebot stellt sicher, dass Typ-2-Diabetiker optimal versorgt und behandelt werden. Mehr Information erhalten sie auf therapie.aktiv</div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Akupunktur</div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Dr. Lehner</div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Laserakupunktur</div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Dr. Lehner</div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Untersuchung <i>Sporttauglichkeit-Neu</i></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Tauglichkeitsuntersuchung für alle Sportvereine</div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Rundum Gesund: Ein Service der Hausärzte und der Ärztekammer Salzburg</div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="experience__title"></div>
+                    <div class="leistung__title"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Nähere Informationen finden sie auf der Homepage der Ärztekammer Salzburg</div>
@@ -804,13 +837,14 @@
         <h2>Die Ordination</h2>
         <p class="lead">
           <p class="lead"> <div class="slideshow-container">
-<!-- Full-width images with number and caption text --> <div class="mySlides fade"> <div class="numbertext">1 / 3</div> <img src="img/ordination/behandl_1.jpg" style="width:100%"> <div class="text">Caption Text</div> </div>
+
+<div class="mySlides fade"> <div class="numbertext">1 / 3</div> <img src="img/ordination/behandl_1.jpg" style="width:100%"> <div class="text">Caption Text</div> </div>
 <div class="mySlides fade"> <div class="numbertext">2 / 3</div> <img src="img/ordination/behandl_2.jpg" style="width:100%"> <div class="text">Caption Two</div> </div>
 <div class="mySlides fade"> <div class="numbertext">3 / 3</div> <img src="img/ordination/empfang.jpg" style="width:100%"> <div class="text">Caption Three</div> </div>
-<!-- Next and previous buttons --> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div> <br>
-<!-- The dots/circles --> <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div>
-<script> var slideIndex = 0; showSlides();
-function showSlides() { var i; var slides = document.getElementsByClassName("mySlides"); for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; } slideIndex++; if (slideIndex > slides.length) {slideIndex = 1} slides[slideIndex-1].style.display = "block"; setTimeout(showSlides, 2000); // Change image every 2 seconds } </script> </p>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div> <br>
+
+<div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div> </p>
         </p>
         
     </div>
@@ -825,83 +859,144 @@ function showSlides() { var i; var slides = document.getElementsByClassName("myS
         <div class="contact">
             <h2>Rezeptbestellung</h2>
             <div class="row pt-2">
-                <div class="col-12 col-lg-7">
-                    <form action="#" method="POST">
+                <div class="col-12">
+                  <p class="text-danger">Bitte beachten sie, dass die getätigten Angaben in diesem Formular unverschlüsselt per Mail an uns erfolgen.</p>
+                    <form action="mailto:janne.cadamuro@gmail.com" method="post">
                         <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" name="" id="full_name"
-                                       placeholder="Full Name"/>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" name="" id="email"
-                                       placeholder="Email Address"/>
-                            </div>
-                        </div>
-                        <div class="row pt-4">
                             <div class="col-12">
-                                <textarea name="" id="message"
-                                          cols="30" rows="3" placeholder="Type Your Message Here"></textarea>
+                                <input type="text" name="Name" id="full_name"
+                                       placeholder="Vor- und Nachname"/ required>
                             </div>
-                        </div>
-                        <div class="row pt-4">
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icon-mail-fill"></i>
-                                    Send Message
-                                </button>
+                                <input type="text" name="Geburtsdatum" id="birth"
+                                       placeholder="Geburtsdatum"/ required>
                             </div>
                         </div>
+
+                        <p></p>
+                        <h4>Medikament #1</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" name="Medikamentenname" id="med_name"
+                                       placeholder="Medikamentenname"/ required>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="Dosierung" id="med_dosis"
+                                       placeholder="Dosierung (mg, ml, ...)"/ required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                              <input type="text" name="Packungsgröße" id="med_size"
+                                     placeholder="Packungsgröße (Anzahl der Tabletten pro Packung)"/ required>
+                            </div>
+                            <div class="col-6">
+                              <input type="text" name="Anzahl" id="med_amount"
+                                     placeholder="Anzahl Packungen"/ required>
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <h4>Medikament #2</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" name="Medikamentenname" id="med_name"
+                                       placeholder="Medikamentenname"/>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="Dosierung" id="med_dosis"
+                                       placeholder="Dosierung (mg, ml, ...)"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                              <input type="text" name="Packungsgröße" id="med_size"
+                                     placeholder="Packungsgröße (Anzahl der Tabletten pro Packung)"/>
+                            </div>
+                            <div class="col-6">
+                              <input type="text" name="Anzahl" id="med_amount"
+                                     placeholder="Anzahl Packungen"/>
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <h4>Medikament #3</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" name="Medikamentenname" id="med_name"
+                                       placeholder="Medikamentenname"/>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="Dosierung" id="med_dosis"
+                                       placeholder="Dosierung (mg, ml, ...)"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                              <input type="text" name="Packungsgröße" id="med_size"
+                                     placeholder="Packungsgröße (Anzahl der Tabletten pro Packung)"/>
+                            </div>
+                            <div class="col-6">
+                              <input type="text" name="Anzahl" id="med_amount"
+                                     placeholder="Anzahl Packungen"/>
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <h4>Medikament #4</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" name="Medikamentenname" id="med_name"
+                                       placeholder="Medikamentenname"/>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="Dosierung" id="med_dosis"
+                                       placeholder="Dosierung (mg, ml, ...)"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                              <input type="text" name="Packungsgröße" id="med_size"
+                                     placeholder="Packungsgröße (Anzahl der Tabletten pro Packung)"/>
+                            </div>
+                            <div class="col-6">
+                              <input type="text" name="Anzahl" id="med_amount"
+                                     placeholder="Anzahl Packungen"/>
+                            </div>
+                        </div>
+
+                      </div>
+
+                      <p></p>
+
+                      <div class="row pt-4">
+                          <div class="col-12">
+                              <textarea name="Nachricht" id="message"
+                                        cols="100" rows="3" placeholder="Falls sie uns noch einen Kommentar mitschicken möchten, können sie diesen hier eingeben"></textarea>
+                          </div>
+                      </div>
+
+                      <div class="row pt-4">
+                        <div class="col-12">
+                          <label for="datenschutz">
+                            <input type="checkbox" name="Datenschutzerklärung zugestimmt" id="datenschutz" required>
+                            <b>Ich habe die <a href="impressum">Datenschutzbestimmungen</a> zur Kenntnis genommen und mir ist bewusst, dass die Übermittlung meiner Angaben unverschlüsselt erfolgt.</b>
+                          </label>
+                        </div>
+                        <p></p>
+                          <div class="col-12">
+                              <button type="submit" class="btn btn-primary">
+                                  <i class="icon-mail-fill"></i>
+                                  Rezeptbestellung abschicken
+                              </button>
+                          </div>
+                      </div>
                     </form>
                 </div>
-                <div class="col-12 col-lg-5 contact__info">
-                    <h4>Phone Number</h4>
-                    <span>&#43;41 (44) 505 10 99</span>
-                    <h4>Email</h4>
-                    <span><a href="mailto:team@radity.com">team@radity.com</a></span>
-                    <h4>Address</h4>
-                    <span>Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich</span>
-                </div>
+                
             </div>
         </div>
     </div>
-</section>
-
-
-	
-	
-<section class="section section--cta">
-<div class="container">
-  <div class="row">
-    <div class="col-12 text-center">
-      <h2>Newsletter subscription</h2>
-      <div class="rad-subscription-group">
-        <form id="rad-subscription" action="">
-          <input
-            id="rad-subscription-email"
-            type="email"
-            class="form-control"
-            aria-describedby="emailHelp"
-            placeholder="Email Address..."
-            aria-label="Email Address"
-          />
-          <button type="submit" id="rad-subscription-submit" class="btn btn-light btn-rounded">
-            Sign Up
-          </button>
-        </form>
-        <div id="rad-subscription-success" class="d-none">
-          <p class="lead">Successfully subscribed</p>
-        </div>
-        <div id="rad-subscription-fail" class="d-none">
-          <p>Error while subscribing.</p>
-        </div>
-        <script src="/js/subscription.js"></script>
-      </div>
-      <small id="emailHelp" class="form-text text-muted"
-        >We&#39;ll never share your email with anyone else.</small
-      >
-    </div>
-  </div>
-</div>
 </section>
 
 

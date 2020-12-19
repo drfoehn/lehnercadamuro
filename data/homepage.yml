@@ -2,10 +2,11 @@
 showcase:
   enable: true
   title: "Gemeinschaftspraxis"
-  title2: "Dr. Lehner & Dr. Cadamuro"
+  title2: "Dr. Katharina Lehner &"
+  title3: "Dr. Evelin Cadamuro"
   subtitle: "Ärztinnen für Allgemeinmedizin"
   subtitle2: "Alle Kassen"
-  description: "Wir nehmen uns Zeit für Sie!"
+  description: ""
   image:
     x: "img/startseite/start.png"
     _2x: "img/showcase/showcase@2x.png"
