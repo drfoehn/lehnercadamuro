@@ -152,17 +152,21 @@ termin:
   title: "Terminvereinbarung"
   content: '<p class="lead">
 
-<h5>Terminvereinbarung zu Ordinationszeiten</h5>
+<p class="subheading">Terminvereinbarung zu Ordinationszeiten</p>
 Ihre telefonische Voranmeldung nehmen wir gerne zu folgenden Zeiten entgegen:<br />
 <b>Montag, Mittwoch und Freitag von 10.00 - 13.00 Uhr.</b>
 <br /><br />
 
-<h5>Hausbesuche</h5>
+<p></p>
+
+<p class="subheading">Hausbesuche</p>
 Zu folgenden Zeiten ist es möglich einen Termin für einen Hausbesuche anzumelden:<br />
 <b>Montag, Mittwoch und Freitags von 8.00 - 11.00 Uhr.</b>
 <br /><br />
 
-<h5>Wochenende und Feiertage</h5>
+<p></p>
+
+<p class="subheading">Wochenende und Feiertage</p>
 Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum
 des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten.<br /><br />
 <a href="https://www.notdienst141.at/" target="_blank">Huasärztliches Notdienstzentrum</a><br />
@@ -171,7 +175,9 @@ des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalte
 Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr
 <br /><br />
 
-<h5>Notfälle</h5>
+<p></p>
+
+<p class="subheading">Notfälle</p>
 Bei dringenden medizinischen Notfällen erreichen
 Sie uns über das Rote Kreuz
 Telefonnummer: 141
@@ -259,19 +265,19 @@ ordination:
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="img/ordination/behandl_1.jpg" style="width:100%">
+    <img src="img/ordination/img_snow_wide.jpg" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="img/ordination/behandl_2.jpg" style="width:100%">
+    <img src="img/ordination/img_lights_wide.jpg" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="img/ordination/empfang.jpg" style="width:100%">
+    <img src="img/ordination/img_nature_wide.jpg" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
 
