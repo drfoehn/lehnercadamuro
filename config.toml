@@ -94,7 +94,8 @@ theme = "simple_red"
     text2 = "Dr. Cadamuro"
 
   [params.footer]
-      copyright = "© Dr.Katherina Lehner & Dr. Evelin Cadamuro, Theme by Raditian. All rights reserved    |    [Impressum](#)"
+      copyright = "© Dr.Katherina Lehner & Dr. Evelin Cadamuro, Theme by Raditian. Alle Rechte vorbehalten"
+
       [params.footer.radity_logo]
         x = "img/general/design-and-code-radity.png"
         _2x = "img/general/design-and-code-radity@2x.png"

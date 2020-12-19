@@ -51,7 +51,22 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
 <!-- End Slideshow -->
+
+<!-- Open new window -->
+
+<script>
+function newWin(url,w,h) {
+ var day = new Date();
+ var id= day.getTime();
+ var params = 'width='+w+',height='+h+',scrollbars,resizable';
+ var win = window.open(url,id,params);
+ return false;
+}
+</script>
+
+<!-- End Open new window -->
 
 <!-- endinject -->
 
