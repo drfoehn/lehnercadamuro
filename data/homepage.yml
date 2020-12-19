@@ -100,7 +100,7 @@ kontakt:
 leistungen:
   enable: true
   title: "Unsere Leistungen"
-  description: "Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives."
+  description: "blabla"
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"

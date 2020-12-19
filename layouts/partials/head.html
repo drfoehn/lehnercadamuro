@@ -56,8 +56,18 @@ function showSlides(n) {
 <!-- endinject -->
 
 <title>{{ .Site.Data.homepage.head.title }}</title>
+
+
+
 <style>
 /*custom CSS*/
+
+/*Import Google Fonts*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+
 
 .container{
   padding-top:24px;
@@ -70,6 +80,7 @@ function showSlides(n) {
 
 .showcase__subtitle2
 {
+  font-family:"Amatic SC";
   font-size:25px;
   font-weight:600;
   line-height:normal;
@@ -81,6 +92,86 @@ function showSlides(n) {
       font-size:30px
       }
  }
+
+.section-title h2{
+  font-family:"Amatic SC";
+}
+
+
+.header .navbar .nav-item {
+  font-family:"Amatic SC";
+  font-size:"25px" !important;
+}
+
+.leistung {
+  padding-top:10px;
+
+}
+
+.leistung__title{
+
+ font-family:"Amatic SC";
+ position:relative;
+ font-size:20px;
+ font-weight:600;
+ z-index:2;
+ }
+   @media (min-width:992px)
+ {
+   .leistung__title{font-size:30px
+ }
+}
+
+
+
+
+.leistung .leistung__leistung {
+  font-size:17px;
+  font-weight:500;
+  color:#e93e34;
+  }
+
+
+.leistung__zusatzleistung {
+  font-size:17px;
+  font-weight:500;
+  color:#e93e34;
+  }
+
+  .leistung__beschreibung {
+    line-height:1,57;
+    font-style: italic;
+  }
+
+  .section div[class*=col-] img {
+    max-width: ;
+  }
+
+
+
+/*geht noch nicht */
+.lead-termin h5{
+  font-family:"Amatic SC";
+  position:relative;
+  font-size:20px;
+  font-weight:600;
+  z-index:2;
+  }
+  @media (min-width:992px){
+    .leistung__title{font-size:30px}
+  }
+
+.rezept .section-title {
+  padding-top: 80px;
+}
+
+
+
+
+
+
+/*end of custom CSS*/
+
 
 
 

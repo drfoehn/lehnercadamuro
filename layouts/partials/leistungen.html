@@ -6,13 +6,13 @@
                 {{ range .Site.Data.homepage.leistungen.items }}
                 <div class="leistung">
                     <div class="leistung__title">{{ .heading | safeHTML}}</div>
-                    <div class="leistung__leistung">{{ .leistung | markdownify }}</div>
+                    <div class="leistung__leistung">{{ .leistung | safeHTML}}</div>
                     <div class="leistung__zusatzleistung">{{ .zusatzleistung | safeHTML}}</div>
                     <div class="leistung__beschreibung">{{ .beschreibung | safeHTML}}</div>
                 </div>
                 {{ end }}
             </div>
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-6 section-title">
                 <h2>{{ .Site.Data.homepage.leistungen.title }}</h2>
                 <p class="lead">
                     {{ .Site.Data.homepage.leistungen.description }}
