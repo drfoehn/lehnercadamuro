@@ -18,7 +18,17 @@ showcase:
     btnText: "Contact"
     URL: "https://radity.com/en/contact/"
 
+# aktuelles
 
+aktuelles:
+  enable: true
+  title: "Aktuelles"
+  content: ''
+  topic1: "Ordinationsbetrieb während der Covid19-Pandemie"
+  info1: "Bitte beachten Sie, dass der Zutritt zur Ordination nur [unter bestimmten Voraussetzungen](http://abc.at) möglich ist."
+  topic2: "Neue Ordinationszeiten ab 1.1.2021"
+  info2: "Wir freuen uns [Frau Dr. Evelin Cadamuro](#team) in unserem Team begrüßen zu dürfen.\
+          Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich [neue Ordinationszeiten](#ordinationszeiten)."
 
 # ordinationszeiten
 ordinationszeiten:

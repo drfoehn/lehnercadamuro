@@ -61,25 +61,31 @@ theme = "simple_red"
   URL = "#ordination"
   weight = 7
 
+
   [[menu.footer]]
-  name = "About"
-  URL = "#about"
+  name = "Ordinationszeiten"
+  URL = "#ordinationszeiten"
+  weight = 1
+
+  [[menu.footer]]
+  name = "Kontakt"
+  URL = "#kontakt"
   weight = 2
 
   [[menu.footer]]
-  name = "Portfolio"
-  URL = "#portfolio"
-  weight = 3
+  name = "Termin"
+  URL = "#termin"
+  weight = 4
 
   [[menu.footer]]
-  name = "Contact"
-  URL = "#contact"
-  weight = 4
+  name = "Rezept"
+  URL = "#rezept"
+  weight = 5
 
 
 [params]
 
-  sections = ["showcase", "ordinationszeiten", "kontakt", "leistungen", "termin", "team", "ordination", "rezept"]
+  sections = ["showcase", "aktuelles", "ordinationszeiten", "kontakt", "leistungen", "termin", "team", "ordination", "rezept"]
 
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 
@@ -88,7 +94,7 @@ theme = "simple_red"
     text2 = "Dr. Cadamuro"
 
   [params.footer]
-      copyright = "© Raditian. All rights reserved    |    Impressum"
+      copyright = "© Dr.Katherina Lehner & Dr. Evelin Cadamuro, Theme by Raditian. All rights reserved    |    [Impressum](#)"
       [params.footer.radity_logo]
         x = "img/general/design-and-code-radity.png"
         _2x = "img/general/design-and-code-radity@2x.png"
