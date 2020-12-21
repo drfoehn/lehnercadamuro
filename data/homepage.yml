@@ -24,7 +24,7 @@ aktuelles:
   title: "Aktuelles"
   content: ''
   topic1: "Ordinationsbetrieb während der Covid19-Pandemie"
-  info1: "Bitte beachten Sie, dass der Zutritt zur Ordination nur [unter bestimmten Voraussetzungen](http://abc.at) möglich ist."
+  info1: "https://www.w3schools.com/howto/howto_js_collapsible.asp Bitte beachten Sie, dass der Zutritt zur Ordination nur [unter bestimmten Voraussetzungen](http://abc.at) möglich ist."
   topic2: "Neue Ordinationszeiten ab 1.1.2021"
   info2: "Wir freuen uns [Frau Dr. Evelin Cadamuro](#team) in unserem Team begrüßen zu dürfen. \
           Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich [neue Ordinationszeiten](#ordinationszeiten)."
@@ -66,7 +66,7 @@ ordinationszeiten:
 
   image:
     x: "img/startseite/open.png"
-    _2x: "img/who-am-i/user-picture@2x.png"
+    _2x: "img/startseite/open.png"
 
 # kontakt
 kontakt:
@@ -101,7 +101,7 @@ kontakt:
 
   image:
     x: "img/startseite/kontakt.png"
-    _2x: "img/who-am-i/user-picture@2x.png"
+    _2x: "img/startseite/kontakt.png"
 
 
 
@@ -120,7 +120,7 @@ leistungen:
     URL: "#"
   image:
     x: "img/startseite/leistung.png"
-    _2x: "img/who-am-i/user-picture@2x.png"
+    _2x: "img/startseite/leistung.png"
 
   items:
     - heading: "Routineleistungen"
@@ -175,7 +175,7 @@ Zu folgenden Zeiten ist es möglich einen Termin für einen Hausbesuche anzumeld
 
 <p></p>
 
-<p class="subheading">Wochenende und Feiertage</p>
+<p class="subheading">Wochenende, Feiertage und Notfälle</p>
 Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum
 des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten.<br /><br />
 <a href="https://www.notdienst141.at/" target="_blank">Huasärztliches Notdienstzentrum</a><br />
@@ -183,21 +183,12 @@ des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalte
 <i>Öffnungszeiten:</i> <br />täglich von 19.00 – 23.00 Uhr<br />
 Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr
 <br /><br />
-
-<p></p>
-
-<p class="subheading">Notfälle</p>
-Bei dringenden medizinischen Notfällen erreichen
-Sie uns über das Rote Kreuz
-Telefonnummer: 141
-
-
     </p>'
 
 
   image:
     x: "img/startseite/termin.png"
-    _2x: "img/who-am-i/user-picture@2x.png"
+    _2x: "img/startseite/termin.png"
 
 
 
@@ -226,8 +217,8 @@ team:
       content: ""
       diplom1: Diplom der ÖÄK für Notfallmedizin
       diplom2: Diplom der ÖÄK für Ernährungsmedizin
-      diplom3: Diplom der ÖÄK für Psychosoziale Medizin I
-      diplom4: Diplom der ÖÄK für Psychosoziale Medizin II
+      diplom3: Diplom der ÖÄK für Psychosoziale Medizin
+      diplom4: Diplom der ÖÄK für Psychosomatische Medizin
       diplom5: Fortbildungsdiplom der ÖÄK
 
       image:
@@ -241,7 +232,7 @@ team:
         x: "img/team/team_andrea.png"
         _2x: ""
 
-    - name: "Gisi"
+    - name: "Gisela Marer"
       position: "Ordinationsassistentin"
       content: "bla"
       image:

@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
 	<meta name="generator" content="Hugo 0.79.0" />
@@ -25,6 +25,7 @@
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-000000');
 </script>
+
 
 
 <script type="text/javascript">
@@ -60,8 +61,149 @@ function showSlides(n) {
 
 
 
+
+
+<script>
+function newWin(url,w,h) {
+ var day = new Date();
+ var id= day.getTime();
+ var params = 'width='+w+',height='+h+',scrollbars,resizable';
+ var win = window.open(url,id,params);
+ return false;
+}
+</script>
+
+
+
+
+
 <title></title>
+
+
+
 <style>
+ 
+
+ 
+
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+
+
+.container{
+  padding-top:24px;
+}
+
+.display-1{
+    font-family:"Amatic SC"
+}
+
+
+.showcase__subtitle2
+{
+  font-family:"Amatic SC";
+  font-size:25px;
+  font-weight:600;
+  line-height:normal;
+  color: #e93e34 !important;
+  }
+  @media (min-width:992px)
+  {
+    .showcase__subtitle2{
+      font-size:30px
+      }
+ }
+
+.section-title h2{
+  font-family:"Amatic SC";
+}
+
+
+.nav-item {
+  font-family:"Amatic SC";
+  font-size:"25px" !important;
+}
+
+
+.aktuell_bg{
+  background-image: repeating-linear-gradient(-45deg, #ffe4af, #ffe4af 30px, #ffc03a 30px, #ffc03a 60px);
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+.leistung {
+  padding-top:10px;
+
+}
+
+.subheading{
+
+ font-family:"Amatic SC";
+ position:relative;
+ font-size:20px;
+ font-weight:600;
+ z-index:2;
+ }
+   @media (min-width:992px)
+ {
+   .subheading{font-size:30px
+ }
+}
+
+
+
+
+.leistung .leistung__leistung {
+  font-size:17px;
+  font-weight:500;
+  color:#e93e34;
+  }
+
+
+.leistung__zusatzleistung {
+  font-size:17px;
+  font-weight:500;
+  color:#e93e34;
+  }
+
+  .leistung__beschreibung {
+    line-height:1,57;
+    font-style: italic;
+  }
+
+  .section div[class*=col-] img {
+    max-width: ;
+  }
+
+
+
+ 
+.lead-termin h5{
+  font-family:"Amatic SC";
+  position:relative;
+  font-size:20px;
+  font-weight:600;
+  z-index:2;
+  }
+  @media (min-width:992px){
+    .leistung__title{font-size:30px}
+  }
+
+.rezept .section-title {
+  padding-top: 80px;
+}
+
+
+
+
+
+
+ 
+
+
+
+
      
     .rad-fade-in {
         will-change: opacity, transform;
@@ -396,6 +538,37 @@ function showSlides(n) {
 
 	
 	
+<section class="section rad-animation-group pb-0" id="aktuelles">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row aktuell_bg">
+
+      <div class="col-12 col-md-12 my-auto my-auto section-title">
+        <h2>Aktuelles</h2>
+        <p class="lead">
+          
+        </p>
+        <div class="col-12 col-md-12 my-auto my-auto">
+          <p class="subheading">Ordinationsbetrieb während der Covid19-Pandemie</p>
+          <p class="lead"><a href="https://www.w3schools.com/howto/howto_js_collapsible.asp">https://www.w3schools.com/howto/howto_js_collapsible.asp</a> Bitte beachten Sie, dass der Zutritt zur Ordination nur <a href="http://abc.at">unter bestimmten Voraussetzungen</a> möglich ist.</p>
+        </div>
+        <div class="col-12 col-md-12 my-auto my-auto">
+          <p class="subheading">Neue Ordinationszeiten ab 1.1.2021</p>
+          <p class="lead">Wir freuen uns <a href="#team">Frau Dr. Evelin Cadamuro</a> in unserem Team begrüßen zu dürfen. Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich <a href="#ordinationszeiten">neue Ordinationszeiten</a>.</p>
+        </div>
+        
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
+	
+	
 <section class="section rad-animation-group pb-0" id="ordinationszeiten">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
@@ -408,7 +581,7 @@ function showSlides(n) {
           alt="Ordinationszeiten"
         />
       </div>
-      <div class="col-12 col-md-6 my-auto my-auto">
+      <div class="col-12 col-md-6 my-auto my-auto section-title">
         <h2>Ordinationszeiten</h2>
         <p class="lead">
           <p class="lead"> <table> <tr> <td>Montag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Cadamuro</td> </tr> <tr> <td>Dienstag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Cadamuro</td> </tr> <tr> <td>Mittwoch</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Lehner</td> </tr> <tr> <td>Donnerstag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Lehner</td> </tr> <tr> <td>Freitag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Lehner oder Dr. Cadamuro</td> </tr>
@@ -427,7 +600,7 @@ function showSlides(n) {
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
 
-      <div class="col-12 col-md-6 my-auto my-auto">
+      <div class="col-12 col-md-6 my-auto my-auto section-title">
         <h2>Kontakt</h2>
         <p class="lead">
           <p class="lead"> <table style="valign:middle"> <tbody> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/tel.png" alt="Telefon" width="40" height="40"></td> <td>0662-123456</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/fax.png" alt="Fax" width="40" height="40"></td> <td>0662-7890123</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/mail.png" alt="Mail" width="40" height="40"></td> <td>praxis (a) dr-katharina-lehner.at</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/map.png" alt="Adresse" width="40" height="40"></td> <td>Moosstrasse 96 <br />5020 Salzburg</td> </tr> </tbody> </table> </p>
@@ -455,171 +628,171 @@ function showSlides(n) {
             <div class="col-12 col-sm-6 mt-5 mt-sm-0">
                 
                 <div class="leistung">
-                    <div class="leistung__title">Routineleistungen</div>
+                    <div class="subheading">Routineleistungen</div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung">Hausärztliche Abklärung im akuten Krankheitsfall</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung">Betreuung und Therapiemanagement bei chronischen Erkrankungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung">Infusionstherapie bei akuter Symptomatik (zB Schmerzen)</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung">Vorsorge- / Gesundenuntersuchungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung">Mutter-Kind-Pass Untersuchungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung">Führerscheinuntersuchungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung">Impfberatung, Impfungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung">Erstellen von Patientenverfügungen</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung">EKG (Elektrokardiogramm)</div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
+                    <div class="leistung__leistung">   </div>
+                    <div class="leistung__zusatzleistung"></div>
+                    <div class="leistung__beschreibung"></div>
+                </div>
+                
+                <div class="leistung">
+                    <div class="subheading">Zusatz- / Privatleistungen</div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title">Zusatz- / Privatleistungen</div>
-                    <div class="leistung__leistung"></div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
-                </div>
-                
-                <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Präoperative Untersuchung (zur Operationsfreigabe)</div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Therapie Aktiv - Diabetes im Griff</div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Dieses von uns zur Verfügung gestelltes Angebot stellt sicher, dass Typ-2-Diabetiker optimal versorgt und behandelt werden. Mehr Information erhalten sie auf therapie.aktiv</div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Akupunktur</div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Dr. Lehner</div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Laserakupunktur</div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Dr. Lehner</div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Untersuchung <i>Sporttauglichkeit-Neu</i></div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Tauglichkeitsuntersuchung für alle Sportvereine</div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Rundum Gesund: Ein Service der Hausärzte und der Ärztekammer Salzburg</div>
                     <div class="leistung__beschreibung"></div>
                 </div>
                 
                 <div class="leistung">
-                    <div class="leistung__title"></div>
+                    <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Nähere Informationen finden sie auf der Homepage der Ärztekammer Salzburg</div>
                 </div>
                 
             </div>
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-6 section-title">
                 <h2>Unsere Leistungen</h2>
                 <p class="lead">
-                    Over 15&#43; years of experience working with companies from all over the world. I design &amp; develop digital products to help businesses and improve people&#39;s lives.
+                    blabla
                 </p>
                 <p class="lead">
                   <div class="col-12 col-md-6">
@@ -644,16 +817,15 @@ function showSlides(n) {
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
 
-      <div class="col-12 col-md-6 my-auto my-auto">
+      <div class="col-12 col-md-6 my-auto my-auto  section-title">
         <h2>Terminvereinbarung</h2>
-        <p class="lead">
+        <p class="lead-termin">
           <p class="lead">
-<h5>Terminvereinbarung zu Ordinationszeiten</h5> Ihre telefonische Voranmeldung nehmen wir gerne zu folgenden Zeiten entgegen:<br /> <b>Montag, Mittwoch und Freitag von 10.00 - 13.00 Uhr.</b> <br /><br />
-<h5>Hausbesuche</h5> Zu folgenden Zeiten ist es möglich einen Termin für einen Hausbesuche anzumelden:<br /> <b>Montag, Mittwoch und Freitags von 8.00 - 11.00 Uhr.</b> <br /><br />
-<h5>Wochenende und Feiertage</h5> Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten.<br /><br /> <a href="https://www.notdienst141.at/" target="_blank">Huasärztliches Notdienstzentrum</a><br /> <i>Telefon:</i> 141<br /> <i>Öffnungszeiten:</i> <br />täglich von 19.00 – 23.00 Uhr<br /> Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr <br /><br />
-<h5>Notfälle</h5> Bei dringenden medizinischen Notfällen erreichen Sie uns über das Rote Kreuz Telefonnummer: 141
-
-</p>
+<p class="subheading">Terminvereinbarung zu Ordinationszeiten</p> Ihre telefonische Voranmeldung nehmen wir gerne zu folgenden Zeiten entgegen:<br /> <b>Montag, Mittwoch und Freitag von 10.00 - 13.00 Uhr.</b> <br /><br />
+<p></p>
+<p class="subheading">Hausbesuche</p> Zu folgenden Zeiten ist es möglich einen Termin für einen Hausbesuche anzumelden:<br /> <b>Montag, Mittwoch und Freitags von 8.00 - 11.00 Uhr.</b> <br /><br />
+<p></p>
+<p class="subheading">Wochenende, Feiertage und Notfälle</p> Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten.<br /><br /> <a href="https://www.notdienst141.at/" target="_blank">Huasärztliches Notdienstzentrum</a><br /> <i>Telefon:</i> 141<br /> <i>Öffnungszeiten:</i> <br />täglich von 19.00 – 23.00 Uhr<br /> Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr <br /><br /> </p>
         </p>
         
       </div>
@@ -673,8 +845,8 @@ function showSlides(n) {
 
 	
 	
-<section class="section rad-animation-group section--border-bottom">
-    <div class="container">
+<section class="section rad-animation-group section--border-bottom" id="team">
+    <div class="container  section-title">
         <h2 class="rad-fade-down">Unser Team</h2>
         <div class="row row--padded mb-0 rad-fade-down">
             
@@ -720,8 +892,8 @@ function showSlides(n) {
                 <p>
                     Diplom der ÖÄK für Notfallmedizin<br />
                     Diplom der ÖÄK für Ernährungsmedizin<br />
-                    Diplom der ÖÄK für Psychosoziale Medizin I<br />
-                    Diplom der ÖÄK für Psychosoziale Medizin II<br />
+                    Diplom der ÖÄK für Psychosoziale Medizin<br />
+                    Diplom der ÖÄK für Psychosomatische Medizin<br />
                     Fortbildungsdiplom der ÖÄK<br />
                 </p>
             </div>
@@ -756,9 +928,9 @@ function showSlides(n) {
                          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
                          data-src="img/team/team_gisi.png"
                          data-srcset="img/team/team_gisi.png 1x,  2x"
-                         alt="Gisi"/>
+                         alt="Gisela Marer"/>
                     <div class="testimonial__author-info">
-                        <h4>Gisi</h4>
+                        <h4>Gisela Marer</h4>
                         <span>Ordinationsassistentin</span>
                     </div>
                 </div>
@@ -833,19 +1005,20 @@ function showSlides(n) {
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
 
-      <div class="col-12 col-md-6 my-auto my-auto">
+      <div class="col-12 col-md-12 my-auto my-auto section-title">
         <h2>Die Ordination</h2>
         <p class="lead">
           <p class="lead"> <div class="slideshow-container">
 
-<div class="mySlides fade"> <div class="numbertext">1 / 3</div> <img src="img/ordination/behandl_1.jpg" style="width:100%"> <div class="text">Caption Text</div> </div>
-<div class="mySlides fade"> <div class="numbertext">2 / 3</div> <img src="img/ordination/behandl_2.jpg" style="width:100%"> <div class="text">Caption Two</div> </div>
-<div class="mySlides fade"> <div class="numbertext">3 / 3</div> <img src="img/ordination/empfang.jpg" style="width:100%"> <div class="text">Caption Three</div> </div>
+<div class="mySlides fade"> <div class="numbertext">1 / 3</div> <img src="img/ordination/img_snow_wide.jpg" style="width:100%"> <div class="text">Caption Text</div> </div>
+<div class="mySlides fade"> <div class="numbertext">2 / 3</div> <img src="img/ordination/img_lights_wide.jpg" style="width:100%"> <div class="text">Caption Two</div> </div>
+<div class="mySlides fade"> <div class="numbertext">3 / 3</div> <img src="img/ordination/img_nature_wide.jpg" style="width:100%"> <div class="text">Caption Three</div> </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div> <br>
 
 <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div> </p>
         </p>
+        
         
     </div>
   </div>
@@ -854,13 +1027,14 @@ function showSlides(n) {
 
 	
 	
-<section id="rezept" class="section section--contact pt-0">
+<section id="rezept" class="section section--rezept pt-0">
     <div class="container">
-        <div class="contact">
+        <div class="rezept  section-title">
             <h2>Rezeptbestellung</h2>
             <div class="row pt-2">
                 <div class="col-12">
                   <p class="text-danger">Bitte beachten sie, dass die getätigten Angaben in diesem Formular unverschlüsselt per Mail an uns erfolgen.</p>
+                  <p></p>
                     <form action="mailto:janne.cadamuro@gmail.com" method="post">
                         <div class="row">
                             <div class="col-12">
@@ -874,7 +1048,7 @@ function showSlides(n) {
                         </div>
 
                         <p></p>
-                        <h4>Medikament #1</h4>
+                        <p class="subheading">Medikament #1</p>
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" name="Medikamentenname" id="med_name"
@@ -897,7 +1071,7 @@ function showSlides(n) {
                         </div>
 
                         <p></p>
-                        <h4>Medikament #2</h4>
+                        <p class="subheading">Medikament #2</p>
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" name="Medikamentenname" id="med_name"
@@ -920,7 +1094,7 @@ function showSlides(n) {
                         </div>
 
                         <p></p>
-                        <h4>Medikament #3</h4>
+                        <p class="subheading">Medikament #3</p>
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" name="Medikamentenname" id="med_name"
@@ -943,7 +1117,7 @@ function showSlides(n) {
                         </div>
 
                         <p></p>
-                        <h4>Medikament #4</h4>
+                        <p class="subheading">Medikament #4</p>
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" name="Medikamentenname" id="med_name"
@@ -1004,11 +1178,7 @@ function showSlides(n) {
 
 	<footer class="footer">
   <div class="container">
-    <div class="footer__left">
-      <div class="footer__copy">
-        © Raditian. All rights reserved    |    Impressum
-      </div>
-    </div>
+
     <div class="footer__links">
       <ul class="navbar-nav ">
         <li class="nav-item">
@@ -1016,19 +1186,30 @@ function showSlides(n) {
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="">ABOUT</a>
+          <a class="nav-link" href="">ORDINATIONSZEITEN</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="">PORTFOLIO</a>
+          <a class="nav-link" href="">KONTAKT</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="">CONTACT</a>
+          <a class="nav-link" href="">TERMIN</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="">REZEPT</a>
         </li>
         
       </ul>
     </div>
+
+    <div class="footer__left">
+      <div class="footer__copy">
+        © Dr.Katherina Lehner &amp; Dr. Evelin Cadamuro, Theme by Raditian. Alle Rechte vorbehalten | <a href="impressum.html" onClick="return newWin('impressum.html',650,350)">Impressum</a>
+      </div>
+    </div>
+
     <div class="footer__right">
       <a href="https://radity.com/"
         ><img
@@ -1037,6 +1218,7 @@ function showSlides(n) {
           alt="Design &amp; Code - Radity"
       /></a>
     </div>
+
   </div>
 </footer>
 
@@ -1098,3 +1280,4 @@ function showSlides(n) {
 </body>
 
 </html>
+
