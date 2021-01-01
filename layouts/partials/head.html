@@ -52,11 +52,13 @@ function showSlides(n) {
 }
 </script>
 
+
+
 <!-- End Slideshow -->
 
 <!-- Open new window -->
 
-<script>
+<script type="text/javascript">>
 function newWin(url,w,h) {
  var day = new Date();
  var id= day.getTime();
@@ -67,6 +69,8 @@ function newWin(url,w,h) {
 </script>
 
 <!-- End Open new window -->
+
+
 
 <!-- endinject -->
 
@@ -80,6 +84,68 @@ function newWin(url,w,h) {
 /*Import Google Fonts*/
 
   @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+  /* Opening times */
+
+  #opening-times {
+    margin-bottom: 20px;
+  }
+  #opening-times .opening-times-header {
+    height: 3em;
+    text-align: center;
+  }
+
+  #opening-times .opening-time {
+    border-top: 5px solid #9fc015;
+    display: block;
+    position: relative;
+    height: 9em;
+    box-shadow: lightgrey 1px 2px 14px;
+    text-align: center;
+  }
+
+
+  #opening-times .opening-time h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #9fc015;
+    position: absolute;
+    bottom: 10px;
+    font-weight: 700;
+    width: 100%;
+    min-width: 2em;
+    overflow: hidden;
+  }
+
+  #opening-times .opening-time > .times {
+    padding-top: 1em;
+  }
+
+  #opening-times .opening-time.today {
+    background-color: #629e0d;
+    color: white;
+    box-shadow: darkgrey 6px 7px 14px;
+  }
+
+  #opening-times .opening-time.today h2{
+    color: white;
+  }
+
+  #opening-time .times {
+    color: #9fc015;
+    font-weight: bold;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -113,9 +179,15 @@ function newWin(url,w,h) {
 }
 
 
-.nav-item {
+.header .navbar-light .navbar-nav .nav-link{
   font-family:"Amatic SC";
   font-size:"25px" !important;
+  @media (min-width: 992px)
+  {
+    font-family:"Amatic SC";
+    font-size:"25px" !important;
+  }
+.header .navbar .nav-item .nav-link
 }
 
 
@@ -191,6 +263,7 @@ function newWin(url,w,h) {
 
 
 
+.air-slider{position:relative; margin: 0 auto;}.air-slider .slide{width:100%;height:100%;position:absolute;overflow:hidden;opacity:0;-webkit-transition:1s ease all;transition:1s ease all;background:#ccc}.air-slider .slide img{width:100%;height:100%}.air-slider .active-slide{opacity:1}.air-slider .controls{width:100%;height:50px;top:calc(50% - 25px);left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;position:absolute}.air-slider .controls button{width:50px;height:50px;background:rgba(0,0,0,0.8);color:#fff;border:none;outline:none;cursor:pointer;font-weight:bold}
 
 /*end of custom CSS*/
 

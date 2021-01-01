@@ -8,23 +8,23 @@ showcase:
   subtitle2: "Alle Kassen"
   description: ""
   image:
-    x: "img/startseite/start.png"
-    _2x: "img/showcase/showcase@2x.png"
+    x: "img/team/eve_kath_title.png"
+    _2x: "img/team/eve_kath_title.png"
   imageMobile:
-    x: "img/showcase/showcase-mobile.jpg"
+    x: "img/team/eve_kath_title.png"
 
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
     URL: "https://radity.com/en/contact/"
 
-# aktuelles
+# aktuelles ev. https://www.w3schools.com/howto/howto_js_collapsible.asp
 aktuelles:
   enable: true
   title: "Aktuelles"
   content: ''
   topic1: "Ordinationsbetrieb während der Covid19-Pandemie"
-  info1: "https://www.w3schools.com/howto/howto_js_collapsible.asp Bitte beachten Sie, dass der Zutritt zur Ordination nur [unter bestimmten Voraussetzungen](http://abc.at) möglich ist."
+  info1: "Bitte beachten Sie, dass der Zutritt zur Ordination nur [unter bestimmten Voraussetzungen](corona.html) möglich ist."
   topic2: "Neue Ordinationszeiten ab 1.1.2021"
   info2: "Wir freuen uns [Frau Dr. Evelin Cadamuro](#team) in unserem Team begrüßen zu dürfen. \
           Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich [neue Ordinationszeiten](#ordinationszeiten)."
@@ -34,34 +34,39 @@ ordinationszeiten:
   enable: true
   title: "Ordinationszeiten"
   content: '<p class="lead">
-  <table>
-  <tr>
-    <td>Montag</td>
-    <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td>
-    <td>Dr. Cadamuro</td>
-  </tr>
-  <tr>
-    <td>Dienstag</td>
-    <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td>
-    <td>Dr. Cadamuro</td>
-  </tr>
-  <tr>
-    <td>Mittwoch</td>
-    <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td>
-    <td>Dr. Lehner</td>
-  </tr>
-  <tr>
-    <td>Donnerstag</td>
-    <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td>
-    <td>Dr. Lehner</td>
-  </tr>
-  <tr>
-    <td>Freitag</td>
-    <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td>
-    <td>Dr. Lehner oder Dr. Cadamuro</td>
-  </tr>
+            <div class="row" id="opening-times">
 
-</table>
+              <div class="col-md 2">
+                <div class="opening-time">
+                  <h2>MO</h2>
+                  <div class="times">08:00 - 13:00</div>
+                </div>
+              </div>
+              <div class="col-md 2">
+                <div class="opening-time">
+                  <h2>DI</h2>
+                  <div class="times">14:00 - 17:00</div>
+                </div>
+              </div>
+              <div class="col-md 2">
+                <div class="opening-time">
+                  <h2>MI</h2>
+                  <div class="times">07:30 - 12:30</div>
+                </div>
+              </div>
+                <div class="col-md 2">
+                  <div class="opening-time">
+                    <h2>DO</h2>
+                    <div class="times">15:00 - 18:00</div>
+                  </div>
+                </div>
+              <div class="col-md 2">
+                <div class="opening-time">
+                  <h2>FR</h2>
+                  <div class="times">07:30 - 11:30</div>
+                </div>
+              </div>
+            </div>
     </p>'
 
   image:

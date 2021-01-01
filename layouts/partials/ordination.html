@@ -1,14 +1,15 @@
 {{ if .Site.Data.homepage.ordination.enable }}
+<body onLoad="showSlides();">
 <section class="section rad-animation-group pb-0" id="ordination">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
 
       <div class="col-12 col-md-12 my-auto my-auto section-title">
-        <h2>{{ .Site.Data.homepage.ordination.title }}</h2>
+        <h2 align="center">{{ .Site.Data.homepage.ordination.title }}</h2>
         <p class="lead">
           {{ .Site.Data.homepage.ordination.content | safeHTML }}
         </p>
-        
+
         <!--
           <a
           href="{{ .Site.Data.homepage.ordination.button.URL | absURL }}"

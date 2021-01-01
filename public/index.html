@@ -63,7 +63,9 @@ function showSlides(n) {
 
 
 
-<script>
+
+
+<script type="text/javascript">>
 function newWin(url,w,h) {
  var day = new Date();
  var id= day.getTime();
@@ -72,6 +74,8 @@ function newWin(url,w,h) {
  return false;
 }
 </script>
+
+
 
 
 
@@ -120,9 +124,15 @@ function newWin(url,w,h) {
 }
 
 
-.nav-item {
+.header .navbar-light .navbar-nav .nav-link{
   font-family:"Amatic SC";
   font-size:"25px" !important;
+  @media (min-width: 992px)
+  {
+    font-family:"Amatic SC";
+    font-size:"25px" !important;
+  }
+.header .navbar .nav-item .nav-link
 }
 
 
@@ -198,6 +208,7 @@ function newWin(url,w,h) {
 
 
 
+.air-slider{position:relative; margin: 0 auto;}.air-slider .slide{width:100%;height:100%;position:absolute;overflow:hidden;opacity:0;-webkit-transition:1s ease all;transition:1s ease all;background:#ccc}.air-slider .slide img{width:100%;height:100%}.air-slider .active-slide{opacity:1}.air-slider .controls{width:100%;height:50px;top:calc(50% - 25px);left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;position:absolute}.air-slider .controls button{width:50px;height:50px;background:rgba(0,0,0,0.8);color:#fff;border:none;outline:none;cursor:pointer;font-weight:bold}
 
  
 
@@ -494,7 +505,7 @@ function newWin(url,w,h) {
       class="lozad img-responsive"
       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
       data-src="img/startseite/start.png"
-      data-srcset="img/startseite/start.png 1x, img/showcase/showcase@2x.png 2x"
+      data-srcset="img/startseite/start.png 1x, img/startseite/start.png 2x"
       alt=""
     />
   </div>
@@ -529,7 +540,7 @@ function newWin(url,w,h) {
     <img
       class="lozad img-responsive"
       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-      data-src="img/showcase/showcase-mobile.jpg"
+      data-src="img/startseite/start.png"
       alt=""
     />
   </div>
@@ -549,12 +560,13 @@ function newWin(url,w,h) {
         </p>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">Ordinationsbetrieb während der Covid19-Pandemie</p>
-          <p class="lead"><a href="https://www.w3schools.com/howto/howto_js_collapsible.asp">https://www.w3schools.com/howto/howto_js_collapsible.asp</a> Bitte beachten Sie, dass der Zutritt zur Ordination nur <a href="http://abc.at">unter bestimmten Voraussetzungen</a> möglich ist.</p>
+          <p class="lead">Bitte beachten Sie, dass der Zutritt zur Ordination nur <a href="http://dr-katharina-lehner.at">unter bestimmten Voraussetzungen</a> möglich ist.</p>
         </div>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">Neue Ordinationszeiten ab 1.1.2021</p>
           <p class="lead">Wir freuen uns <a href="#team">Frau Dr. Evelin Cadamuro</a> in unserem Team begrüßen zu dürfen. Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich <a href="#ordinationszeiten">neue Ordinationszeiten</a>.</p>
         </div>
+
         
       </div>
 
@@ -577,7 +589,7 @@ function newWin(url,w,h) {
           class="lozad img-responsive image-left-overflow"
           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
           data-src="img/startseite/open.png"
-          data-srcset="img/startseite/open.png 1x, img/who-am-i/user-picture@2x.png 2x"
+          data-srcset="img/startseite/open.png 1x, img/startseite/open.png 2x"
           alt="Ordinationszeiten"
         />
       </div>
@@ -800,7 +812,7 @@ function newWin(url,w,h) {
                       class="lozad img-responsive image-right-overflow"
                       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
                       data-src="img/startseite/leistung.png"
-                      data-srcset="img/startseite/leistung.png 1x, img/who-am-i/user-picture@2x.png 2x"
+                      data-srcset="img/startseite/leistung.png 1x, img/startseite/leistung.png 2x"
                       alt="Unsere Leistungen"
                     />
                   </div>
@@ -834,7 +846,7 @@ function newWin(url,w,h) {
           class="lozad img-responsive image-right-overflow"
           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
           data-src="img/startseite/termin.png"
-          data-srcset="img/startseite/termin.png 1x, img/who-am-i/user-picture@2x.png 2x"
+          data-srcset="img/startseite/termin.png 1x, img/startseite/termin.png 2x"
           alt="termin"
         />
       </div>
@@ -1001,6 +1013,7 @@ function newWin(url,w,h) {
 
 	
 	
+<body onLoad="showSlides();">
 <section class="section rad-animation-group pb-0" id="ordination">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
@@ -1018,7 +1031,7 @@ function newWin(url,w,h) {
 
 <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div> </p>
         </p>
-        
+
         
     </div>
   </div>
