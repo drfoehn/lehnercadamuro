@@ -10,7 +10,7 @@
         </p>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">{{ .Site.Data.homepage.aktuelles.topic1 | safeHTML }}</p>
-          <p class="lead">{{ .Site.Data.homepage.aktuelles.info1 | markdownify }}</p>
+          <p class="lead">{{ .Site.Data.homepage.aktuelles.info1 | safeHTML }}</p>
         </div>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">{{ .Site.Data.homepage.aktuelles.topic2 | safeHTML }}</p>

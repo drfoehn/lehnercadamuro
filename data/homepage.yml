@@ -24,19 +24,64 @@ aktuelles:
   title: "Aktuelles"
   content: ''
   topic1: "Neue Ordinationszeiten ab 1.1.2021"
-  info1: "Wir freuen uns [Frau Dr. Evelin Cadamuro](#team) in unserem Team begrüßen zu dürfen. \
-          Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich [neue Ordinationszeiten](#ordinationszeiten)."
+  info1: "       <div class='panel-group'>
+                  <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                      <h4 class='panel-title'>
+                        <a data-toggle='collapse' href='#aktuell_ordizeit'>Weitere Information</a>
+                      </h4>
+                    </div>
+                      <div id='aktuell_ordizeit' class='panel-collapse collapse'>
+                            Wir freuen uns <a href='#team'>Frau Dr. Evelin Cadamuro</a> in unserem Team begrüßen zu dürfen. <br>
+                            Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich <a href='#ordinationszeiten'>neue Ordinationszeiten</a>.
+                      </div>
+                    </div>
+                  </div>"
 
-  topic2: "Ordinationsbetrieb während der Covid19-Pandemie"
-  info2: "Bitte beachten Sie, dass der Zutritt zur Ordination nur <a href='corona.html'>unter bestimmten Voraussetzungen</a> möglich ist."
+  topic2: "Eingeschränkter Ordinationsbetrieb während der Covid19-Pandemie"
+  info2: "       <div class='panel-group'>
+                  <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                      <h4 class='panel-title'>
+                        <a data-toggle='collapse' href='#aktuell_corona'>Weitere Information</a>
+                      </h4>
+                    </div>
+                      <div id='aktuell_corona' class='panel-collapse collapse'>
+                            Wir bitten alle Patienten vor dem Besuch der Ordination um telefonische Terminvereinbarung!<br>
+                            (ausgenommen Notfälle)
+                            <p></p>
+                            Bei Betreten der Ordination ist verpflichtend ein Mund- und Nasenschutz (Maske) zu tragen!
+                            <p></p>
+                            <img src='img/Corona-Patienteninfo_20210102.png' hight='auto' width='70%' class='corona__img'></img>
+                            <p></p>
+                            Aktuelle Informationen zur Corona-Sitaution<br>
+                            Homepage der AGES<br>
+                            Homepage der SALK<br>
+                            Aktuelle Informationen zur COVID19-Impmfung<br>
+                      </div>
+                    </div>
+                  </div>"
 
   topic3: "Welche Covid19-Tests bieten wir an?"
-  info3: "Bei entsprechendn Beschwerden bieten wir in unserer Ordination folgende COVID19-Tests an:<br>
-          <ul>
-            <li>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li>
-            <li>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</i></li>
-            <li>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</i></li>
-          </ul>
+  info3: "
+
+          <div class='panel-group'>
+            <div class='panel panel-default'>
+              <div class='panel-heading'>
+                <h4 class='panel-title'>
+                  <a data-toggle='collapse' href='#covidtest'>Diplome</a>
+                </h4>
+              </div>
+              <div id='covidtest' class='panel-collapse collapse'>
+                <ul class='list-group'>
+                <li class='list-group-item'>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li>
+                <li class='list-group-item'>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</li>
+                <li class='list-group-item'>Diplom der ÖÄK für Manuelle Medizin</li>
+                <li class='list-group-item'>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           "
 
 
@@ -345,22 +390,39 @@ ordination:
 
   <div class="mySlides">
     <div class="numbertext">1 / 3</div>
-    <img src="img/ordination/img_snow_wide.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+    <img src="img/ordination/ordi1.jpg" style="width:100%">
+    <div class="text">1</div>
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 3</div>
-    <img src="img/ordination/img_lights_wide.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+    <img src="img/ordination/ordi2.jpg" style="width:100%">
+    <div class="text">2</div>
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 3</div>
-    <img src="img/ordination/img_nature_wide.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <img src="img/ordination/ordi3.jpg" style="width:100%">
+    <div class="text">3</div>
   </div>
 
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/ordination/ordi4.jpg" style="width:100%">
+    <div class="text">4</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/ordination/ordi5.jpg" style="width:100%">
+    <div class="text">5</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/ordination/ordi6.jpg" style="width:100%">
+    <div class="text">6</div>
+  </div>
 
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -372,6 +434,9 @@ ordination:
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
 </div>
     </p>'
 
