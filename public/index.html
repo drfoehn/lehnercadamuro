@@ -9,6 +9,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
+
+
+
+
 <script>
     (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -62,6 +66,16 @@ function showSlides(n) {
 
 
 
+<script>
+$(document).ready(function() {
+  var weekday = new Date().getDay();
+  
+  if (weekday >= 1 && weekday <= 5) {
+    $('.opening-box').eq(weekday-1).addClass('today');
+  }
+});
+</script>
+
 
 
 
@@ -94,6 +108,121 @@ function newWin(url,w,h) {
 
 
 
+   
+
+  #opening-times {
+    margin-bottom: 20px;
+  }
+
+  #opening-times .opening-times-header {
+    height: 3em;
+    text-align: center;
+  }
+
+  #opening-times .opening-box {
+    padding-bottom: 1em;
+  }
+
+  #opening-times .opening-time {
+    border-top: 5px solid #90BE6D;
+    display: block;
+    position: relative;
+    height: 9em;
+    box-shadow: lightgrey 1px 2px 14px;
+    text-align: center;
+  }
+
+  #opening-times .opening-box .today {
+    border: 10px solid #F94144;
+    background-color: #90BE6D;
+    color: white;
+    box-shadow: darkgrey 6px 7px 14px;
+  }
+
+  #opening-times .opening-time h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #90BE6D;
+    position: absolute;
+    bottom: 10px;
+    font-weight: 700;
+    width: 100%;
+    min-width: 2em;
+    overflow: hidden;
+  }
+
+  #opening-times .opening-box .today h2{
+    color: white;
+  }
+
+
+  #opening-time .times {
+    color: #9fc015;
+    font-weight: bold;
+  }
+
+  #opening-times .opening-time .times {
+    padding-top: 0.5em;
+    font-family: "Amatic SC";
+    font-size: 35px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  .header .navbar-brand span:first-child{
+    color:#90BE6D !important;
+    }
+
+ 
+
+    .showcase__foto{
+      -webkit-box-pack:start;
+      justify-content:flex-start;
+      -webkit-box-align:center;
+      align-items:center;
+      width:100%;
+      position:absolute;left:50%;
+      z-index:0;display:none
+    }
+
+    .showcase__foto img{
+      max-width:100%;
+      margin-top:90px;
+      height: auto;;
+      }
+      @media
+      (min-width:992px)
+      {
+        .rad-showcase{
+        min-height:870px;
+        padding-top:0;
+        margin-bottom:0
+        }
+        .showcase__foto{
+          display:-webkit-box;
+          display:flex;
+          right:-50px
+        }
+        .showcase__foto img{
+          width:auto
+        }
+      }
+
+
+
 
 .container{
   padding-top:24px;
@@ -110,7 +239,7 @@ function newWin(url,w,h) {
   font-size:25px;
   font-weight:600;
   line-height:normal;
-  color: #e93e34 !important;
+  color: #90BE6D !important;
   }
   @media (min-width:992px)
   {
@@ -137,7 +266,7 @@ function newWin(url,w,h) {
 
 
 .aktuell_bg{
-  background-image: repeating-linear-gradient(-45deg, #ffe4af, #ffe4af 30px, #ffc03a 30px, #ffc03a 60px);
+  background-image: repeating-linear-gradient(-45deg, #f9c74f, #f9c74f 30px, #F8961E 30px, #F8961E 60px);
   border-radius: 10px;
   padding-top: 10px;
 }
@@ -167,14 +296,12 @@ function newWin(url,w,h) {
 .leistung .leistung__leistung {
   font-size:17px;
   font-weight:500;
-  color:#e93e34;
   }
 
 
 .leistung__zusatzleistung {
   font-size:17px;
   font-weight:500;
-  color:#e93e34;
   }
 
   .leistung__beschreibung {
@@ -186,6 +313,26 @@ function newWin(url,w,h) {
     max-width: ;
   }
 
+
+
+ 
+
+.button__collaps__team{
+  width: 80%;
+
+}
+
+ 
+.panel-collapse:after {
+  font-family: "Glyphicons Halflings";
+  content: "\e114";
+  float: right;
+  margin-left: 15px;
+}
+ 
+.panel-collapse.collapsed:after {
+  content: "\e080";
+}
 
 
  
@@ -504,8 +651,8 @@ function newWin(url,w,h) {
     <img
       class="lozad img-responsive"
       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-      data-src="img/startseite/start.png"
-      data-srcset="img/startseite/start.png 1x, img/startseite/start.png 2x"
+      data-src="img/team/kath_eve_title.png"
+      data-srcset="img/team/kath_eve_title.png 1x, img/team/kath_eve_title.png 2x"
       alt=""
     />
   </div>
@@ -540,7 +687,7 @@ function newWin(url,w,h) {
     <img
       class="lozad img-responsive"
       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-      data-src="img/startseite/start.png"
+      data-src="img/team/kath_eve_title.png"
       alt=""
     />
   </div>
@@ -559,12 +706,16 @@ function newWin(url,w,h) {
           
         </p>
         <div class="col-12 col-md-12 my-auto my-auto">
-          <p class="subheading">Ordinationsbetrieb während der Covid19-Pandemie</p>
-          <p class="lead">Bitte beachten Sie, dass der Zutritt zur Ordination nur <a href="http://dr-katharina-lehner.at">unter bestimmten Voraussetzungen</a> möglich ist.</p>
-        </div>
-        <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">Neue Ordinationszeiten ab 1.1.2021</p>
           <p class="lead">Wir freuen uns <a href="#team">Frau Dr. Evelin Cadamuro</a> in unserem Team begrüßen zu dürfen. Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich <a href="#ordinationszeiten">neue Ordinationszeiten</a>.</p>
+        </div>
+        <div class="col-12 col-md-12 my-auto my-auto">
+          <p class="subheading">Ordinationsbetrieb während der Covid19-Pandemie</p>
+          <p class="lead">Bitte beachten Sie, dass der Zutritt zur Ordination nur <a href='corona.html'>unter bestimmten Voraussetzungen</a> möglich ist.</p>
+        </div>
+        <div class="col-12 col-md-12 my-auto my-auto">
+          <p class="subheading">Welche Covid19-Tests bieten wir an?</p>
+          <p class="lead">Bei entsprechendn Beschwerden bieten wir in unserer Ordination folgende COVID19-Tests an:<br> <ul> <li>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li> <li>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</i></li> <li>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</i></li> </ul> </p>
         </div>
 
         
@@ -584,20 +735,12 @@ function newWin(url,w,h) {
 <section class="section rad-animation-group pb-0" id="ordinationszeiten">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
-      <div class="ordinationszeiten__profile-picture col-12 col-md-6">
-        <img
-          class="lozad img-responsive image-left-overflow"
-          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-          data-src="img/startseite/open.png"
-          data-srcset="img/startseite/open.png 1x, img/startseite/open.png 2x"
-          alt="Ordinationszeiten"
-        />
-      </div>
-      <div class="col-12 col-md-6 my-auto my-auto section-title">
+    
+      <div class="col-12 col-md-12 my-auto my-auto section-title">
         <h2>Ordinationszeiten</h2>
         <p class="lead">
-          <p class="lead"> <table> <tr> <td>Montag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Cadamuro</td> </tr> <tr> <td>Dienstag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Cadamuro</td> </tr> <tr> <td>Mittwoch</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Lehner</td> </tr> <tr> <td>Donnerstag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Lehner</td> </tr> <tr> <td>Freitag</td> <td style="padding: 0px 20px 0px 20px;">00:00 - 00:00</td> <td>Dr. Lehner oder Dr. Cadamuro</td> </tr>
-</table> </p>
+          <p class="lead"> <div class="row" id="opening-times">
+<div class="col-md 2 opening-box"> <div class="opening-time"> <h2>MO</h2> <div class="times">08:00 - 13:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="today"> <div class="opening-time"> <h2>DI</h2> <div class="times">14:00 - 17:00</div> </div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>MI</h2> <div class="times">07:30 - 12:30</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>DO</h2> <div class="times">15:00 - 18:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>FR</h2> <div class="times">07:30 - 11:30</div> </div> </div> </div> </p>
         </p>
         
       </div>
@@ -875,13 +1018,13 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                    
+                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse1'>Diplome</a> </h4> </div> <div id='collapse1' class='panel-collapse collapse'> <ul class='list-group'> <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Akupunktur</li> <li class='list-group-item'>Diplom der ÖÄK für Manuelle Medizin</li> <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div> 
                 </p>
                 <p>
-                    Diplom der ÖÄK für Notfallmedizin<br />
-                    Diplom der ÖÄK für Akupunktur<br />
-                    Diplom der ÖÄK für Manuelle Medizin<br />
-                    Fortbildungsdiplom der ÖÄK&#34;<br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <br />
                 </p>
             </div>
@@ -899,14 +1042,14 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                    
+                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse2'>Diplome</a> </h4> </div> <div id='collapse2' class='panel-collapse collapse'> <ul class='list-group'> <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Ernährungsmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Psychosoziale Medizin</li> <li class='list-group-item'>Diplom der ÖÄK für Psychosomatische MedizinK</li> <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div> 
                 </p>
                 <p>
-                    Diplom der ÖÄK für Notfallmedizin<br />
-                    Diplom der ÖÄK für Ernährungsmedizin<br />
-                    Diplom der ÖÄK für Psychosoziale Medizin<br />
-                    Diplom der ÖÄK für Psychosomatische Medizin<br />
-                    Fortbildungsdiplom der ÖÄK<br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </p>
             </div>
             
@@ -1006,6 +1149,30 @@ function newWin(url,w,h) {
                 </p>
             </div>
             
+            <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
+                <div class="testimonial__author">
+                    <img class="lozad testimonial__author-image"
+                         src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                         data-src="img/team/team_claudia.jpg"
+                         data-srcset="img/team/team_claudia.jpg 1x,  2x"
+                         alt="Claudia Berger"/>
+                    <div class="testimonial__author-info">
+                        <h4>Claudia Berger</h4>
+                        <span>Ordinationsassistentin</span>
+                    </div>
+                </div>
+                <p>
+                    
+                </p>
+                <p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </p>
+            </div>
+            
         </div>
     </div>
 </section>
@@ -1019,13 +1186,13 @@ function newWin(url,w,h) {
     <div class="row d-flex flex-column-reverse flex-md-row">
 
       <div class="col-12 col-md-12 my-auto my-auto section-title">
-        <h2>Die Ordination</h2>
+        <h2 align="center">Die Ordination</h2>
         <p class="lead">
           <p class="lead"> <div class="slideshow-container">
 
-<div class="mySlides fade"> <div class="numbertext">1 / 3</div> <img src="img/ordination/img_snow_wide.jpg" style="width:100%"> <div class="text">Caption Text</div> </div>
-<div class="mySlides fade"> <div class="numbertext">2 / 3</div> <img src="img/ordination/img_lights_wide.jpg" style="width:100%"> <div class="text">Caption Two</div> </div>
-<div class="mySlides fade"> <div class="numbertext">3 / 3</div> <img src="img/ordination/img_nature_wide.jpg" style="width:100%"> <div class="text">Caption Three</div> </div>
+<div class="mySlides"> <div class="numbertext">1 / 3</div> <img src="img/ordination/img_snow_wide.jpg" style="width:100%"> <div class="text">Caption Text</div> </div>
+<div class="mySlides"> <div class="numbertext">2 / 3</div> <img src="img/ordination/img_lights_wide.jpg" style="width:100%"> <div class="text">Caption Two</div> </div>
+<div class="mySlides"> <div class="numbertext">3 / 3</div> <img src="img/ordination/img_nature_wide.jpg" style="width:100%"> <div class="text">Caption Three</div> </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div> <br>
 

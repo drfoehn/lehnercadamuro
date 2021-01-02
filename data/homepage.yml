@@ -36,7 +36,8 @@ aktuelles:
             <li>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li>
             <li>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</i></li>
             <li>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</i></li>
-          </ul>"
+          </ul>
+          "
 
 
 
@@ -218,14 +219,40 @@ team:
   items:
     - name: "Dr. Katharina Lehner"
       position: "Ärztin für Allgemeinmedizin"
-      content: ""
-      diplom1: Diplom der ÖÄK für Notfallmedizin
-      diplom2: Diplom der ÖÄK für Akupunktur
-      diplom3: Diplom der ÖÄK für Manuelle Medizin
-      diplom4: Fortbildungsdiplom der ÖÄK"
+      content: "
+        <div class='panel-group'>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              <h4 class='panel-title'>
+                <a data-toggle='collapse' href='#collapse1'>Diplome</a>
+              </h4>
+            </div>
+            <div id='collapse1' class='panel-collapse collapse'>
+              <ul class='list-group'>
+              <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li>
+              <li class='list-group-item'>Diplom der ÖÄK für Akupunktur</li>
+              <li class='list-group-item'>Diplom der ÖÄK für Manuelle Medizin</li>
+              <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-      diplom: Diplom der ÖÄK für Notfallmedizin
-      diplom: Diplom der ÖÄK für Akupunktur
+              <div class='panel-group'>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                      <a data-toggle='collapse' href='#lebenslauf_kath'>Lebenslauf</a>
+                    </h4>
+                  </div>
+                    <div id='lebenslauf_kath' class='panel-collapse collapse'>
+                        Blablabla<br>
+                        blabla
+                    </div>
+                  </div>
+                </div>
+
+      "
 
       image:
         x: "img/team/team_katharina.png"
@@ -233,12 +260,41 @@ team:
 
     - name: "Dr. Evelin Cadamuro"
       position: "Ärztin für Allgemeinmedizin"
-      content: ""
-      diplom1: Diplom der ÖÄK für Notfallmedizin
-      diplom2: Diplom der ÖÄK für Ernährungsmedizin
-      diplom3: Diplom der ÖÄK für Psychosoziale Medizin
-      diplom4: Diplom der ÖÄK für Psychosomatische Medizin
-      diplom5: Fortbildungsdiplom der ÖÄK
+      content: "
+              <div class='panel-group'>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                      <a data-toggle='collapse' href='#collapse2'>Diplome</a>
+                    </h4>
+                  </div>
+                    <div id='collapse2' class='panel-collapse collapse'>
+                      <ul class='list-group'>
+                      <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li>
+                      <li class='list-group-item'>Diplom der ÖÄK für Ernährungsmedizin</li>
+                      <li class='list-group-item'>Diplom der ÖÄK für Psychosoziale Medizin</li>
+                      <li class='list-group-item'>Diplom der ÖÄK für Psychosomatische MedizinK</li>
+                      <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              <div class='panel-group'>
+                <div class='panel panel-default'>
+                  <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                      <a data-toggle='collapse' href='#lebenslauf_eve'>Lebenslauf</a>
+                    </h4>
+                  </div>
+                    <div id='lebenslauf_eve' class='panel-collapse collapse'>
+                        Blablabla<br>
+                        blabla
+                    </div>
+                  </div>
+                </div>
+
+      "
 
       image:
         x: "img/team/team_eve.png"
@@ -287,19 +343,19 @@ ordination:
 <div class="slideshow-container">
 
 
-  <div class="mySlides fade">
+  <div class="mySlides">
     <div class="numbertext">1 / 3</div>
     <img src="img/ordination/img_snow_wide.jpg" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
-  <div class="mySlides fade">
+  <div class="mySlides">
     <div class="numbertext">2 / 3</div>
     <img src="img/ordination/img_lights_wide.jpg" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
-  <div class="mySlides fade">
+  <div class="mySlides">
     <div class="numbertext">3 / 3</div>
     <img src="img/ordination/img_nature_wide.jpg" style="width:100%">
     <div class="text">Caption Three</div>
