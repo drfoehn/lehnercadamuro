@@ -86,18 +86,24 @@ function newWin(url,w,h) {
   @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 
+
   /* Opening times */
 
   #opening-times {
     margin-bottom: 20px;
   }
+
   #opening-times .opening-times-header {
     height: 3em;
     text-align: center;
   }
 
+  #opening-times .opening-box {
+    padding-bottom: 1em;
+  }
+
   #opening-times .opening-time {
-    border-top: 5px solid #9fc015;
+    border-top: 5px solid #90BE6D;
     display: block;
     position: relative;
     height: 9em;
@@ -105,11 +111,17 @@ function newWin(url,w,h) {
     text-align: center;
   }
 
+  #opening-times .opening-box .today {
+    border: 10px solid #F94144;
+    background-color: #90BE6D;
+    color: white;
+    box-shadow: darkgrey 6px 7px 14px;
+  }
 
   #opening-times .opening-time h2 {
     text-align: center;
     font-size: 40px;
-    color: #9fc015;
+    color: #90BE6D;
     position: absolute;
     bottom: 10px;
     font-weight: 700;
@@ -118,25 +130,22 @@ function newWin(url,w,h) {
     overflow: hidden;
   }
 
-  #opening-times .opening-time > .times {
-    padding-top: 1em;
-  }
-
-  #opening-times .opening-time.today {
-    background-color: #629e0d;
-    color: white;
-    box-shadow: darkgrey 6px 7px 14px;
-  }
-
-  #opening-times .opening-time.today h2{
+  #opening-times .opening-box .today h2{
     color: white;
   }
+
 
   #opening-time .times {
     color: #9fc015;
     font-weight: bold;
   }
 
+  #opening-times .opening-time .times {
+    padding-top: 0.5em;
+    font-family: "Amatic SC";
+    font-size: 35px;
+    }
+  }
 
 
 
@@ -146,6 +155,50 @@ function newWin(url,w,h) {
 
 
 
+
+
+
+
+
+/* Logo */
+  .header .navbar-brand span:first-child{
+    color:#90BE6D !important;
+    }
+
+/* Logo Bild Lehner cadamuro*/
+
+    .showcase__foto{
+      -webkit-box-pack:start;
+      justify-content:flex-start;
+      -webkit-box-align:center;
+      align-items:center;
+      width:100%;
+      position:absolute;left:50%;
+      z-index:0;display:none
+    }
+
+    .showcase__foto img{
+      max-width:100%;
+      margin-top:90px;
+      height: auto;;
+      }
+      @media
+      (min-width:992px)
+      {
+        .rad-showcase{
+        min-height:870px;
+        padding-top:0;
+        margin-bottom:0
+        }
+        .showcase__foto{
+          display:-webkit-box;
+          display:flex;
+          right:-50px
+        }
+        .showcase__foto img{
+          width:auto
+        }
+      }
 
 
 
@@ -165,7 +218,7 @@ function newWin(url,w,h) {
   font-size:25px;
   font-weight:600;
   line-height:normal;
-  color: #e93e34 !important;
+  color: #90BE6D !important;
   }
   @media (min-width:992px)
   {
@@ -192,7 +245,7 @@ function newWin(url,w,h) {
 
 
 .aktuell_bg{
-  background-image: repeating-linear-gradient(-45deg, #ffe4af, #ffe4af 30px, #ffc03a 30px, #ffc03a 60px);
+  background-image: repeating-linear-gradient(-45deg, #f9c74f, #f9c74f 30px, #F8961E 30px, #F8961E 60px);
   border-radius: 10px;
   padding-top: 10px;
 }
@@ -222,14 +275,12 @@ function newWin(url,w,h) {
 .leistung .leistung__leistung {
   font-size:17px;
   font-weight:500;
-  color:#e93e34;
   }
 
 
 .leistung__zusatzleistung {
   font-size:17px;
   font-weight:500;
-  color:#e93e34;
   }
 
   .leistung__beschreibung {
@@ -240,6 +291,13 @@ function newWin(url,w,h) {
   .section div[class*=col-] img {
     max-width: ;
   }
+
+
+
+.corona__img {
+  float: right;
+}
+
 
 
 

@@ -8,10 +8,10 @@ showcase:
   subtitle2: "Alle Kassen"
   description: ""
   image:
-    x: "img/team/eve_kath_title.png"
-    _2x: "img/team/eve_kath_title.png"
+    x: "img/team/kath_eve_title.png"
+    _2x: "img/team/kath_eve_title.png"
   imageMobile:
-    x: "img/team/eve_kath_title.png"
+    x: "img/team/kath_eve_title.png"
 
   button:
     icon: "icon-mail-fill"
@@ -23,11 +23,23 @@ aktuelles:
   enable: true
   title: "Aktuelles"
   content: ''
-  topic1: "Ordinationsbetrieb während der Covid19-Pandemie"
-  info1: "Bitte beachten Sie, dass der Zutritt zur Ordination nur [unter bestimmten Voraussetzungen](corona.html) möglich ist."
-  topic2: "Neue Ordinationszeiten ab 1.1.2021"
-  info2: "Wir freuen uns [Frau Dr. Evelin Cadamuro](#team) in unserem Team begrüßen zu dürfen. \
+  topic1: "Neue Ordinationszeiten ab 1.1.2021"
+  info1: "Wir freuen uns [Frau Dr. Evelin Cadamuro](#team) in unserem Team begrüßen zu dürfen. \
           Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich [neue Ordinationszeiten](#ordinationszeiten)."
+
+  topic2: "Ordinationsbetrieb während der Covid19-Pandemie"
+  info2: "Bitte beachten Sie, dass der Zutritt zur Ordination nur <a href='corona.html'>unter bestimmten Voraussetzungen</a> möglich ist."
+
+  topic3: "Welche Covid19-Tests bieten wir an?"
+  info3: "Bei entsprechendn Beschwerden bieten wir in unserer Ordination folgende COVID19-Tests an:<br>
+          <ul>
+            <li>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li>
+            <li>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</i></li>
+            <li>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</i></li>
+          </ul>"
+
+
+
 
 # ordinationszeiten
 ordinationszeiten:
@@ -36,37 +48,39 @@ ordinationszeiten:
   content: '<p class="lead">
             <div class="row" id="opening-times">
 
-              <div class="col-md 2">
+              <div class="col-md 2 opening-box">
                 <div class="opening-time">
                   <h2>MO</h2>
                   <div class="times">08:00 - 13:00</div>
                 </div>
               </div>
-              <div class="col-md 2">
+              <div class="col-md 2 opening-box">
+              <div class="today">
                 <div class="opening-time">
                   <h2>DI</h2>
                   <div class="times">14:00 - 17:00</div>
                 </div>
               </div>
-              <div class="col-md 2">
+              </div>
+              <div class="col-md 2 opening-box">
                 <div class="opening-time">
                   <h2>MI</h2>
                   <div class="times">07:30 - 12:30</div>
                 </div>
               </div>
-                <div class="col-md 2">
+                <div class="col-md 2 opening-box">
                   <div class="opening-time">
                     <h2>DO</h2>
                     <div class="times">15:00 - 18:00</div>
                   </div>
                 </div>
-              <div class="col-md 2">
+              <div class="col-md 2 opening-box">
                 <div class="opening-time">
                   <h2>FR</h2>
-                  <div class="times">07:30 - 11:30</div>
-                </div>
+                <div class="times">07:30 - 11:30</div>
               </div>
             </div>
+          </div>
     </p>'
 
   image:
@@ -258,7 +272,12 @@ team:
         x: "img/team/team_vanessa.png"
         _2x: ""
 
-
+    - name: "Claudia Berger"
+      position: "Ordinationsassistentin"
+      content: ""
+      image:
+        x: "img/team/team_claudia.jpg"
+        _2x: ""
 
 # Ordination - slideshow-quelle: https://www.w3schools.com/howto/howto_js_slideshow.asp
 ordination:
