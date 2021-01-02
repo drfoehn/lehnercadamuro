@@ -266,7 +266,7 @@ function newWin(url,w,h) {
 
 
 .aktuell_bg{
-  background-image: repeating-linear-gradient(-45deg, #f9c74f, #f9c74f 30px, #F8961E 30px, #F8961E 60px);
+  background-image: repeating-linear-gradient(-45deg, #f9c74f, #f9c74f 30px, #face64 30px, #face64 60px);
   border-radius: 10px;
   padding-top: 10px;
 }
@@ -320,18 +320,6 @@ function newWin(url,w,h) {
 .button__collaps__team{
   width: 80%;
 
-}
-
- 
-.panel-collapse:after {
-  font-family: "Glyphicons Halflings";
-  content: "\e114";
-  float: right;
-  margin-left: 15px;
-}
- 
-.panel-collapse.collapsed:after {
-  content: "\e080";
 }
 
 
@@ -707,15 +695,16 @@ function newWin(url,w,h) {
         </p>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">Neue Ordinationszeiten ab 1.1.2021</p>
-          <p class="lead">Wir freuen uns <a href="#team">Frau Dr. Evelin Cadamuro</a> in unserem Team begrüßen zu dürfen. Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich <a href="#ordinationszeiten">neue Ordinationszeiten</a>.</p>
+          <p class="lead">       <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#aktuell_ordizeit'>Weitere Information</a> </h4> </div> <div id='aktuell_ordizeit' class='panel-collapse collapse'> Wir freuen uns <a href='#team'>Frau Dr. Evelin Cadamuro</a> in unserem Team begrüßen zu dürfen. <br> Ab 1.1.2021 wird die Ordination als Gemeinschaftspraxis geführt. Daher ergeben sich <a href='#ordinationszeiten'>neue Ordinationszeiten</a>. </div> </div> </div></p>
         </div>
         <div class="col-12 col-md-12 my-auto my-auto">
-          <p class="subheading">Ordinationsbetrieb während der Covid19-Pandemie</p>
-          <p class="lead">Bitte beachten Sie, dass der Zutritt zur Ordination nur <a href='corona.html'>unter bestimmten Voraussetzungen</a> möglich ist.</p>
+          <p class="subheading">Eingeschränkter Ordinationsbetrieb während der Covid19-Pandemie</p>
+          <p class="lead">       <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#aktuell_corona'>Weitere Information</a> </h4> </div> <div id='aktuell_corona' class='panel-collapse collapse'> Wir bitten alle Patienten vor dem Besuch der Ordination um telefonische Terminvereinbarung!<br> (ausgenommen Notfälle) <p></p> Bei Betreten der Ordination ist verpflichtend ein Mund- und Nasenschutz (Maske) zu tragen! <p></p> <img src='img/Corona-Patienteninfo_20210102.png' hight='auto' width='70%' class='corona__img'></img> <p></p> Aktuelle Informationen zur Corona-Sitaution<br> Homepage der AGES<br> Homepage der SALK<br> Aktuelle Informationen zur COVID19-Impmfung<br> </div> </div> </div></p>
         </div>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">Welche Covid19-Tests bieten wir an?</p>
-          <p class="lead">Bei entsprechendn Beschwerden bieten wir in unserer Ordination folgende COVID19-Tests an:<br> <ul> <li>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li> <li>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</i></li> <li>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</i></li> </ul> </p>
+          <p class="lead">
+<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#covidtest'>Weitere Information</a> </h4> </div> <div id='covidtest' class='panel-collapse collapse'> <ul class='list-group'> <li class='list-group-item'>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li> <li class='list-group-item'>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</li> <li class='list-group-item'>Diplom der ÖÄK für Manuelle Medizin</li> <li class='list-group-item'>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</li> </ul> </div> </div> </div> </p>
         </div>
 
         
@@ -740,7 +729,7 @@ function newWin(url,w,h) {
         <h2>Ordinationszeiten</h2>
         <p class="lead">
           <p class="lead"> <div class="row" id="opening-times">
-<div class="col-md 2 opening-box"> <div class="opening-time"> <h2>MO</h2> <div class="times">08:00 - 13:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="today"> <div class="opening-time"> <h2>DI</h2> <div class="times">14:00 - 17:00</div> </div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>MI</h2> <div class="times">07:30 - 12:30</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>DO</h2> <div class="times">15:00 - 18:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>FR</h2> <div class="times">07:30 - 11:30</div> </div> </div> </div> </p>
+<div class="col-md 2 opening-box today"> <div class="opening-time"> <h2>MO</h2> <div class="times">08:00 - 13:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>DI</h2> <div class="times">14:00 - 17:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>MI</h2> <div class="times">07:30 - 12:30</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>DO</h2> <div class="times">15:00 - 18:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>FR</h2> <div class="times">07:30 - 11:30</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>SA</h2> <div class="times">07:30 - 11:30</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>SO</h2> <div class="times">07:30 - 11:30</div> </div> </div> </div> </p>
         </p>
         
       </div>
@@ -1018,14 +1007,9 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse1'>Diplome</a> </h4> </div> <div id='collapse1' class='panel-collapse collapse'> <ul class='list-group'> <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Akupunktur</li> <li class='list-group-item'>Diplom der ÖÄK für Manuelle Medizin</li> <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div> 
-                </p>
-                <p>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse1'>Diplome</a> </h4> </div> <div id='collapse1' class='panel-collapse collapse'> <ul class='list-group'> <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Akupunktur</li> <li class='list-group-item'>Diplom der ÖÄK für Manuelle Medizin</li> <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div>
+<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#lebenslauf_kath'>Lebenslauf</a> </h4> </div> <div id='lebenslauf_kath' class='panel-collapse collapse'> Blablabla<br> blabla </div> </div> </div>
+
                 </p>
             </div>
             
@@ -1042,14 +1026,9 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse2'>Diplome</a> </h4> </div> <div id='collapse2' class='panel-collapse collapse'> <ul class='list-group'> <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Ernährungsmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Psychosoziale Medizin</li> <li class='list-group-item'>Diplom der ÖÄK für Psychosomatische MedizinK</li> <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div> 
-                </p>
-                <p>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse2'>Diplome</a> </h4> </div> <div id='collapse2' class='panel-collapse collapse'> <ul class='list-group'> <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Ernährungsmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Psychosoziale Medizin</li> <li class='list-group-item'>Diplom der ÖÄK für Psychosomatische MedizinK</li> <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div>
+<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#lebenslauf_eve'>Lebenslauf</a> </h4> </div> <div id='lebenslauf_eve' class='panel-collapse collapse'> Blablabla<br> blabla </div> </div> </div>
+
                 </p>
             </div>
             
@@ -1068,13 +1047,6 @@ function newWin(url,w,h) {
                 <p>
                     Bla
                 </p>
-                <p>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                </p>
             </div>
             
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
@@ -1091,13 +1063,6 @@ function newWin(url,w,h) {
                 </div>
                 <p>
                     bla
-                </p>
-                <p>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
                 </p>
             </div>
             
@@ -1116,13 +1081,6 @@ function newWin(url,w,h) {
                 <p>
                     bla
                 </p>
-                <p>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                </p>
             </div>
             
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
@@ -1140,13 +1098,6 @@ function newWin(url,w,h) {
                 <p>
                     Derzeit in Mütterkarenz
                 </p>
-                <p>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                </p>
             </div>
             
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
@@ -1163,13 +1114,6 @@ function newWin(url,w,h) {
                 </div>
                 <p>
                     
-                </p>
-                <p>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
                 </p>
             </div>
             
@@ -1190,13 +1134,15 @@ function newWin(url,w,h) {
         <p class="lead">
           <p class="lead"> <div class="slideshow-container">
 
-<div class="mySlides"> <div class="numbertext">1 / 3</div> <img src="img/ordination/img_snow_wide.jpg" style="width:100%"> <div class="text">Caption Text</div> </div>
-<div class="mySlides"> <div class="numbertext">2 / 3</div> <img src="img/ordination/img_lights_wide.jpg" style="width:100%"> <div class="text">Caption Two</div> </div>
-<div class="mySlides"> <div class="numbertext">3 / 3</div> <img src="img/ordination/img_nature_wide.jpg" style="width:100%"> <div class="text">Caption Three</div> </div>
-
+<div class="mySlides"> <div class="numbertext">1 / 3</div> <img src="img/ordination/ordi1.jpg" style="width:100%"> <div class="text">1</div> </div>
+<div class="mySlides"> <div class="numbertext">2 / 3</div> <img src="img/ordination/ordi2.jpg" style="width:100%"> <div class="text">2</div> </div>
+<div class="mySlides"> <div class="numbertext">3 / 3</div> <img src="img/ordination/ordi3.jpg" style="width:100%"> <div class="text">3</div> </div>
+<div class="mySlides"> <div class="numbertext">1 / 3</div> <img src="img/ordination/ordi4.jpg" style="width:100%"> <div class="text">4</div> </div>
+<div class="mySlides"> <div class="numbertext">2 / 3</div> <img src="img/ordination/ordi5.jpg" style="width:100%"> <div class="text">5</div> </div>
+<div class="mySlides"> <div class="numbertext">3 / 3</div> <img src="img/ordination/ordi6.jpg" style="width:100%"> <div class="text">6</div> </div>
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div> <br>
 
-<div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div> </p>
+<div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span> <span class="dot" onclick="currentSlide(6)"></span> </div> </p>
         </p>
 
         

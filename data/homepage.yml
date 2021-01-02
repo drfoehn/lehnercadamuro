@@ -69,7 +69,7 @@ aktuelles:
             <div class='panel panel-default'>
               <div class='panel-heading'>
                 <h4 class='panel-title'>
-                  <a data-toggle='collapse' href='#covidtest'>Diplome</a>
+                  <a data-toggle='collapse' href='#covidtest'>Weitere Information</a>
                 </h4>
               </div>
               <div id='covidtest' class='panel-collapse collapse'>
@@ -94,19 +94,17 @@ ordinationszeiten:
   content: '<p class="lead">
             <div class="row" id="opening-times">
 
-              <div class="col-md 2 opening-box">
+              <div class="col-md 2 opening-box today">
                 <div class="opening-time">
                   <h2>MO</h2>
                   <div class="times">08:00 - 13:00</div>
                 </div>
               </div>
               <div class="col-md 2 opening-box">
-              <div class="today">
                 <div class="opening-time">
                   <h2>DI</h2>
                   <div class="times">14:00 - 17:00</div>
                 </div>
-              </div>
               </div>
               <div class="col-md 2 opening-box">
                 <div class="opening-time">
@@ -126,6 +124,18 @@ ordinationszeiten:
                 <div class="times">07:30 - 11:30</div>
               </div>
             </div>
+                          <div class="col-md 2 opening-box">
+                            <div class="opening-time">
+                              <h2>SA</h2>
+                            <div class="times">07:30 - 11:30</div>
+                          </div>
+                        </div>
+                                      <div class="col-md 2 opening-box">
+                                        <div class="opening-time">
+                                          <h2>SO</h2>
+                                        <div class="times">07:30 - 11:30</div>
+                                      </div>
+                                    </div>
           </div>
     </p>'
 
