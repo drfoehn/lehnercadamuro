@@ -18,7 +18,7 @@ showcase:
     btnText: "Contact"
     URL: "https://radity.com/en/contact/"
 
-# aktuelles ev. https://www.w3schools.com/howto/howto_js_collapsible.asp
+# aktuelles  https://www.w3schools.com/bootstrap/bootstrap_ref_js_collapse.asp
 aktuelles:
   enable: true
   title: "Aktuelles"
@@ -47,17 +47,22 @@ aktuelles:
                       </h4>
                     </div>
                       <div id='aktuell_corona' class='panel-collapse collapse'>
-                            Wir bitten alle Patienten vor dem Besuch der Ordination um telefonische Terminvereinbarung!<br>
-                            (ausgenommen Notfälle)
+                            <p class='achtung'>Wir bitten alle Patienten vor dem Besuch der Ordination um telefonische Terminvereinbarung!<br>
+                            (ausgenommen Notfälle)</p>
+                            <p class='achtung'>Bei Betreten der Ordination ist verpflichtend ein Mund- und Nasenschutz (Maske) zu tragen!</p>
+                            <ul>
+                            <li>Sie möchten in unsere Ordination kommen?</li>
+                            <li>Sie benötigen ein Rezept?</li>
+                            <li>Sie benötigen eine Krankschreibung?</li>
+                            </ul>
+                            <p class='arrow'>Bitte lesen Sie sich folgendes Diagramm durch.</p>
+                            <a target='_blank' href='img/Corona-Patienteninfo_20210102.png' class='corona__img'>
+                              <img src='img/Corona-Patienteninfo_20210102.png'>
+                            </a>
                             <p></p>
-                            Bei Betreten der Ordination ist verpflichtend ein Mund- und Nasenschutz (Maske) zu tragen!
-                            <p></p>
-                            <img src='img/Corona-Patienteninfo_20210102.png' hight='auto' width='70%' class='corona__img'></img>
-                            <p></p>
-                            Aktuelle Informationen zur Corona-Sitaution<br>
-                            Homepage der AGES<br>
-                            Homepage der SALK<br>
-                            Aktuelle Informationen zur COVID19-Impmfung<br>
+                            <a href='https://www.ages.at/themen/krankheitserreger/coronavirus/' target='_blank'>Aktuelle Informationen zur Corona-Sitaution in Österreich<br></a>
+                            <a href='https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html' target='_blank'>Aktuelle Informationen zur Corona-Sitaution weltweit<br></a>
+                            <a href='https://www.sozialministerium.at/Corona-Schutzimpfung/Corona-Schutzimpfung.html' target='_blank'>Aktuelle Informationen zur COVID19-Impmfung</a><br>
                       </div>
                     </div>
                   </div>"
@@ -73,11 +78,10 @@ aktuelles:
                 </h4>
               </div>
               <div id='covidtest' class='panel-collapse collapse'>
-                <ul class='list-group'>
-                <li class='list-group-item'>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li>
-                <li class='list-group-item'>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</li>
-                <li class='list-group-item'>Diplom der ÖÄK für Manuelle Medizin</li>
-                <li class='list-group-item'>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</li>
+                <ul class='collaps-list'>
+                <li class='collaps-list-item'>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li>
+                <li class='collaps-list-item'>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</li>
+                <li class='collaps-list-item'>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</li>
                 </ul>
               </div>
             </div>
@@ -91,7 +95,8 @@ aktuelles:
 ordinationszeiten:
   enable: true
   title: "Ordinationszeiten"
-  content: '<p class="lead">
+  content: '
+  <p class="lead">
             <div class="row" id="opening-times">
 
               <div class="col-md 2 opening-box today">
@@ -160,11 +165,13 @@ kontakt:
             </tr>
             <tr>
               <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/mail.png" alt="Mail" width="40" height="40"></td>
-              <td>praxis (a) dr-katharina-lehner.at</td>
+              <td><a href="mailto:praxis@dr-katharina-lehner.at">praxis (a) dr-katharina-lehner.at</a></td>
             </tr>
             <tr>
               <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/map.png" alt="Adresse" width="40" height="40"></td>
-              <td>Moosstrasse 96 <br />5020 Salzburg</td>
+              <td>Moosstrasse 96 <br />
+              5020 Salzburg<br>
+              Zu erreichen mit der <a href="https://salzburg-verkehr.at/downloads/stadtbus-21-haltestellenfahrplaene-fahrtrichtung-bergheim-fuerstenbrunn/" target="_blank">Linie 21</a></td>
             </tr>
           </tbody>
           </table>
@@ -215,7 +222,7 @@ leistungen:
     - zusatzleistung: "Präoperative Untersuchung (zur Operationsfreigabe)"
     - zusatzleistung: "Therapie Aktiv - Diabetes im Griff"
     - beschreibung: "Dieses von uns zur Verfügung gestelltes Angebot stellt sicher, dass Typ-2-Diabetiker optimal versorgt und behandelt werden.
-Mehr Information erhalten sie auf therapie.aktiv"
+Mehr Information erhalten sie auf <a href='https://www.therapie-aktiv.at/' target='_blank'>therapie.aktiv</a>"
     - zusatzleistung: "Akupunktur"
     - beschreibung: "Dr. Lehner"
     - zusatzleistung: "Laserakupunktur"
@@ -223,7 +230,7 @@ Mehr Information erhalten sie auf therapie.aktiv"
     - zusatzleistung: "Untersuchung <i>Sporttauglichkeit-Neu</i>"
     - beschreibung: Tauglichkeitsuntersuchung für alle Sportvereine
     - zusatzleistung: "Rundum Gesund: Ein Service der Hausärzte und der Ärztekammer Salzburg"
-    - beschreibung: "Nähere Informationen finden sie auf der Homepage der Ärztekammer Salzburg"
+    - beschreibung: "Nähere Informationen finden sie auf der <a href='https://www.aeksbg.at/gesundheitsaktionen/rundumvorsorge' target='_blank'>Homepage der Ärztekammer Salzburg</a>"
 
 
 
@@ -283,11 +290,11 @@ team:
               </h4>
             </div>
             <div id='collapse1' class='panel-collapse collapse'>
-              <ul class='list-group'>
-              <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li>
-              <li class='list-group-item'>Diplom der ÖÄK für Akupunktur</li>
-              <li class='list-group-item'>Diplom der ÖÄK für Manuelle Medizin</li>
-              <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li>
+              <ul class='collaps-list'>
+              <li class='collaps-list-item'>Diplom der ÖÄK für Notfallmedizin</li>
+              <li class='collaps-list-item'>Diplom der ÖÄK für Akupunktur</li>
+              <li class='collaps-list-item'>Diplom der ÖÄK für Manuelle Medizin</li>
+              <li class='collaps-list-item'>Fortbildungsdiplom der ÖÄK</li>
               </ul>
             </div>
           </div>
@@ -301,8 +308,10 @@ team:
                     </h4>
                   </div>
                     <div id='lebenslauf_kath' class='panel-collapse collapse'>
-                        Blablabla<br>
-                        blabla
+                        Dr. Kathrina Lehner ist glücklich verheiratet. Sie hat 2 Kinder und ein Enkelkind.
+                      <br>
+                      text text text<br>
+                      Informationen zu Dr. Lehners Zusatzausbildungen finden Sie im Link 'Diplome'
                     </div>
                   </div>
                 </div>
@@ -324,12 +333,12 @@ team:
                     </h4>
                   </div>
                     <div id='collapse2' class='panel-collapse collapse'>
-                      <ul class='list-group'>
-                      <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li>
-                      <li class='list-group-item'>Diplom der ÖÄK für Ernährungsmedizin</li>
-                      <li class='list-group-item'>Diplom der ÖÄK für Psychosoziale Medizin</li>
-                      <li class='list-group-item'>Diplom der ÖÄK für Psychosomatische MedizinK</li>
-                      <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li>
+                      <ul class='collaps-list'>
+                      <li class='collaps-list-item'>Diplom der ÖÄK für Notfallmedizin</li>
+                      <li class='collaps-list-item'>Diplom der ÖÄK für Ernährungsmedizin</li>
+                      <li class='collaps-list-item'>Diplom der ÖÄK für Psychosoziale Medizin</li>
+                      <li class='collaps-list-item'>Diplom der ÖÄK für Psychosomatische MedizinK</li>
+                      <li class='collaps-list-item'>Fortbildungsdiplom der ÖÄK</li>
                       </ul>
                     </div>
                   </div>
@@ -343,8 +352,10 @@ team:
                     </h4>
                   </div>
                     <div id='lebenslauf_eve' class='panel-collapse collapse'>
-                        Blablabla<br>
-                        blabla
+                        Dr. Evelin Cadamuro ist glücklich verheiratet und hat 3 Kinder.<br>
+                        Sie hat in Wien Medizin studiert und danach die Ausbildung zur Allgemeinmedizinerin in den Krankenhäusern Bozen (IT), Hallein, LKH Salzburg, .... gemacht.<br>
+                        Seit 20XX arbeitet sie gemeinsam mit Dr. Katharina Lehner in deren Ordination und seit 1.1.2021 führt sie diese gemeinsam mit Dr. Lehner.<br>
+                        Informationen zu Dr. Cadamuros Zusatzausbildungen finden Sie im Link 'Diplome'<br>
                     </div>
                   </div>
                 </div>

@@ -59,11 +59,11 @@ function showSlides(n) {
 <!-- End Slideshow -->
 
 <!-- Opening Time -->
-<script>
+<script type="text/javascript">
 $(document).ready(function() {
   var weekday = new Date().getDay();
   // Mo - Fr
-  if (weekday >= 1 && weekday <= 5) {
+  if (weekday >= 1 && weekday <= 7) {
     $('.opening-box').eq(weekday-1).addClass('today');
   }
 });
@@ -95,6 +95,10 @@ function newWin(url,w,h) {
 <style>
 /*custom CSS*/
 
+
+
+
+
 /*Import Google Fonts*/
 
   @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
@@ -125,11 +129,32 @@ function newWin(url,w,h) {
     text-align: center;
   }
 
-  #opening-times .opening-box .today {
+  .opening-box.today h2{
+    color: white;
+  }
+
+  .today {
     border: 10px solid #F94144;
+    border-radius: 3px;
+    border-bottom: 30px solid #F94144;
     background-color: #90BE6D;
     color: white;
     box-shadow: darkgrey 6px 7px 14px;
+  }
+
+  #opening-times .today .opening-time{
+    box-shadow: none;
+  }
+
+  #opening-times .today .opening-time h2{
+    color: white;
+  }
+
+
+  #opening-times .today::after {
+    text-align: center;
+    content: "HEUTE";
+    color: white;
   }
 
   #opening-times .opening-time h2 {
@@ -144,9 +169,7 @@ function newWin(url,w,h) {
     overflow: hidden;
   }
 
-  #opening-times .opening-box .today h2{
-    color: white;
-  }
+
 
 
   #opening-time .times {
@@ -310,10 +333,59 @@ function newWin(url,w,h) {
 
 /*collapsible*/
 
-.button__collaps__team{
-  width: 80%;
-
+  .panel-title a:link{
+  font-family: 'Amatic SC';
+  font-size: 1em;
+  color: #577590;
 }
+
+  #aktuell_ordizeit{
+      ;
+  }
+
+  .achtung {
+    color: #F94144;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .arrow{
+    text-align: center;
+  }
+
+  .arrow::before{
+    content:' \21E8';
+  }
+
+  #aktuell_corona img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 150px; /* Set a small width */
+  }
+
+  /* Add a hover effect (blue shadow) */
+  #aktuell_corona img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+  .list-group-item{
+    background-color: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*geht noch nicht */
