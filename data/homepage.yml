@@ -80,8 +80,8 @@ aktuelles:
               <div id='covidtest' class='panel-collapse collapse'>
                 <ul class='collaps-list'>
                 <li class='collaps-list-item'>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li>
-                <li class='collaps-list-item'>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</li>
-                <li class='collaps-list-item'>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</li>
+                <li class='collaps-list-item'>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</i></li>
+                <li class='collaps-list-item'>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</i></li>
                 </ul>
               </div>
             </div>
@@ -129,18 +129,6 @@ ordinationszeiten:
                 <div class="times">07:30 - 11:30</div>
               </div>
             </div>
-                          <div class="col-md 2 opening-box">
-                            <div class="opening-time">
-                              <h2>SA</h2>
-                            <div class="times">07:30 - 11:30</div>
-                          </div>
-                        </div>
-                                      <div class="col-md 2 opening-box">
-                                        <div class="opening-time">
-                                          <h2>SO</h2>
-                                        <div class="times">07:30 - 11:30</div>
-                                      </div>
-                                    </div>
           </div>
     </p>'
 
@@ -201,8 +189,8 @@ leistungen:
     btnText: "Download My Resume"
     URL: "#"
   image:
-    x: "img/startseite/leistung.png"
-    _2x: "img/startseite/leistung.png"
+    x: ""
+    _2x: ""
 
   items:
     - heading: "Routineleistungen"
@@ -237,41 +225,63 @@ Mehr Information erhalten sie auf <a href='https://www.therapie-aktiv.at/' targe
 
 
 
-# Termin
-termin:
+# patienteninfo
+patienteninfo:
   enable: true
-  title: "Terminvereinbarung"
+  title: "Patienteninformationen"
   content: '<p class="lead">
 
-<p class="subheading">Terminvereinbarung zu Ordinationszeiten</p>
-Ihre telefonische Voranmeldung nehmen wir gerne zu folgenden Zeiten entgegen:<br />
-<b>Montag, Mittwoch und Freitag von 10.00 - 13.00 Uhr.</b>
-<br /><br />
+<p class="subheading">Terminreservierung</p>
 
-<p></p>
+<p class="subsubheading">Allgemeine Ordination:</p>
 
-<p class="subheading">Hausbesuche</p>
-Zu folgenden Zeiten ist es möglich einen Termin für einen Hausbesuche anzumelden:<br />
-<b>Montag, Mittwoch und Freitags von 8.00 - 11.00 Uhr.</b>
-<br /><br />
+Wir bitten Sie Termine telefonisch (0662 - 82 22 14) oder per e-Mail zu vereinbaren.<br>
+Sie erhalten dann eine Richtzeit, die wir möglichst versuchen einzuhalten.<br>
+<br>
+Für Rezepte, Blutdruckkontrollen und Bestätigungen, die kein ärztliches Gespräch benötigen, ist kein Termin notwendig.<br>
+Vorsorge(Gesunden-)untersuchungen, Privatordinationen und Laboruntersuchungen<br>
+<br>
+Für diese Leistungen erhalten sie einen gesonderten Termin<br>
+<br>
+<br>
+<p class="subsubheading">Hausbesuche</p>
 
-<p></p>
+Sollten sie einen Hausbescuh benötigen, melden sie diesen bitte ebenfalls telefonisch (0662 - 82 22 14) oder per e-Mail währen der Ordinationszeiten an.<br>
+<br>
+<p class="achtung2">Sollten sie aus wichtigen Gründen einen bereits vereinbarten Termin nicht wahrnehmen können, geben sie uns bitte rechtzeitig Bescheid.<br>
+Dies ermöglicht eine bessere Zeiteinteilung und eine Verkürzung der Wartezeiten für andere Patienten.</p>
+<br>
+<br>
+<p class="subheading">Rezeptbestellung</p>
 
+Bitte für Rezeptwünsche die begreitgestellten Formulare ausfüllen und diese im Ordinationsbriefkasten zu hinterlegen oder per Fax (0662 - 82 26 63) oder Post zu übermitteln. <br>
+Telefonische Rezeptwünsche können leider nicht entgegengenommen werden.
+<br>
+<br>
 <p class="subheading">Wochenende, Feiertage und Notfälle</p>
-Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum
-des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten.<br /><br />
-<a href="https://www.notdienst141.at/" target="_blank">Huasärztliches Notdienstzentrum</a><br />
-<i>Telefon:</i> 141<br />
-<i>Öffnungszeiten:</i> <br />täglich von 19.00 – 23.00 Uhr<br />
-Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr
-<br /><br />
+
+Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten.
+<br>
+<br>
+<p class="subsubheading">Hausärztliches Notdienstzentrum</p>
+
+Telefon: 141<br>
+Homepage: <a href="https://www.notdienst141.at" target=_blank">www.notdienst141.at</a><br>
+Öffnungszeiten:<br>
+täglich von 19.00 – 23.00 Uhr<br>
+Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr<br>
+<br>
+<br>
+<p class="subheading">E-Card</p>
+
+Bitte bringen sie ihre e-Card bei jedem Ordinationsbesuch mit. Andernfalls ist ein Einsatz von 20€ zu hinterlegen. <br>
+Sollten sie bis Quartalsende die e-Card nicht vorgelegt haben, übernimmt die Krankenkasse die ihre Behandlungskosten nicht!<br>
+<br>
+<br>
+<p class="subsubheading">Gerne betreuen wir sie auch in folgenden Sprachen: Englisch, Französisch, Italienisch oder Schwedisch.</p>
+
+(Bitte geben sie bei der Anmeldung Bescheid falls sie dies wünschen)
     </p>'
-
-
-  image:
-    x: "img/startseite/termin.png"
-    _2x: "img/startseite/termin.png"
-
 
 
 # Team
@@ -408,41 +418,52 @@ ordination:
   content: '<p class="lead">
 <div class="slideshow-container">
 
-
   <div class="mySlides">
-    <div class="numbertext">1 / 3</div>
-    <img src="img/ordination/ordi1.jpg" style="width:100%">
-    <div class="text">1</div>
+    <div class="numbertext">1 / 8</div>
+    <center><img src="img/ordination/ordi_aussen1.jpg"></center>
+    <div class="mySlides__text">Außenansicht 1</div>
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">2 / 3</div>
-    <img src="img/ordination/ordi2.jpg" style="width:100%">
-    <div class="text">2</div>
+    <div class="numbertext">2 / 8</div>
+    <center><img src="img/ordination/ordi_aussen2.jpg"></center>
+    <div class="mySlides__text">Außenansicht 2</div>
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">3 / 3</div>
-    <img src="img/ordination/ordi3.jpg" style="width:100%">
-    <div class="text">3</div>
+    <div class="numbertext">3 / 8</div>
+    <center><img src="img/ordination/ordi1.jpg"></center>
+    <div class="mySlides__text">Infusionsraum 1</div>
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">1 / 3</div>
-    <img src="img/ordination/ordi4.jpg" style="width:100%">
-    <div class="text">4</div>
+    <div class="numbertext">4 / 8</div>
+    <center><img src="img/ordination/ordi2.jpg"></center>
+    <div class="mySlides__text">Infusionsraum 1</div>
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">2 / 3</div>
-    <img src="img/ordination/ordi5.jpg" style="width:100%">
-    <div class="text">5</div>
+    <div class="numbertext">5 / 8</div>
+    <center><img src="img/ordination/ordi3.jpg"></center>
+    <div class="mySlides__text">Empfang</div>
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">3 / 3</div>
-    <img src="img/ordination/ordi6.jpg" style="width:100%">
-    <div class="text">6</div>
+    <div class="numbertext">6 / 8</div>
+    <center><img src="img/ordination/ordi4.jpg"></center>
+    <div class="mySlides__text">Kinderspielecke</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 8</div>
+    <center><img src="img/ordination/ordi5.jpg"></center>
+    <div class="mySlides__text">Ordination 1</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 8</div>
+    <center><img src="img/ordination/ordi6.jpg"></center>
+    <div class="mySlides__text">...</div>
   </div>
 
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -458,6 +479,8 @@ ordination:
   <span class="dot" onclick="currentSlide(4)"></span>
   <span class="dot" onclick="currentSlide(5)"></span>
   <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
 </div>
     </p>'
 

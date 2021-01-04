@@ -66,11 +66,11 @@ function showSlides(n) {
 
 
 
-<script>
+<script type="text/javascript">
 $(document).ready(function() {
   var weekday = new Date().getDay();
   
-  if (weekday >= 1 && weekday <= 5) {
+  if (weekday >= 1 && weekday <= 7) {
     $('.opening-box').eq(weekday-1).addClass('today');
   }
 });
@@ -102,6 +102,10 @@ function newWin(url,w,h) {
 <style>
  
 
+
+
+
+
  
 
   @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
@@ -132,11 +136,32 @@ function newWin(url,w,h) {
     text-align: center;
   }
 
-  #opening-times .opening-box .today {
+  .opening-box.today h2{
+    color: white;
+  }
+
+  .today {
     border: 10px solid #F94144;
+    border-radius: 3px;
+    border-bottom: 30px solid #F94144;
     background-color: #90BE6D;
     color: white;
     box-shadow: darkgrey 6px 7px 14px;
+  }
+
+  #opening-times .today .opening-time{
+    box-shadow: none;
+  }
+
+  #opening-times .today .opening-time h2{
+    color: white;
+  }
+
+
+  #opening-times .today::after {
+    text-align: center;
+    content: "HEUTE";
+    color: white;
   }
 
   #opening-times .opening-time h2 {
@@ -151,9 +176,7 @@ function newWin(url,w,h) {
     overflow: hidden;
   }
 
-  #opening-times .opening-box .today h2{
-    color: white;
-  }
+
 
 
   #opening-time .times {
@@ -264,9 +287,11 @@ function newWin(url,w,h) {
 .header .navbar .nav-item .nav-link
 }
 
+ 
 
 .aktuell_bg{
-  background-image: repeating-linear-gradient(-45deg, #f9c74f, #f9c74f 30px, #face64 30px, #face64 60px);
+  background-image: repeating-linear-gradient(-45deg, #90BE6D, #90BE6D 30px, #90bb6f 30px, #90bb6f 60px);
+  border: 5px solid #F94144;
   border-radius: 10px;
   padding-top: 10px;
 }
@@ -291,7 +316,31 @@ function newWin(url,w,h) {
 }
 
 
+ 
 
+.kontakt__bgimage {
+	background-image: url("img/startseite/kontakt.png");
+	background-position: center;  
+	background-repeat: no-repeat;  
+	background-size: contain;
+  width: 100%;
+}
+
+.leistung__bgimage {
+	background-image: url("img/startseite/leistung.png");
+	background-position: center;  
+	background-repeat: no-repeat;  
+	background-size: contain;
+  width: 100%;
+}
+
+.patienteninfo__bgimage {
+	background-image: url("img/startseite/info.png");
+	background-position: center;  
+	background-repeat: no-repeat;  
+	background-size: contain;
+  width: 100%;
+}
 
 .leistung .leistung__leistung {
   font-size:17px;
@@ -317,10 +366,99 @@ function newWin(url,w,h) {
 
  
 
-.button__collaps__team{
-  width: 80%;
+  .panel-title a:link{
+  font-family: 'Amatic SC';
+  font-size: 1em;
+  color: #577590;
+}
+
+
+ .panel-title-impressum a:link{
+  font-family: 'Amatic SC';
+   font-size: 0.5em;
+   color: white;
 
 }
+
+ #impressum{
+  color: white;
+  font-family: OpenSans;
+ }
+
+ .impressum__title{
+  font-family: 'Amatic SC';
+  color: white;
+ }
+
+
+.impressum_text{
+  fontfamily: Verdana;
+  color: white;
+}
+
+
+
+  
+  #aktuell_ordizeit{
+      ;
+  }
+
+  .achtung {
+    color: #F94144;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .arrow{
+    text-align: center;
+  }
+
+  .arrow::before{
+    content:' \21E8';
+  }
+
+  #aktuell_corona img {
+    border: 1px solid #ddd;  
+    border-radius: 4px;   
+    padding: 5px;  
+    width: 150px;  
+  }
+
+   
+  #aktuell_corona img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+  .list-group-item{
+    background-color: none;
+  }
+
+
+
+  .mySlides__text{
+    font-family: 'Amatic SC';
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #90BE6D;
+  }
+
+
+
+  .mySlides img{
+    hight:300px;
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
  
@@ -561,8 +699,8 @@ function newWin(url,w,h) {
   <div class="container rad-fade-in">
     <nav class="navbar navbar-expand-lg navbar-light p-0">
       <a class="navbar-brand" href="">
-        <span>Dr. Lehner</span>
-        <span>Dr. Cadamuro</span>
+        <span>Dr. Lehner &amp; Dr. Cadamuro</span>
+        <span></span>
         
       </a>
       <button
@@ -602,14 +740,8 @@ function newWin(url,w,h) {
           </li>
           
           <li class="nav-item">
-            <a data-scroll class="nav-link" href="#termin"
-              >TERMIN</a
-            >
-          </li>
-          
-          <li class="nav-item">
-            <a data-scroll class="nav-link" href="#rezept"
-              >REZEPT</a
+            <a data-scroll class="nav-link" href="#patienteninfo"
+              >PATIENTENINFORMATION</a
             >
           </li>
           
@@ -699,12 +831,12 @@ function newWin(url,w,h) {
         </div>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">Eingeschränkter Ordinationsbetrieb während der Covid19-Pandemie</p>
-          <p class="lead">       <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#aktuell_corona'>Weitere Information</a> </h4> </div> <div id='aktuell_corona' class='panel-collapse collapse'> Wir bitten alle Patienten vor dem Besuch der Ordination um telefonische Terminvereinbarung!<br> (ausgenommen Notfälle) <p></p> Bei Betreten der Ordination ist verpflichtend ein Mund- und Nasenschutz (Maske) zu tragen! <p></p> <img src='img/Corona-Patienteninfo_20210102.png' hight='auto' width='70%' class='corona__img'></img> <p></p> Aktuelle Informationen zur Corona-Sitaution<br> Homepage der AGES<br> Homepage der SALK<br> Aktuelle Informationen zur COVID19-Impmfung<br> </div> </div> </div></p>
+          <p class="lead">       <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#aktuell_corona'>Weitere Information</a> </h4> </div> <div id='aktuell_corona' class='panel-collapse collapse'> <p class='achtung'>Wir bitten alle Patienten vor dem Besuch der Ordination um telefonische Terminvereinbarung!<br> (ausgenommen Notfälle)</p> <p class='achtung'>Bei Betreten der Ordination ist verpflichtend ein Mund- und Nasenschutz (Maske) zu tragen!</p> <ul> <li>Sie möchten in unsere Ordination kommen?</li> <li>Sie benötigen ein Rezept?</li> <li>Sie benötigen eine Krankschreibung?</li> </ul> <p class='arrow'>Bitte lesen Sie sich folgendes Diagramm durch.</p> <a target='_blank' href='img/Corona-Patienteninfo_20210102.png' class='corona__img'> <img src='img/Corona-Patienteninfo_20210102.png'> </a> <p></p> <a href='https://www.ages.at/themen/krankheitserreger/coronavirus/' target='_blank'>Aktuelle Informationen zur Corona-Sitaution in Österreich<br></a> <a href='https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html' target='_blank'>Aktuelle Informationen zur Corona-Sitaution weltweit<br></a> <a href='https://www.sozialministerium.at/Corona-Schutzimpfung/Corona-Schutzimpfung.html' target='_blank'>Aktuelle Informationen zur COVID19-Impmfung</a><br> </div> </div> </div></p>
         </div>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">Welche Covid19-Tests bieten wir an?</p>
           <p class="lead">
-<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#covidtest'>Weitere Information</a> </h4> </div> <div id='covidtest' class='panel-collapse collapse'> <ul class='list-group'> <li class='list-group-item'>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li> <li class='list-group-item'>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</li> <li class='list-group-item'>Diplom der ÖÄK für Manuelle Medizin</li> <li class='list-group-item'>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</li> </ul> </div> </div> </div> </p>
+<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#covidtest'>Weitere Information</a> </h4> </div> <div id='covidtest' class='panel-collapse collapse'> <ul class='collaps-list'> <li class='collaps-list-item'>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li> <li class='collaps-list-item'>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</li> <li class='collaps-list-item'>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</li> </ul> </div> </div> </div> </p>
         </div>
 
         
@@ -724,12 +856,21 @@ function newWin(url,w,h) {
 <section class="section rad-animation-group pb-0" id="ordinationszeiten">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
+      <script type="text/javascript">
+      $(document).ready(function() {
+        var weekday = new Date().getDay();
+        
+        if (weekday >= 1 && weekday <= 7) {
+          $('.opening-box').eq(weekday-1).addClass('today');
+        }
+      });
+      </script>
     
       <div class="col-12 col-md-12 my-auto my-auto section-title">
         <h2>Ordinationszeiten</h2>
         <p class="lead">
-          <p class="lead"> <div class="row" id="opening-times">
-<div class="col-md 2 opening-box today"> <div class="opening-time"> <h2>MO</h2> <div class="times">08:00 - 13:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>DI</h2> <div class="times">14:00 - 17:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>MI</h2> <div class="times">07:30 - 12:30</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>DO</h2> <div class="times">15:00 - 18:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>FR</h2> <div class="times">07:30 - 11:30</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>SA</h2> <div class="times">07:30 - 11:30</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>SO</h2> <div class="times">07:30 - 11:30</div> </div> </div> </div> </p>
+           <p class="lead"> <div class="row" id="opening-times">
+<div class="col-md 2 opening-box today"> <div class="opening-time"> <h2>MO</h2> <div class="times">08:00 - 13:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>DI</h2> <div class="times">14:00 - 17:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>MI</h2> <div class="times">07:30 - 12:30</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>DO</h2> <div class="times">15:00 - 18:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>FR</h2> <div class="times">07:30 - 11:30</div> </div> </div> </div> </p>
         </p>
         
       </div>
@@ -744,10 +885,10 @@ function newWin(url,w,h) {
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
 
-      <div class="col-12 col-md-6 my-auto my-auto section-title">
+      <div class="col-12 col-md-6 my-auto my-auto section-title kontakt__bgimage">
         <h2>Kontakt</h2>
         <p class="lead">
-          <p class="lead"> <table style="valign:middle"> <tbody> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/tel.png" alt="Telefon" width="40" height="40"></td> <td>0662-123456</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/fax.png" alt="Fax" width="40" height="40"></td> <td>0662-7890123</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/mail.png" alt="Mail" width="40" height="40"></td> <td>praxis (a) dr-katharina-lehner.at</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/map.png" alt="Adresse" width="40" height="40"></td> <td>Moosstrasse 96 <br />5020 Salzburg</td> </tr> </tbody> </table> </p>
+          <p class="lead"> <table style="valign:middle"> <tbody> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/tel.png" alt="Telefon" width="40" height="40"></td> <td>0662-123456</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/fax.png" alt="Fax" width="40" height="40"></td> <td>0662-7890123</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/mail.png" alt="Mail" width="40" height="40"></td> <td><a href="mailto:praxis@dr-katharina-lehner.at">praxis (a) dr-katharina-lehner.at</a></td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/map.png" alt="Adresse" width="40" height="40"></td> <td>Moosstrasse 96 <br /> 5020 Salzburg<br> Zu erreichen mit der <a href="https://salzburg-verkehr.at/downloads/stadtbus-21-haltestellenfahrplaene-fahrtrichtung-bergheim-fuerstenbrunn/" target="_blank">Linie 21</a></td> </tr> </tbody> </table> </p>
         </p>
         
       </div>
@@ -768,7 +909,7 @@ function newWin(url,w,h) {
 	
 <section id="leistungen" class="section section--border-bottom rad-animation-group">
     <div class="container">
-        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down leistung__bgimage">
             <div class="col-12 col-sm-6 mt-5 mt-sm-0">
                 
                 <div class="leistung">
@@ -873,7 +1014,7 @@ function newWin(url,w,h) {
                     <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung">Dieses von uns zur Verfügung gestelltes Angebot stellt sicher, dass Typ-2-Diabetiker optimal versorgt und behandelt werden. Mehr Information erhalten sie auf therapie.aktiv</div>
+                    <div class="leistung__beschreibung">Dieses von uns zur Verfügung gestelltes Angebot stellt sicher, dass Typ-2-Diabetiker optimal versorgt und behandelt werden. Mehr Information erhalten sie auf <a href='https://www.therapie-aktiv.at/' target='_blank'>therapie.aktiv</a></div>
                 </div>
                 
                 <div class="leistung">
@@ -929,7 +1070,7 @@ function newWin(url,w,h) {
                     <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung">Nähere Informationen finden sie auf der Homepage der Ärztekammer Salzburg</div>
+                    <div class="leistung__beschreibung">Nähere Informationen finden sie auf der <a href='https://www.aeksbg.at/gesundheitsaktionen/rundumvorsorge' target='_blank'>Homepage der Ärztekammer Salzburg</a></div>
                 </div>
                 
             </div>
@@ -938,16 +1079,8 @@ function newWin(url,w,h) {
                 <p class="lead">
                     blabla
                 </p>
-                <p class="lead">
-                  <div class="col-12 col-md-6">
-                    <img
-                      class="lozad img-responsive image-right-overflow"
-                      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-                      data-src="img/startseite/leistung.png"
-                      data-srcset="img/startseite/leistung.png 1x, img/startseite/leistung.png 2x"
-                      alt="Unsere Leistungen"
-                    />
-                  </div>
+
+
                 
             </div>
         </div>
@@ -957,14 +1090,15 @@ function newWin(url,w,h) {
 
 	
 	
-<section class="section rad-animation-group pb-0" id="termin">
+<section class="section rad-animation-group pb-0" id="patienteninfo">
   <div class="container rad-fade-down">
-    <div class="row d-flex flex-column-reverse flex-md-row">
+    <div class="row d-flex flex-column-reverse flex-md-row patienteninfo__bgimage">
 
       <div class="col-12 col-md-6 my-auto my-auto  section-title">
-        <h2>Terminvereinbarung</h2>
-        <p class="lead-termin">
+        <h2>Patienteninformationen</h2>
+        <p class="lead-patienteninfo">
           <p class="lead">
+
 <p class="subheading">Terminvereinbarung zu Ordinationszeiten</p> Ihre telefonische Voranmeldung nehmen wir gerne zu folgenden Zeiten entgegen:<br /> <b>Montag, Mittwoch und Freitag von 10.00 - 13.00 Uhr.</b> <br /><br />
 <p></p>
 <p class="subheading">Hausbesuche</p> Zu folgenden Zeiten ist es möglich einen Termin für einen Hausbesuche anzumelden:<br /> <b>Montag, Mittwoch und Freitags von 8.00 - 11.00 Uhr.</b> <br /><br />
@@ -972,16 +1106,6 @@ function newWin(url,w,h) {
 <p class="subheading">Wochenende, Feiertage und Notfälle</p> Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten.<br /><br /> <a href="https://www.notdienst141.at/" target="_blank">Huasärztliches Notdienstzentrum</a><br /> <i>Telefon:</i> 141<br /> <i>Öffnungszeiten:</i> <br />täglich von 19.00 – 23.00 Uhr<br /> Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr <br /><br /> </p>
         </p>
         
-      </div>
-      <div class="about__profile-picture col-8 col-md-4">
-        <img
-          class="lozad img-responsive image-right-overflow"
-          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-          data-src="img/startseite/termin.png"
-          data-srcset="img/startseite/termin.png 1x, img/startseite/termin.png 2x"
-          alt="termin"
-        />
-      </div>
     </div>
   </div>
 </section>
@@ -1007,8 +1131,8 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse1'>Diplome</a> </h4> </div> <div id='collapse1' class='panel-collapse collapse'> <ul class='list-group'> <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Akupunktur</li> <li class='list-group-item'>Diplom der ÖÄK für Manuelle Medizin</li> <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div>
-<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#lebenslauf_kath'>Lebenslauf</a> </h4> </div> <div id='lebenslauf_kath' class='panel-collapse collapse'> Blablabla<br> blabla </div> </div> </div>
+                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse1'>Diplome</a> </h4> </div> <div id='collapse1' class='panel-collapse collapse'> <ul class='collaps-list'> <li class='collaps-list-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='collaps-list-item'>Diplom der ÖÄK für Akupunktur</li> <li class='collaps-list-item'>Diplom der ÖÄK für Manuelle Medizin</li> <li class='collaps-list-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div>
+<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#lebenslauf_kath'>Lebenslauf</a> </h4> </div> <div id='lebenslauf_kath' class='panel-collapse collapse'> Dr. Kathrina Lehner ist glücklich verheiratet. Sie hat 2 Kinder und ein Enkelkind. <br> text text text<br> Informationen zu Dr. Lehners Zusatzausbildungen finden Sie im Link 'Diplome' </div> </div> </div>
 
                 </p>
             </div>
@@ -1026,8 +1150,8 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse2'>Diplome</a> </h4> </div> <div id='collapse2' class='panel-collapse collapse'> <ul class='list-group'> <li class='list-group-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Ernährungsmedizin</li> <li class='list-group-item'>Diplom der ÖÄK für Psychosoziale Medizin</li> <li class='list-group-item'>Diplom der ÖÄK für Psychosomatische MedizinK</li> <li class='list-group-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div>
-<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#lebenslauf_eve'>Lebenslauf</a> </h4> </div> <div id='lebenslauf_eve' class='panel-collapse collapse'> Blablabla<br> blabla </div> </div> </div>
+                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse2'>Diplome</a> </h4> </div> <div id='collapse2' class='panel-collapse collapse'> <ul class='collaps-list'> <li class='collaps-list-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='collaps-list-item'>Diplom der ÖÄK für Ernährungsmedizin</li> <li class='collaps-list-item'>Diplom der ÖÄK für Psychosoziale Medizin</li> <li class='collaps-list-item'>Diplom der ÖÄK für Psychosomatische MedizinK</li> <li class='collaps-list-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div>
+<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#lebenslauf_eve'>Lebenslauf</a> </h4> </div> <div id='lebenslauf_eve' class='panel-collapse collapse'> Dr. Evelin Cadamuro ist glücklich verheiratet und hat 3 Kinder.<br> Sie hat in Wien Medizin studiert und danach die Ausbildung zur Allgemeinmedizinerin in den Krankenhäusern Bozen (IT), Hallein, LKH Salzburg, .... gemacht.<br> Seit 20XX arbeitet sie gemeinsam mit Dr. Katharina Lehner in deren Ordination und seit 1.1.2021 führt sie diese gemeinsam mit Dr. Lehner.<br> Informationen zu Dr. Cadamuros Zusatzausbildungen finden Sie im Link 'Diplome'<br> </div> </div> </div>
 
                 </p>
             </div>
@@ -1133,16 +1257,17 @@ function newWin(url,w,h) {
         <h2 align="center">Die Ordination</h2>
         <p class="lead">
           <p class="lead"> <div class="slideshow-container">
-
-<div class="mySlides"> <div class="numbertext">1 / 3</div> <img src="img/ordination/ordi1.jpg" style="width:100%"> <div class="text">1</div> </div>
-<div class="mySlides"> <div class="numbertext">2 / 3</div> <img src="img/ordination/ordi2.jpg" style="width:100%"> <div class="text">2</div> </div>
-<div class="mySlides"> <div class="numbertext">3 / 3</div> <img src="img/ordination/ordi3.jpg" style="width:100%"> <div class="text">3</div> </div>
-<div class="mySlides"> <div class="numbertext">1 / 3</div> <img src="img/ordination/ordi4.jpg" style="width:100%"> <div class="text">4</div> </div>
-<div class="mySlides"> <div class="numbertext">2 / 3</div> <img src="img/ordination/ordi5.jpg" style="width:100%"> <div class="text">5</div> </div>
-<div class="mySlides"> <div class="numbertext">3 / 3</div> <img src="img/ordination/ordi6.jpg" style="width:100%"> <div class="text">6</div> </div>
+<div class="mySlides"> <div class="numbertext">1 / 8</div> <center><img src="img/ordination/ordi_aussen1.jpg"></center> <div class="mySlides__text">Außenansicht 1</div> </div>
+<div class="mySlides"> <div class="numbertext">2 / 8</div> <center><img src="img/ordination/ordi_aussen2.jpg"></center> <div class="mySlides__text">Außenansicht 2</div> </div>
+<div class="mySlides"> <div class="numbertext">3 / 8</div> <center><img src="img/ordination/ordi1.jpg"></center> <div class="mySlides__text">Infusionsraum 1</div> </div>
+<div class="mySlides"> <div class="numbertext">4 / 8</div> <center><img src="img/ordination/ordi2.jpg"></center> <div class="mySlides__text">Infusionsraum 1</div> </div>
+<div class="mySlides"> <div class="numbertext">5 / 8</div> <center><img src="img/ordination/ordi3.jpg"></center> <div class="mySlides__text">Empfang</div> </div>
+<div class="mySlides"> <div class="numbertext">6 / 8</div> <center><img src="img/ordination/ordi4.jpg"></center> <div class="mySlides__text">Kinderspielecke</div> </div>
+<div class="mySlides"> <div class="numbertext">7 / 8</div> <center><img src="img/ordination/ordi5.jpg"></center> <div class="mySlides__text">Ordination 1</div> </div>
+<div class="mySlides"> <div class="numbertext">8 / 8</div> <center><img src="img/ordination/ordi6.jpg"></center> <div class="mySlides__text">...</div> </div>
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div> <br>
 
-<div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span> <span class="dot" onclick="currentSlide(6)"></span> </div> </p>
+<div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span> <span class="dot" onclick="currentSlide(6)"></span> <span class="dot" onclick="currentSlide(7)"></span> <span class="dot" onclick="currentSlide(8)"></span> </div> </p>
         </p>
 
         
@@ -1152,200 +1277,107 @@ function newWin(url,w,h) {
 
 
 	
-	
-<section id="rezept" class="section section--rezept pt-0">
-    <div class="container">
-        <div class="rezept  section-title">
-            <h2>Rezeptbestellung</h2>
-            <div class="row pt-2">
-                <div class="col-12">
-                  <p class="text-danger">Bitte beachten sie, dass die getätigten Angaben in diesem Formular unverschlüsselt per Mail an uns erfolgen.</p>
-                  <p></p>
-                    <form action="mailto:janne.cadamuro@gmail.com" method="post">
-                        <div class="row">
-                            <div class="col-12">
-                                <input type="text" name="Name" id="full_name"
-                                       placeholder="Vor- und Nachname"/ required>
-                            </div>
-                            <div class="col-12">
-                                <input type="text" name="Geburtsdatum" id="birth"
-                                       placeholder="Geburtsdatum"/ required>
-                            </div>
-                        </div>
-
-                        <p></p>
-                        <p class="subheading">Medikament #1</p>
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="text" name="Medikamentenname" id="med_name"
-                                       placeholder="Medikamentenname"/ required>
-                            </div>
-                            <div class="col-6">
-                                <input type="text" name="Dosierung" id="med_dosis"
-                                       placeholder="Dosierung (mg, ml, ...)"/ required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                              <input type="text" name="Packungsgröße" id="med_size"
-                                     placeholder="Packungsgröße (Anzahl der Tabletten pro Packung)"/ required>
-                            </div>
-                            <div class="col-6">
-                              <input type="text" name="Anzahl" id="med_amount"
-                                     placeholder="Anzahl Packungen"/ required>
-                            </div>
-                        </div>
-
-                        <p></p>
-                        <p class="subheading">Medikament #2</p>
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="text" name="Medikamentenname" id="med_name"
-                                       placeholder="Medikamentenname"/>
-                            </div>
-                            <div class="col-6">
-                                <input type="text" name="Dosierung" id="med_dosis"
-                                       placeholder="Dosierung (mg, ml, ...)"/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                              <input type="text" name="Packungsgröße" id="med_size"
-                                     placeholder="Packungsgröße (Anzahl der Tabletten pro Packung)"/>
-                            </div>
-                            <div class="col-6">
-                              <input type="text" name="Anzahl" id="med_amount"
-                                     placeholder="Anzahl Packungen"/>
-                            </div>
-                        </div>
-
-                        <p></p>
-                        <p class="subheading">Medikament #3</p>
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="text" name="Medikamentenname" id="med_name"
-                                       placeholder="Medikamentenname"/>
-                            </div>
-                            <div class="col-6">
-                                <input type="text" name="Dosierung" id="med_dosis"
-                                       placeholder="Dosierung (mg, ml, ...)"/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                              <input type="text" name="Packungsgröße" id="med_size"
-                                     placeholder="Packungsgröße (Anzahl der Tabletten pro Packung)"/>
-                            </div>
-                            <div class="col-6">
-                              <input type="text" name="Anzahl" id="med_amount"
-                                     placeholder="Anzahl Packungen"/>
-                            </div>
-                        </div>
-
-                        <p></p>
-                        <p class="subheading">Medikament #4</p>
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="text" name="Medikamentenname" id="med_name"
-                                       placeholder="Medikamentenname"/>
-                            </div>
-                            <div class="col-6">
-                                <input type="text" name="Dosierung" id="med_dosis"
-                                       placeholder="Dosierung (mg, ml, ...)"/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                              <input type="text" name="Packungsgröße" id="med_size"
-                                     placeholder="Packungsgröße (Anzahl der Tabletten pro Packung)"/>
-                            </div>
-                            <div class="col-6">
-                              <input type="text" name="Anzahl" id="med_amount"
-                                     placeholder="Anzahl Packungen"/>
-                            </div>
-                        </div>
-
-                      </div>
-
-                      <p></p>
-
-                      <div class="row pt-4">
-                          <div class="col-12">
-                              <textarea name="Nachricht" id="message"
-                                        cols="100" rows="3" placeholder="Falls sie uns noch einen Kommentar mitschicken möchten, können sie diesen hier eingeben"></textarea>
-                          </div>
-                      </div>
-
-                      <div class="row pt-4">
-                        <div class="col-12">
-                          <label for="datenschutz">
-                            <input type="checkbox" name="Datenschutzerklärung zugestimmt" id="datenschutz" required>
-                            <b>Ich habe die <a href="impressum">Datenschutzbestimmungen</a> zur Kenntnis genommen und mir ist bewusst, dass die Übermittlung meiner Angaben unverschlüsselt erfolgt.</b>
-                          </label>
-                        </div>
-                        <p></p>
-                          <div class="col-12">
-                              <button type="submit" class="btn btn-primary">
-                                  <i class="icon-mail-fill"></i>
-                                  Rezeptbestellung abschicken
-                              </button>
-                          </div>
-                      </div>
-                    </form>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-
-	
 
 	<footer class="footer">
-  <div class="container">
+<div class="container">
+    
 
-    <div class="footer__links">
-      <ul class="navbar-nav ">
-        <li class="nav-item">
-          <a class="nav-link" href="/">HOME</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="">ORDINATIONSZEITEN</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="">KONTAKT</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="">TERMIN</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="">REZEPT</a>
-        </li>
-        
-      </ul>
-    </div>
-
-    <div class="footer__left">
-      <div class="footer__copy">
-        © Dr.Katherina Lehner &amp; Dr. Evelin Cadamuro, Theme by Raditian. Alle Rechte vorbehalten | <a href="impressum.html" onClick="return newWin('impressum.html',650,350)">Impressum</a>
+    <div class="row">
+      <div class="col-">
+        <div class="footer__copy">
+        © Dr.Katherina Lehner &amp; Dr. Evelin Cadamuro, Theme by Raditian. Alle Rechte vorbehalten |
+        </div>
+      </div>
+      <div class="col-">
+        <div class="footer__right">
+          <a href="https://radity.com/">
+            <img
+              src="img/general/design-and-code-radity.png"
+              srcset="img/general/design-and-code-radity.png 1x, img/general/design-and-code-radity@2x.png 2x"
+              alt="Design &amp; Code - Radity"
+            />
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="footer__right">
-      <a href="https://radity.com/"
-        ><img
-          src="img/general/design-and-code-radity.png"
-          srcset="img/general/design-and-code-radity.png 1x, img/general/design-and-code-radity@2x.png 2x"
-          alt="Design &amp; Code - Radity"
-      /></a>
-    </div>
+    <div class="row">
+      <div class='col- panel-group'>
+        <div class='panel panel-default'>
+          <div class='panel-heading'>
+              <h4 class='panel-title-impressum'>
+                  <a data-toggle='collapse' href='#impressum'>Impressum und Datenschutz</a>
+              </h4>
+          </div>
+            <div id='impressum' class='panel-collapse-impressum collapse'>
+                  <h1 class="impressum__title">Impressum</h1>
+                  <p class="impressum_text">Informationspflicht laut &sect;5 E-Commerce Gesetz, &sect;14 Unternehmensgesetzbuch, &sect;63 Gewerbeordnung und Offenlegungspflicht laut &sect;25 Mediengesetz.</p>
+                  <p class="impressum_text">Dr. Katharina Lehner, Dr. Evelin Cadamuro, &Auml;rztinnen f&uuml;r Allgemeinmedizin OG<br />Moosstrasse 96, <br />5020 Salzburg, <br />&Ouml;sterreich</p>
+                  <p class="impressum_text">
+                  <strong>Unternehmensgegenstand:</strong> Ordination f&uuml;r Allgemeinmedizin<br />
+                  <strong>UID-Nummer:</strong> folgt<br />
+                  <strong>Firmenbuchnummer:</strong> FN 545486 k<br />
+                  <strong>Firmenbuchgericht:</strong> Salzburg<br />
+                  <strong>Firmensitz:</strong> 5020 Salzburg</p>
+                  <p class="impressum_text">
+                  <strong>Tel.:</strong> 0662  - 82 22 14<br />
+                  <strong>Fax:</strong> 0662  - 82 26 63<br />
+                  <strong>E-Mail:</strong> <a href="mailto:praxis@dr-katharina-lehner.at">praxis@dr-katharina-lehner.at</a>
+                  </p>
+                  <p class="impressum_text">
+                  <strong>Mitglied bei:</strong> &Auml;rztekammer Salzburg, WKS<br />
+                  <strong>Berufsrecht:</strong> &Auml;rztegesetz 1998 - https://www.ris.bka.gv.at/</p>
+                  <p class="impressum_text">
+                  <strong>Aufsichtsbeh&ouml;rde/Gewerbebeh&ouml;rde:</strong> Bezirkshauptmannschaft Salzburg Stadt<br />
+                  <strong>Berufsbezeichnung:</strong> &Auml;rztinnen f&uuml;r Allgemeinmedizin<br />
+                  <strong>Verleihungsstaat:</strong> &Ouml;sterreich</p>
+                  <p class="impressum_text">
+                  <strong>Vertretungsbefugte Gesellschafter</strong>
+                  <br />Dr. Katharina Lehner, Dr. Evelin Cadamuro</p>
+                  <p class="impressum_text">
+                  <strong>Beteiligungsverh&auml;ltnisse</strong>
+                  <br />Gesellschafter Dr. Katharina Lehner 50%, Dr. Evelin Cadamuro 50%</p>
+                  <p  class="impressum_text" style="margin-top:15px">Quelle: Erstellt mit dem Impressum Generator von <a href="https://www.adsimple.at/blog-marketing/" title="AdSimple&circledR; Blog Marketing" rel="follow noopener" target="_blank">AdSimple&circledR; Blog Marketing</a> in Kooperation mit <a href="https://www.aboutbusiness.at/" target="_blank" rel="follow noopener">aboutbusiness.at</a>
+                  </p>
+                  <h2 id="eu-streitschlichtung" class="impressum__title">EU-Streitschlichtung</h2>
+                  <p class="impressum_text">Gem&auml;&szlig; Verordnung &uuml;ber Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung) m&ouml;chten wir Sie &uuml;ber die Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br />
+                  Verbraucher haben die M&ouml;glichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europ&auml;ischen Kommission unter <a class="impressum_text" href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE" target="_blank" rel="noopener">http://ec.europa.eu/odr?tid=121597619</a> zu richten. Die daf&uuml;r notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.</p>
+                  <p class="impressum_text">Wir m&ouml;chten Sie jedoch darauf hinweisen, dass wir nicht bereit oder verpflichtet sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+                  <h2 id="haftung-fuer-inhalte-dieser-webseite" class="impressum__title">Haftung f&uuml;r Inhalte dieser Webseite</h2>
+                  <p class="impressum_text">Wir entwickeln die Inhalte dieser Webseite st&auml;ndig weiter und bem&uuml;hen uns korrekte und aktuelle Informationen bereitzustellen. Leider k&ouml;nnen wir keine Haftung f&uuml;r die Korrektheit aller Inhalte auf dieser Webseite &uuml;bernehmen, speziell f&uuml;r jene die seitens Dritter bereitgestellt wurden.</p>
+                  <p class="impressum_text">Sollten Ihnen problematische oder rechtswidrige Inhalte auffallen, bitten wir Sie uns umgehend zu kontaktieren, Sie finden die Kontaktdaten im Impressum.</p>
+                  <h2 id="haftung-links-webseite" class="impressum__title">Haftung f&uuml;r Links auf dieser Webseite</h2>
+                  <p class="impressum_text">Unsere Webseite enth&auml;lt Links zu anderen Webseiten f&uuml;r deren Inhalt wir nicht verantwortlich sind. Haftung f&uuml;r verlinkte Websites besteht laut <a class="impressum_text" href="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&amp;Dokumentnummer=NOR40025813&amp;tid=121597619" target="_blank" rel="noopener">&sect; 17 ECG</a> f&uuml;r uns nicht, da wir keine Kenntnis rechtswidriger T&auml;tigkeiten hatten und haben, uns solche Rechtswidrigkeiten auch bisher nicht aufgefallen sind und wir Links sofort entfernen w&uuml;rden, wenn uns Rechtswidrigkeiten bekannt werden.</p>
+                  <p class="impressum_text">Wenn Ihnen rechtswidrige Links auf unserer Website auffallen, bitten wir Sie uns zu kontaktieren, Sie finden die Kontaktdaten im Impressum.</p>
+                  <h2 id="urheberrechtshinweis" class="impressum__title">Urheberrechtshinweis</h2>
+                  <p class="impressum_text">Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht. Falls notwendig, werden wir die unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich verfolgen.</p>
+                  <p class="impressum_text">Sollten Sie auf dieser Webseite Inhalte finden, die das Urheberrecht verletzen, bitten wir Sie uns zu kontaktieren.</p>
+                  <h2 id="bildernachweis" class="impressum__title">Bildernachweis</h2>
+                  <p class="impressum_text">Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich gesch&uuml;tzt.</p>
 
-  </div>
+                  <h1 class="impressum__title">Datenschutzerkl&auml;rung</h1>
+                  <h2 id="datenschutz" class="impressum__title">Datenschutz</h2>
+                  <p class="impressum_text">Wir haben diese Datenschutzerkl&auml;rung (Fassung 01.01.1970-121597619) verfasst, um Ihnen gem&auml;&szlig; der Vorgaben der <a class="impressum_text" href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&amp;tid=121597619" target="_blank" rel="noopener">Datenschutz-Grundverordnung (EU) 2016/679</a> zu erkl&auml;ren, welche Informationen wir sammeln, wie wir Daten verwenden und welche Entscheidungsm&ouml;glichkeiten Sie als Besucher dieser Webseite haben.</p>
+                  <p class="impressum_text">Leider liegt es in der Natur der Sache, dass diese Erkl&auml;rungen sehr technisch klingen, wir haben uns bei der Erstellung jedoch bem&uuml;ht die wichtigsten Dinge so einfach und klar wie m&ouml;glich zu beschreiben.</p>
+                  <h2 id="rechte-dsgvo" class="impressum__title">Rechte laut Datenschutzgrundverordnung</h2>
+                  <p class="impressum_text">Ihnen stehen laut den Bestimmungen der DSGVO und des &ouml;sterreichischen <a class="impressum_text" href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&amp;Gesetzesnummer=10001597&amp;tid=121597619" target="_blank" rel="noopener">Datenschutzgesetzes (DSG)</a> grunds&auml;tzlich die folgende Rechte zu:</p>
+                  <ul class="impressum_text">
+                  <li class="impressum_text">Recht auf Berichtigung (Artikel 16 DSGVO)</li>
+                  <li class="impressum_text">Recht auf L&ouml;schung (&bdquo;Recht auf Vergessenwerden&ldquo;) (Artikel 17 DSGVO)</li>
+                  <li class="impressum_text">Recht auf Einschr&auml;nkung der Verarbeitung (Artikel 18 DSGVO)</li>
+                  <li class="impressum_text">Recht auf Benachrichtigung &ndash; Mitteilungspflicht im Zusammenhang mit der Berichtigung oder L&ouml;schung personenbezogener Daten oder der Einschr&auml;nkung der Verarbeitung (Artikel 19 DSGVO)</li>
+                  <li class="impressum_text">Recht auf Daten&uuml;bertragbarkeit (Artikel 20 DSGVO)</li>
+                  <li class="impressum_text">Widerspruchsrecht (Artikel 21 DSGVO)</li>
+                  <li class="impressum_text">Recht, nicht einer ausschlie&szlig;lich auf einer automatisierten Verarbeitung &mdash; einschlie&szlig;lich Profiling &mdash; beruhenden Entscheidung unterworfen zu werden (Artikel 22 DSGVO)</li>
+                  </ul>
+                  <p class="impressum_text">Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verst&ouml;&szlig;t oder Ihre datenschutzrechtlichen Anspr&uuml;che sonst in einer Weise verletzt worden sind, k&ouml;nnen Sie sich bei der Aufsichtsbeh&ouml;rde beschweren, welche in &Ouml;sterreich die Datenschutzbeh&ouml;rde ist, deren Webseite Sie unter <a class="impressum_text" href="https://www.dsb.gv.at/?tid=121597619">https://www.dsb.gv.at/</a> finden.</p>
+                  <p  class="impressum_text" style="margin-top:15px">Quelle: Erstellt mit dem Datenschutz Generator von <a href="https://www.adsimple.at/seo-suchmaschinenoptimierung/" title="AdSimple&circledR; Suchmaschinenoptimierung" rel="follow noopener" target="_blank">AdSimple&circledR; SEO</a> in Kooperation mit <a href="https://www.meinhaushalt.at/" target="_blank" rel="follow noopener">meinhaushalt.at</a>
+                  </p>
+              </div>
+        </div>
+      </div>
+    </div>
+</div>
 </footer>
 
     <script src='js/rad-animations.js'></script>

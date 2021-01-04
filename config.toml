@@ -42,24 +42,19 @@ theme = "simple_red"
   weight = 3
 
   [[menu.header]]
-  name = "Termin"
-  URL = "#termin"
+  name = "Patienteninformation"
+  URL = "#patienteninfo"
   weight = 4
-
-  [[menu.header]]
-  name = "Rezept"
-  URL = "#rezept"
-  weight = 5
 
   [[menu.header]]
   name = "Team"
   URL = "#team"
-  weight = 6
+  weight = 5
 
   [[menu.header]]
   name = "Die Ordination"
   URL = "#ordination"
-  weight = 7
+  weight = 6
 
 
   [[menu.footer]]
@@ -73,25 +68,20 @@ theme = "simple_red"
   weight = 2
 
   [[menu.footer]]
-  name = "Termin"
-  URL = "#termin"
-  weight = 4
-
-  [[menu.footer]]
-  name = "Rezept"
-  URL = "#rezept"
-  weight = 5
+  name = "Patienteninformation"
+  URL = "#patienteninfo"
+  weight = 3
 
 
 [params]
 
-  sections = ["showcase", "aktuelles", "ordinationszeiten", "kontakt", "leistungen", "termin", "team", "ordination", "rezept"]
+  sections = ["showcase", "aktuelles", "ordinationszeiten", "kontakt", "leistungen", "patienteninfo", "team", "ordination"]
 
   googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
 
   [params.logo]
-    text1 = "Dr. Lehner"
-    text2 = "Dr. Cadamuro"
+    text1 = "Dr.Lehner"
+    text2 = "& Dr.Cadamuro"
 
   [params.footer]
       copyright = "© Dr.Katherina Lehner & Dr. Evelin Cadamuro, Theme by Raditian. Alle Rechte vorbehalten"

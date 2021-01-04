@@ -1,0 +1,35 @@
+{{ if .Site.Data.homepage.patienteninfo.enable }}
+<section class="section rad-animation-group pb-0" id="patienteninfo">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row patienteninfo__bgimage">
+
+      <div class="col-12 col-md-6 my-auto my-auto  section-title">
+        <h2>{{ .Site.Data.homepage.patienteninfo.title }}</h2>
+        <p class="lead-patienteninfo">
+          {{ .Site.Data.homepage.patienteninfo.content | safeHTML }}
+        </p>
+        <!--
+          <a
+          href="{{ .Site.Data.homepage.patienteninfo.button.URL | absURL }}"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          <i class="{{ .Site.Data.homepage.patienteninfo.button.icon }}"></i>
+          {{ .Site.Data.homepage.patienteninfo.button.btnText }}
+        </a>
+
+      </div>
+      <div class="about__profile-picture col-8 col-md-4">
+        <img
+          class="lozad img-responsive image-right-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="{{ .Site.Data.homepage.patienteninfo.image.x | absURL }}"
+          data-srcset="{{ .Site.Data.homepage.patienteninfo.image.x | absURL }} 1x, {{ .Site.Data.homepage.patienteninfo.image._2x | absURL }} 2x"
+          alt="patienteninfo"
+        />
+      </div>
+      -->
+    </div>
+  </div>
+</section>
+{{ end }}
