@@ -4,681 +4,17 @@
 
 <head>
 	<meta name="generator" content="Hugo 0.79.0" />
+  <meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
-    <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
+<title>Gemeinschaftspraxis Dr.Lehner & Dr.Cadamuro</title>
 
 
+<style></style>
 
-
-<script>
-    (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-000000');
-</script>
-
-
-
-<script type="text/javascript">
-  var slideIndex = 1;
-showSlides(slideIndex);
-
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-
-
-
-<script type="text/javascript">
-$(document).ready(function() {
-  var weekday = new Date().getDay();
-  
-  if (weekday >= 1 && weekday <= 7) {
-    $('.opening-box').eq(weekday-1).addClass('today');
-  }
-});
-</script>
-
-
-
-
-<script type="text/javascript">>
-function newWin(url,w,h) {
- var day = new Date();
- var id= day.getTime();
- var params = 'width='+w+',height='+h+',scrollbars,resizable';
- var win = window.open(url,id,params);
- return false;
-}
-</script>
-
-
-
-
-
-
-
-<title></title>
-
-
-
-<style>
- 
-
-
-
-
-
- 
-
-  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-
-
-
-   
-
-  #opening-times {
-    margin-bottom: 20px;
-  }
-
-  #opening-times .opening-times-header {
-    height: 3em;
-    text-align: center;
-  }
-
-  #opening-times .opening-box {
-    padding-bottom: 1em;
-  }
-
-  #opening-times .opening-time {
-    border-top: 5px solid #90BE6D;
-    display: block;
-    position: relative;
-    height: 9em;
-    box-shadow: lightgrey 1px 2px 14px;
-    text-align: center;
-  }
-
-  .opening-box.today h2{
-    color: white;
-  }
-
-  .today {
-    border: 10px solid #F94144;
-    border-radius: 3px;
-    border-bottom: 30px solid #F94144;
-    background-color: #90BE6D;
-    color: white;
-    box-shadow: darkgrey 6px 7px 14px;
-  }
-
-  #opening-times .today .opening-time{
-    box-shadow: none;
-  }
-
-  #opening-times .today .opening-time h2{
-    color: white;
-  }
-
-
-  #opening-times .today::after {
-    text-align: center;
-    content: "HEUTE";
-    color: white;
-  }
-
-  #opening-times .opening-time h2 {
-    text-align: center;
-    font-size: 40px;
-    color: #90BE6D;
-    position: absolute;
-    bottom: 10px;
-    font-weight: 700;
-    width: 100%;
-    min-width: 2em;
-    overflow: hidden;
-  }
-
-
-
-
-  #opening-time .times {
-    color: #9fc015;
-    font-weight: bold;
-  }
-
-  #opening-times .opening-time .times {
-    padding-top: 0.5em;
-    font-family: "Amatic SC";
-    font-size: 35px;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-  .header .navbar-brand span:first-child{
-    color:#90BE6D !important;
-    }
-
- 
-
-    .showcase__foto{
-      -webkit-box-pack:start;
-      justify-content:flex-start;
-      -webkit-box-align:center;
-      align-items:center;
-      width:100%;
-      position:absolute;left:50%;
-      z-index:0;display:none
-    }
-
-    .showcase__foto img{
-      max-width:100%;
-      margin-top:90px;
-      height: auto;;
-      }
-      @media
-      (min-width:992px)
-      {
-        .rad-showcase{
-        min-height:870px;
-        padding-top:0;
-        margin-bottom:0
-        }
-        .showcase__foto{
-          display:-webkit-box;
-          display:flex;
-          right:-50px
-        }
-        .showcase__foto img{
-          width:auto
-        }
-      }
-
-
-
-
-.container{
-  padding-top:24px;
-}
-
-.display-1{
-    font-family:"Amatic SC"
-}
-
-
-.showcase__subtitle2
-{
-  font-family:"Amatic SC";
-  font-size:25px;
-  font-weight:600;
-  line-height:normal;
-  color: #90BE6D !important;
-  }
-  @media (min-width:992px)
-  {
-    .showcase__subtitle2{
-      font-size:30px
-      }
- }
-
-.section-title h2{
-  font-family:"Amatic SC";
-}
-
-
-.header .navbar-light .navbar-nav .nav-link{
-  font-family:"Amatic SC";
-  font-size:"25px" !important;
-  @media (min-width: 992px)
-  {
-    font-family:"Amatic SC";
-    font-size:"25px" !important;
-  }
-.header .navbar .nav-item .nav-link
-}
-
- 
-
-.aktuell_bg{
-  background-image: repeating-linear-gradient(-45deg, #90BE6D, #90BE6D 30px, #90bb6f 30px, #90bb6f 60px);
-  border: 5px solid #F94144;
-  border-radius: 10px;
-  padding-top: 10px;
-}
-
-.leistung {
-  padding-top:10px;
-
-}
-
-.subheading{
-
- font-family:"Amatic SC";
- position:relative;
- font-size:20px;
- font-weight:600;
- z-index:2;
- }
-   @media (min-width:992px)
- {
-   .subheading{font-size:30px
- }
-}
-
-
- 
-
-.kontakt__bgimage {
-	background-image: url("img/startseite/kontakt.png");
-	background-position: center;  
-	background-repeat: no-repeat;  
-	background-size: contain;
-  width: 100%;
-}
-
-.leistung__bgimage {
-	background-image: url("img/startseite/leistung.png");
-	background-position: center;  
-	background-repeat: no-repeat;  
-	background-size: contain;
-  width: 100%;
-}
-
-.patienteninfo__bgimage {
-	background-image: url("img/startseite/info.png");
-	background-position: center;  
-	background-repeat: no-repeat;  
-	background-size: contain;
-  width: 100%;
-}
-
-.leistung .leistung__leistung {
-  font-size:17px;
-  font-weight:500;
-  }
-
-
-.leistung__zusatzleistung {
-  font-size:17px;
-  font-weight:500;
-  }
-
-  .leistung__beschreibung {
-    line-height:1,57;
-    font-style: italic;
-  }
-
-  .section div[class*=col-] img {
-    max-width: ;
-  }
-
-
-
- 
-
-  .panel-title a:link{
-  font-family: 'Amatic SC';
-  font-size: 1em;
-  color: #577590;
-}
-
-
- .panel-title-impressum a:link{
-  font-family: 'Amatic SC';
-   font-size: 0.5em;
-   color: white;
-
-}
-
- #impressum{
-  color: white;
-  font-family: OpenSans;
- }
-
- .impressum__title{
-  font-family: 'Amatic SC';
-  color: white;
- }
-
-
-.impressum_text{
-  fontfamily: Verdana;
-  color: white;
-}
-
-
-
-  
-  #aktuell_ordizeit{
-      ;
-  }
-
-  .achtung {
-    color: #F94144;
-    font-size: 1.4em;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .arrow{
-    text-align: center;
-  }
-
-  .arrow::before{
-    content:' \21E8';
-  }
-
-  #aktuell_corona img {
-    border: 1px solid #ddd;  
-    border-radius: 4px;   
-    padding: 5px;  
-    width: 150px;  
-  }
-
-   
-  #aktuell_corona img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  }
-
-  .list-group-item{
-    background-color: none;
-  }
-
-
-
-  .mySlides__text{
-    font-family: 'Amatic SC';
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #90BE6D;
-  }
-
-
-
-  .mySlides img{
-    hight:300px;
-    display: block;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
- 
-.lead-termin h5{
-  font-family:"Amatic SC";
-  position:relative;
-  font-size:20px;
-  font-weight:600;
-  z-index:2;
-  }
-  @media (min-width:992px){
-    .leistung__title{font-size:30px}
-  }
-
-.rezept .section-title {
-  padding-top: 80px;
-}
-
-
-
-
-
-.air-slider{position:relative; margin: 0 auto;}.air-slider .slide{width:100%;height:100%;position:absolute;overflow:hidden;opacity:0;-webkit-transition:1s ease all;transition:1s ease all;background:#ccc}.air-slider .slide img{width:100%;height:100%}.air-slider .active-slide{opacity:1}.air-slider .controls{width:100%;height:50px;top:calc(50% - 25px);left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;position:absolute}.air-slider .controls button{width:50px;height:50px;background:rgba(0,0,0,0.8);color:#fff;border:none;outline:none;cursor:pointer;font-weight:bold}
-
- 
-
-
-
-
-     
-    .rad-fade-in {
-        will-change: opacity, transform;
-        animation-name: rad-fade-in-fallback;
-        animation-duration: 5s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes rad-fade-in-fallback {
-        0% {
-            opacity: 0;
-        }
-
-        75% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    .fonts-loaded .rad-fade-in.rad-waiting {
-        animation-name: none;
-        opacity: 0;
-    }
-
-    .fonts-loaded .rad-fade-in.rad-animate {
-        animation-name: rad-fade-in;
-        animation-duration: 1.1s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes rad-fade-in {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-     
-    .rad-fade-in-long {
-        will-change: opacity, transform;
-        animation-name: rad-fade-in-long-fallback;
-        animation-duration: 8s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes rad-fade-in-long-fallback {
-        0% {
-            opacity: 0;
-        }
-
-        75% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    .fonts-loaded .rad-fade-in-long.rad-waiting {
-        animation-name: none;
-        opacity: 0;
-    }
-
-    .fonts-loaded .rad-fade-in-long.rad-animate {
-        animation-name: rad-fade-in-long;
-        animation-duration: 2s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes rad-fade-in-long {
-        0% {
-            opacity: 0;
-        }
-
-        20% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-     
-    .rad-fade-down {
-        will-change: opacity, transform;
-        animation-name: rad-fade-down-fallback;
-        animation-duration: 5s;
-        animation-fill-mode: both;
-        transform: translateY(-30px);
-    }
-
-    @keyframes rad-fade-down-fallback {
-        0% {
-            opacity: 0;
-            transform: translateY(-30px);
-        }
-
-        75% {
-            opacity: 0;
-            transform: translateY(-30px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .fonts-loaded .rad-fade-down.rad-waiting {
-        animation-name: none;
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    .fonts-loaded .rad-fade-down.rad-animate {
-        animation-name: rad-fade-down;
-        animation-duration: 1.1s;
-    }
-
-    @keyframes rad-fade-down {
-        0% {
-            opacity: 0;
-            transform: translateY(-30px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-     
-    .rad-scale-down {
-        will-change: opacity, transform;
-        animation-name: rad-scale-down-fallback;
-        animation-duration: 5s;
-        animation-fill-mode: both;
-        transform-origin: 50% 0;
-    }
-
-    @keyframes rad-scale-down-fallback {
-        0% {
-            opacity: 0;
-            transform: scaleY(0.95);
-        }
-
-        75% {
-            opacity: 0;
-            transform: scaleY(0.95);
-        }
-
-        100% {
-            opacity: 1;
-            transform: scaleY(1);
-        }
-    }
-
-    .fonts-loaded .rad-scale-down.rad-waiting {
-        animation-name: none;
-        opacity: 0;
-        transform: scaleY(0.95);
-    }
-
-    .fonts-loaded .rad-scale-down.rad-animate {
-        animation-name: rad-scale-down;
-        animation-duration: 1.1s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes rad-scale-down {
-        0% {
-            opacity: 0;
-            transform: scaleY(0.95);
-        }
-
-        100% {
-            opacity: 1;
-            transform: scaleY(1);
-        }
-    }
-</style>
-
-
+<!--- Loading Stylesheets --->
 
 <link rel="stylesheet" href="css/main.css"/>
 
@@ -687,21 +23,82 @@ function newWin(url,w,h) {
 <link rel="stylesheet" href="css/custom.css"/>
 
 
-
-    
-
-
 </head>
 
+
+
 <body>
+
+
+
+
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    });
+    observer.observe();
+  });
+</script>
+<script src='js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='js/library/bootstrap.min.js'></script>
+
+<script src='js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='js/library/fontfaceobserver.js'></script>
+
+<script>
+  (function(w) {
+
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+
+
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+
+
+<!--- Header --->
 
 	<header class="header fixed-top rad-animation-group" id="header">
   <div class="container rad-fade-in">
     <nav class="navbar navbar-expand-lg navbar-light p-0">
       <a class="navbar-brand" href="">
-        <span>Dr. Lehner &amp; Dr. Cadamuro</span>
-        <span></span>
-        
+        <span>Dr.Lehner</span>
+        <span>&amp; Dr.Cadamuro</span>
+
       </a>
       <button
         class="navbar-toggler"
@@ -720,43 +117,43 @@ function newWin(url,w,h) {
           <li class="nav-item">
             <a class="nav-link" href="">HOME</a>
           </li>
-          
+
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#ordinationszeiten"
               >ORDINATIONSZEITEN</a
             >
           </li>
-          
+
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#kontakt"
               >KONTAKT</a
             >
           </li>
-          
+
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#leistungen"
               >LEISTUNGEN</a
             >
           </li>
-          
+
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#patienteninfo"
               >PATIENTENINFORMATION</a
             >
           </li>
-          
+
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#team"
               >TEAM</a
             >
           </li>
-          
+
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#ordination"
               >DIE ORDINATION</a
             >
           </li>
-          
+
         </ul>
       </div>
     </nav>
@@ -764,21 +161,12 @@ function newWin(url,w,h) {
 </header>
 
 
-	
-	
+<!--- Titel--->
+
 <section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
-  <div class="rad-showcase__bg">
-    <img
-      class="lozad img-responsive"
-      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-      data-src="img/team/kath_eve_title.png"
-      data-srcset="img/team/kath_eve_title.png 1x, img/team/kath_eve_title.png 2x"
-      alt=""
-    />
-  </div>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+      <div class="col-md 6">
         <h1 class="display-1">
           Gemeinschaftspraxis
           <br />
@@ -792,30 +180,25 @@ function newWin(url,w,h) {
           <br />
           </span>
         </h1>
-        <div class="showcase__subtitle2">
-          Alle Kassen
-        </div>
+	        <div class="showcase__subtitle2">
+	          Alle Kassen
+	        </div>
         <p class="lead">
-          
+
         </p>
-        
+
       </div>
-    
+      <div class="col-md 6">
+				<img src="img/team/kath_eve_title.jpg" class="titelbild"></img>
+			</div>
     </div>
-  </div>
-  <div class="rad-showcase__bg rad-showcase__bg--mobile">
-    <img
-      class="lozad img-responsive"
-      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-      data-src="img/team/kath_eve_title.png"
-      alt=""
-    />
   </div>
 </section>
 
 
-	
-	
+<!--- Aktuelles --->
+
+
 <section class="section rad-animation-group pb-0" id="aktuelles">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row aktuell_bg">
@@ -823,7 +206,7 @@ function newWin(url,w,h) {
       <div class="col-12 col-md-12 my-auto my-auto section-title">
         <h2>Aktuelles</h2>
         <p class="lead">
-          
+
         </p>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">Neue Ordinationszeiten ab 1.1.2021</p>
@@ -831,71 +214,174 @@ function newWin(url,w,h) {
         </div>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">Eingeschränkter Ordinationsbetrieb während der Covid19-Pandemie</p>
-          <p class="lead">       <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#aktuell_corona'>Weitere Information</a> </h4> </div> <div id='aktuell_corona' class='panel-collapse collapse'> <p class='achtung'>Wir bitten alle Patienten vor dem Besuch der Ordination um telefonische Terminvereinbarung!<br> (ausgenommen Notfälle)</p> <p class='achtung'>Bei Betreten der Ordination ist verpflichtend ein Mund- und Nasenschutz (Maske) zu tragen!</p> <ul> <li>Sie möchten in unsere Ordination kommen?</li> <li>Sie benötigen ein Rezept?</li> <li>Sie benötigen eine Krankschreibung?</li> </ul> <p class='arrow'>Bitte lesen Sie sich folgendes Diagramm durch.</p> <a target='_blank' href='img/Corona-Patienteninfo_20210102.png' class='corona__img'> <img src='img/Corona-Patienteninfo_20210102.png'> </a> <p></p> <a href='https://www.ages.at/themen/krankheitserreger/coronavirus/' target='_blank'>Aktuelle Informationen zur Corona-Sitaution in Österreich<br></a> <a href='https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html' target='_blank'>Aktuelle Informationen zur Corona-Sitaution weltweit<br></a> <a href='https://www.sozialministerium.at/Corona-Schutzimpfung/Corona-Schutzimpfung.html' target='_blank'>Aktuelle Informationen zur COVID19-Impmfung</a><br> </div> </div> </div></p>
+          <p class="lead">
+						<div class='panel-group'>
+							<div class='panel panel-default'>
+								<div class='panel-heading'>
+									<h4 class='panel-title'>
+										<a data-toggle='collapse' href='#aktuell_corona'>Weitere Information</a>
+									</h4>
+								</div>
+								<div id='aktuell_corona' class='panel-collapse collapse'>
+									<p class='achtung'>Wir bitten alle Patienten vor dem Besuch der Ordination um telefonische Terminvereinbarung!<br>
+										(ausgenommen Notfälle)</p> <p class='achtung'>Bei Betreten der Ordination ist verpflichtend ein Mund- und Nasenschutz (Maske) zu tragen!</p>
+										<ul>
+											<li>Sie möchten in unsere Ordination kommen?</li>
+											<li>Sie benötigen ein Rezept?</li>
+											<li>Sie benötigen eine Krankschreibung?</li>
+										</ul> <p class='arrow'>Bitte lesen Sie sich folgendes Diagramm durch.
+									</p>
+									<a target='_blank' href='img/Corona-Patienteninfo_20210102.png' class='corona__img'>
+										<img src='img/Corona-Patienteninfo_20210102.png'>
+									</a>
+									<p></p>
+									<a href='https://www.ages.at/themen/krankheitserreger/coronavirus/' target='_blank'>Aktuelle Informationen zur Corona-Sitaution in Österreich<br>
+									</a> <a href='https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html' target='_blank'>Aktuelle Informationen zur Corona-Sitaution weltweit<br></a>
+									<a href='https://www.sozialministerium.at/Corona-Schutzimpfung/Corona-Schutzimpfung.html' target='_blank'>Aktuelle Informationen zur COVID19-Impmfung</a><br>
+								</div>
+							</div>
+						</div>
+					</p>
         </div>
         <div class="col-12 col-md-12 my-auto my-auto">
           <p class="subheading">Welche Covid19-Tests bieten wir an?</p>
           <p class="lead">
-<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#covidtest'>Weitere Information</a> </h4> </div> <div id='covidtest' class='panel-collapse collapse'> <ul class='collaps-list'> <li class='collaps-list-item'>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li> <li class='collaps-list-item'>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</li> <li class='collaps-list-item'>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</li> </ul> </div> </div> </div> </p>
+						<div class='panel-group'>
+							<div class='panel panel-default'>
+								<div class='panel-heading'>
+									<h4 class='panel-title'>
+										<a data-toggle='collapse' href='#covidtest'>Weitere Information</a>
+									</h4>
+								</div>
+								<div id='covidtest' class='panel-collapse collapse'>
+									<ul class='collaps-list'>
+										<li class='collaps-list-item'>COVID19-Antigentest  -  <i>(Nasen-/Rachenabstrich - Schnelltest in der Ordination)</i></li>
+										<li class='collaps-list-item'>COVID19-PCR Test  -  <i>(Nasen-/Rachenabstrich - Versand an Labor) - auch als Privatleistung möglich (138 Euro)</i></li>
+										<li class='collaps-list-item'>COVID19-Antikörpertest  -  <i>(Blutabnahme - Versand an Labor - kostenpflichtig: 65 Euro)</i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</p>
         </div>
-
-        
       </div>
-
-
-
-
-
     </div>
   </div>
 </section>
 
 
-	
-	
+<!--- Ordinationszeiten --->
+
 <section class="section rad-animation-group pb-0" id="ordinationszeiten">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
+
       <script type="text/javascript">
       $(document).ready(function() {
         var weekday = new Date().getDay();
-        
-        if (weekday >= 1 && weekday <= 7) {
+
+        if (weekday >= 1 && weekday <= 5) {
           $('.opening-box').eq(weekday-1).addClass('today');
         }
       });
       </script>
-    
+
       <div class="col-12 col-md-12 my-auto my-auto section-title">
         <h2>Ordinationszeiten</h2>
         <p class="lead">
            <p class="lead"> <div class="row" id="opening-times">
-<div class="col-md 2 opening-box today"> <div class="opening-time"> <h2>MO</h2> <div class="times">08:00 - 13:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>DI</h2> <div class="times">14:00 - 17:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>MI</h2> <div class="times">07:30 - 12:30</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>DO</h2> <div class="times">15:00 - 18:00</div> </div> </div> <div class="col-md 2 opening-box"> <div class="opening-time"> <h2>FR</h2> <div class="times">07:30 - 11:30</div> </div> </div> </div> </p>
+						 <div class="col-md 2 opening-box">
+							 <div class="opening-time">
+								 <h2>MO</h2>
+								 <div class="times">08:00 - 13:00</div>
+							 </div>
+						 </div>
+						 <div class="col-md 2 opening-box">
+							 <div class="opening-time">
+								 <h2>DI</h2>
+								 <div class="times">14:00 - 17:00</div>
+							 </div>
+						 </div>
+						 <div class="col-md 2 opening-box">
+							 <div class="opening-time">
+								 <h2>MI</h2>
+								 <div class="times">07:30 - 12:30</div>
+							 </div>
+						 </div>
+						 <div class="col-md 2 opening-box">
+							 <div class="opening-time">
+								 <h2>DO</h2>
+								 <div class="times">15:00 - 18:00</div>
+							 </div>
+						 </div>
+						 <div class="col-md 2 opening-box">
+							 <div class="opening-time">
+								 <h2>FR</h2>
+								 <div class="times">07:30 - 11:30</div>
+							 </div>
+						 </div>
+					 </div>
+				 </p>
         </p>
-        
+
       </div>
     </div>
   </div>
 </section>
 
 
-	
-	
-<section class="section rad-animation-group pb-0" id="kontakt">
-  <div class="container rad-fade-down">
-    <div class="row d-flex flex-column-reverse flex-md-row">
+<!--- Konbtakt --->
 
-      <div class="col-12 col-md-6 my-auto my-auto section-title kontakt__bgimage">
+
+<section class="section rad-animation-group  pb-0" id="kontakt">
+  <div class="container rad-fade-down">
+    <div class="row d-flex  flex-md-row">
+
+      <div class="col-md-6  section-title kontakt__bgimage">
         <h2>Kontakt</h2>
         <p class="lead">
-          <p class="lead"> <table style="valign:middle"> <tbody> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/tel.png" alt="Telefon" width="40" height="40"></td> <td>0662-123456</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/fax.png" alt="Fax" width="40" height="40"></td> <td>0662-7890123</td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/mail.png" alt="Mail" width="40" height="40"></td> <td><a href="mailto:praxis@dr-katharina-lehner.at">praxis (a) dr-katharina-lehner.at</a></td> </tr> <tr> <td style="padding: 0px 20px 20px 0px;"><img src="img/icon/map.png" alt="Adresse" width="40" height="40"></td> <td>Moosstrasse 96 <br /> 5020 Salzburg<br> Zu erreichen mit der <a href="https://salzburg-verkehr.at/downloads/stadtbus-21-haltestellenfahrplaene-fahrtrichtung-bergheim-fuerstenbrunn/" target="_blank">Linie 21</a></td> </tr> </tbody> </table> </p>
+          <p class="lead">
+						<table style="valign:middle">
+							<tbody>
+								<tr>
+									<td style="padding: 0px 20px 20px 0px;">
+										<img src="img/icon/tel.png" alt="Telefon" width="40" height="40">
+									</td>
+									<td>0662-123456</td>
+								</tr>
+								<tr>
+									<td style="padding: 0px 20px 20px 0px;"><img src="img/icon/fax.png" alt="Fax" width="40" height="40"></td>
+									<td>0662-7890123</td>
+								</tr>
+								<tr>
+									<td style="padding: 0px 20px 20px 0px;"><img src="img/icon/mail.png" alt="Mail" width="40" height="40"></td>
+									<td><a href="mailto:praxis@dr-katharina-lehner.at">praxis (a) dr-katharina-lehner.at</a></td>
+								</tr>
+								<tr>
+									<td style="padding: 0px 20px 20px 0px;"><img src="img/icon/map.png" alt="Adresse" width="40" height="40"></td>
+									<td>Moosstrasse 96 <br />
+										5020 Salzburg<br>
+										Zu erreichen mit der <a href="https://salzburg-verkehr.at/downloads/stadtbus-21-haltestellenfahrplaene-fahrtrichtung-bergheim-fuerstenbrunn/" target="_blank">Linie 21</a>
+									</td>
+								</tr>
+								<tr>
+									<td  valign="middle" style="padding: 0px 20px 20px 0px;">
+									<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-parking" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#577590" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+									<rect x="4" y="4" width="16" height="16" rx="2" />
+									<path d="M9 16v-8h4a2 2 0 0 1 0 4h-4" />
+									</svg>
+									</td>
+									<td>Parkmöglichkeiten ausreichend direkt vor der Ordination</td>
+								</tr>
+							</tbody>
+						</table>
+					</p>
         </p>
-        
       </div>
 
 
-      <div class="col-12 col-md-6 my-auto my-auto">
-
+      <div class="col-md-6">
         <p class="lead"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.2227561422364!2d13.020569415875833!3d47.77712848417512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4776904d317e8e31%3A0xed043c3d85ad2fac!2sDr.med.univ.%20Katharina%20Lehner!5e0!3m2!1sde!2sat!4v1608095359423!5m2!1sde!2sat" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </p>
       </div>
 
@@ -904,220 +390,161 @@ function newWin(url,w,h) {
   </div>
 </section>
 
+<!--- Unsere Leistungen --->
 
-	
-	
-<section id="leistungen" class="section section--border-bottom rad-animation-group">
-    <div class="container">
-        <div class="row flex-column-reverse flex-md-row rad-fade-down leistung__bgimage">
-            <div class="col-12 col-sm-6 mt-5 mt-sm-0">
-                
+
+<section id="leistungen" class="section rad-animation-group">
+    <div class="container leistung__bgimage">
+			<div class="row section-title">
+					<h2>Unsere Leistungen</h2>
+			</div>
+        <div class="row  flex-md-row rad-fade-down">
+            <div class="col-md 6">
+
                 <div class="leistung">
                     <div class="subheading">Routineleistungen</div>
-                    <div class="leistung__leistung"></div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
                     <div class="leistung__leistung">Hausärztliche Abklärung im akuten Krankheitsfall</div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
                     <div class="leistung__leistung">Betreuung und Therapiemanagement bei chronischen Erkrankungen</div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
                     <div class="leistung__leistung">Infusionstherapie bei akuter Symptomatik (zB Schmerzen)</div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
                     <div class="leistung__leistung">Vorsorge- / Gesundenuntersuchungen</div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
                     <div class="leistung__leistung">Mutter-Kind-Pass Untersuchungen</div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
                     <div class="leistung__leistung">Führerscheinuntersuchungen</div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
                     <div class="leistung__leistung">Impfberatung, Impfungen</div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
                     <div class="leistung__leistung">Erstellen von Patientenverfügungen</div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
                     <div class="leistung__leistung">EKG (Elektrokardiogramm)</div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
-                    <div class="leistung__leistung">   </div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
+                    <div class="leistung__leistung">&nbsp;  </div>
                 </div>
-                
+							</div>
+							<div class="col-md 6">
                 <div class="leistung">
                     <div class="subheading">Zusatz- / Privatleistungen</div>
-                    <div class="leistung__leistung"></div>
-                    <div class="leistung__zusatzleistung"></div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
-                    <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Präoperative Untersuchung (zur Operationsfreigabe)</div>
-                    <div class="leistung__beschreibung"></div>
                 </div>
-                
+
                 <div class="leistung">
                     <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Therapie Aktiv - Diabetes im Griff</div>
-                    <div class="leistung__beschreibung"></div>
-                </div>
-                
-                <div class="leistung">
-                    <div class="subheading"></div>
-                    <div class="leistung__leistung"></div>
-                    <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Dieses von uns zur Verfügung gestelltes Angebot stellt sicher, dass Typ-2-Diabetiker optimal versorgt und behandelt werden. Mehr Information erhalten sie auf <a href='https://www.therapie-aktiv.at/' target='_blank'>therapie.aktiv</a></div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
-                    <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Akupunktur</div>
-                    <div class="leistung__beschreibung"></div>
-                </div>
-                
-                <div class="leistung">
-                    <div class="subheading"></div>
-                    <div class="leistung__leistung"></div>
-                    <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Dr. Lehner</div>
                 </div>
-                
+
                 <div class="leistung">
-                    <div class="subheading"></div>
-                    <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Laserakupunktur</div>
-                    <div class="leistung__beschreibung"></div>
-                </div>
-                
-                <div class="leistung">
-                    <div class="subheading"></div>
-                    <div class="leistung__leistung"></div>
-                    <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Dr. Lehner</div>
                 </div>
-                
-                <div class="leistung">
-                    <div class="subheading"></div>
-                    <div class="leistung__leistung"></div>
+
+								<div class="leistung">
                     <div class="leistung__zusatzleistung">Untersuchung <i>Sporttauglichkeit-Neu</i></div>
-                    <div class="leistung__beschreibung"></div>
-                </div>
-                
-                <div class="leistung">
-                    <div class="subheading"></div>
-                    <div class="leistung__leistung"></div>
-                    <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Tauglichkeitsuntersuchung für alle Sportvereine</div>
                 </div>
-                
+
                 <div class="leistung">
                     <div class="subheading"></div>
                     <div class="leistung__leistung"></div>
                     <div class="leistung__zusatzleistung">Rundum Gesund: Ein Service der Hausärzte und der Ärztekammer Salzburg</div>
-                    <div class="leistung__beschreibung"></div>
-                </div>
-                
-                <div class="leistung">
-                    <div class="subheading"></div>
-                    <div class="leistung__leistung"></div>
-                    <div class="leistung__zusatzleistung"></div>
                     <div class="leistung__beschreibung">Nähere Informationen finden sie auf der <a href='https://www.aeksbg.at/gesundheitsaktionen/rundumvorsorge' target='_blank'>Homepage der Ärztekammer Salzburg</a></div>
                 </div>
-                
-            </div>
-            <div class="col-12 col-sm-6 section-title">
-                <h2>Unsere Leistungen</h2>
-                <p class="lead">
-                    blabla
-                </p>
 
-
-                
             </div>
+
         </div>
     </div>
 </section>
 
+<!--- Patienteninformation --->
 
-	
-	
+
 <section class="section rad-animation-group pb-0" id="patienteninfo">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row patienteninfo__bgimage">
 
-      <div class="col-12 col-md-6 my-auto my-auto  section-title">
+      <div class="col-12 section-title">
         <h2>Patienteninformationen</h2>
         <p class="lead-patienteninfo">
           <p class="lead">
+						<p class="subheading">Terminreservierung</p>
+						<p class="subsubheading">Allgemeine Ordination:</p>
+						Wir bitten Sie Termine telefonisch (0662 - 82 22 14) oder per <a href="mailto:praxis@dr-katharina-lehner.at">e-Mail</a> zu vereinbaren.<br>
+						Sie erhalten dann eine Richtzeit, die wir möglichst versuchen einzuhalten.<br><br>
+						Für Rezepte, Blutdruckkontrollen und Bestätigungen, die kein ärztliches Gespräch benötigen, ist kein Termin notwendig.<br>
+						<br><br>
 
-<p class="subheading">Terminvereinbarung zu Ordinationszeiten</p> Ihre telefonische Voranmeldung nehmen wir gerne zu folgenden Zeiten entgegen:<br /> <b>Montag, Mittwoch und Freitag von 10.00 - 13.00 Uhr.</b> <br /><br />
-<p></p>
-<p class="subheading">Hausbesuche</p> Zu folgenden Zeiten ist es möglich einen Termin für einen Hausbesuche anzumelden:<br /> <b>Montag, Mittwoch und Freitags von 8.00 - 11.00 Uhr.</b> <br /><br />
-<p></p>
-<p class="subheading">Wochenende, Feiertage und Notfälle</p> Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten.<br /><br /> <a href="https://www.notdienst141.at/" target="_blank">Huasärztliches Notdienstzentrum</a><br /> <i>Telefon:</i> 141<br /> <i>Öffnungszeiten:</i> <br />täglich von 19.00 – 23.00 Uhr<br /> Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr <br /><br /> </p>
+						<p class="subsubheading">Vorsorge(Gesunden-)untersuchungen, Privatordinationen und Laboruntersuchungen</p>
+						Für diese Leistungen erhalten sie einen gesonderten Termin<br> <br> <br>
+
+						<p class="subsubheading">Hausbesuche</p>
+						Sollten sie einen Hausbescuh benötigen, melden sie diesen bitte ebenfalls telefonisch (0662 - 82 22 14) oder per <a href="mailto:praxis@dr-katharina-lehner.at">e-Mail</a> während der Ordinationszeiten an.<br> <br>
+
+						<p class="achtung2">Sollten sie aus wichtigen Gründen einen bereits vereinbarten Termin nicht wahrnehmen können, geben sie uns bitte rechtzeitig Bescheid.<br> Dies ermöglicht eine bessere Zeiteinteilung und eine Verkürzung der Wartezeiten für andere Patienten.</p> <br> <br>
+
+						<p class="subheading">Rezeptbestellung</p>
+						Bitte für Rezeptwünsche die begreitgestellten Formulare ausfüllen und diese im Ordinationsbriefkasten zu hinterlegen oder per Fax (0662 - 82 26 63) oder Post zu übermitteln. <br>
+						Telefonische Rezeptwünsche können leider nicht entgegengenommen werden. <br> <br>
+
+						<p class="subheading">Wochenende, Feiertage und Notfälle</p>
+						Außerhalb der Ordinationszeiten ist es möglich im Hausarzt Notdienstzentrum des Roten Kreuz in der Dr. Karl-Renner Straße 8 ärztliche Betreuung zu erhalten. <br> <br>
+						<p class="subsubheading">Hausärztliches Notdienstzentrum</p>
+						Telefon: 141<br> Homepage: <a href="https://www.notdienst141.at" target="_blank">www.notdienst141.at</a><br>
+						Öffnungszeiten:<br> täglich von 19.00 – 23.00 Uhr<br>
+						Wochenende/Feiertag: 8.00 – 13.00 und 16.00 -23.00 Uhr<br> <br> <br>
+
+						<p class="subheading">E-Card</p>
+						Bitte bringen sie ihre e-Card bei jedem Ordinationsbesuch mit. Andernfalls ist ein Einsatz von 20€ zu hinterlegen. <br>
+						Sollten sie bis Quartalsende die e-Card nicht vorgelegt haben, übernimmt die Krankenkasse die ihre Behandlungskosten nicht!<br> <br> <br>
+
+						<p class="subsubheading">Gerne betreuen wir sie auch in folgenden Sprachen: Englisch, Französisch, Italienisch oder Schwedisch.</p>
+						(Bitte geben sie bei der Anmeldung Bescheid falls sie dies wünschen) </p>
         </p>
-        
     </div>
   </div>
 </section>
 
 
-	
-	
-<section class="section rad-animation-group section--border-bottom" id="team">
+<!--- Unser Team --->
+
+<section class="section rad-animation-group" id="team">
     <div class="container  section-title">
         <h2 class="rad-fade-down">Unser Team</h2>
         <div class="row row--padded mb-0 rad-fade-down">
-            
+
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
                 <div class="testimonial__author">
                     <img class="lozad testimonial__author-image"
@@ -1131,12 +558,45 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse1'>Diplome</a> </h4> </div> <div id='collapse1' class='panel-collapse collapse'> <ul class='collaps-list'> <li class='collaps-list-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='collaps-list-item'>Diplom der ÖÄK für Akupunktur</li> <li class='collaps-list-item'>Diplom der ÖÄK für Manuelle Medizin</li> <li class='collaps-list-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div>
-<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#lebenslauf_kath'>Lebenslauf</a> </h4> </div> <div id='lebenslauf_kath' class='panel-collapse collapse'> Dr. Kathrina Lehner ist glücklich verheiratet. Sie hat 2 Kinder und ein Enkelkind. <br> text text text<br> Informationen zu Dr. Lehners Zusatzausbildungen finden Sie im Link 'Diplome' </div> </div> </div>
+
+									<div class='panel-group'>
+										<div class='panel panel-default'>
+											<div class='panel-heading'>
+												<h4 class='panel-title'>
+													<a data-toggle='collapse' href='#lebenslauf_kath'>Lebenslauf</a>
+												</h4>
+											</div>
+											<div id='lebenslauf_kath' class='panel-collapse collapse'>
+												Dr. Kathrina Lehner ist glücklich verheiratet. Sie hat 2 Kinder und ein Enkelkind. <br><br>
+												text text text<br><br>
+												 Informationen zu Dr. Lehners Zusatzausbildungen und Diplomen finden unter folgendem Link<br><br>
+											 </div>
+										 </div>
+									 </div>
+
+
+                     <div class='panel-group'>
+											 <div class='panel panel-default'>
+												 <div class='panel-heading'>
+													 <h4 class='panel-title'>
+														 <a data-toggle='collapse' href='#collapse1'>Zusatzausbildungen und Diplome</a>
+													 </h4>
+												 </div>
+												 <div id='collapse1' class='panel-collapse collapse'>
+													 <ul class='collaps-list'>
+														 <li class='collaps-list-item'>Diplom der ÖÄK für Notfallmedizin</li>
+														 <li class='collaps-list-item'>Diplom der ÖÄK für Akupunktur</li>
+														 <li class='collaps-list-item'>Diplom der ÖÄK für Manuelle Medizin</li>
+														 <li class='collaps-list-item'>Fortbildungsdiplom der ÖÄK</li>
+													 </ul>
+												 </div>
+											 </div>
+										 </div>
+
 
                 </p>
             </div>
-            
+
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
                 <div class="testimonial__author">
                     <img class="lozad testimonial__author-image"
@@ -1150,12 +610,50 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                     <div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#collapse2'>Diplome</a> </h4> </div> <div id='collapse2' class='panel-collapse collapse'> <ul class='collaps-list'> <li class='collaps-list-item'>Diplom der ÖÄK für Notfallmedizin</li> <li class='collaps-list-item'>Diplom der ÖÄK für Ernährungsmedizin</li> <li class='collaps-list-item'>Diplom der ÖÄK für Psychosoziale Medizin</li> <li class='collaps-list-item'>Diplom der ÖÄK für Psychosomatische MedizinK</li> <li class='collaps-list-item'>Fortbildungsdiplom der ÖÄK</li> </ul> </div> </div> </div>
-<div class='panel-group'> <div class='panel panel-default'> <div class='panel-heading'> <h4 class='panel-title'> <a data-toggle='collapse' href='#lebenslauf_eve'>Lebenslauf</a> </h4> </div> <div id='lebenslauf_eve' class='panel-collapse collapse'> Dr. Evelin Cadamuro ist glücklich verheiratet und hat 3 Kinder.<br> Sie hat in Wien Medizin studiert und danach die Ausbildung zur Allgemeinmedizinerin in den Krankenhäusern Bozen (IT), Hallein, LKH Salzburg, .... gemacht.<br> Seit 20XX arbeitet sie gemeinsam mit Dr. Katharina Lehner in deren Ordination und seit 1.1.2021 führt sie diese gemeinsam mit Dr. Lehner.<br> Informationen zu Dr. Cadamuros Zusatzausbildungen finden Sie im Link 'Diplome'<br> </div> </div> </div>
+
+								 <div class='panel-group'>
+									 <div class='panel panel-default'>
+										 <div class='panel-heading'>
+											 <h4 class='panel-title'>
+												 <a data-toggle='collapse' href='#lebenslauf_eve'>Lebenslauf</a>
+											 </h4>
+										 </div>
+										 <div id='lebenslauf_eve' class='panel-collapse collapse'>
+											 Dr. Evelin Cadamuro ist glücklich verheiratet und hat 3 Kinder.<br><br>
+											 Sie hat in Wien Medizin studiert und danach die Ausbildung zur Allgemeinmedizinerin in den Krankenhäusern Bozen und Meran (IT), Hallein, UKH Salzburg und dem LKH Salzburg 2012 abgeschlossen.<br><br>
+											 Seit 2012 hat Dr. Cadamuro in 17 verschiedenen Allgemeinmediziner-Ordinationen in Salzburg Stadt und Land vertreten.<br>
+											 Zudem ist sie seit dieser Zeit auch für die Elternberatung Salzburg tätig.<br><br>
+											 Seit 2016 hat sie vor allem in der Ordination von Dr. Katharina Lehner vertreten<br>
+											 Seit 1.1.2021 führt sie diese Ordination als Gemeinschaftspraxis gemeinsam mit Dr. Lehner.<br> <br>
+
+											 Neben ihrer Arbeit betreibt sie gerne Sport (Volleyball, Skifahren, Tennis, Zumba), sie näht und strickt gerne, spielt Klavier, aber die meiste freie Zeit widmet sie ihren Kindern.<br><br>
+											 Informationen zu Dr. Cadamuros Zusatzausbildungen und Diplomen finden unter folgendem Link<br><br>
+										 </div>
+									 </div>
+								 </div>
+
+								 <div class='panel-group'>
+									 <div class='panel panel-default'>
+											<div class='panel-heading'> <h4 class='panel-title'>
+													<a data-toggle='collapse' href='#collapse2'>Zusatzausbildungen und Diplome</a>
+												</h4>
+											</div>
+											<div id='collapse2' class='panel-collapse collapse'>
+												<ul class='collaps-list'>
+													<li class='collaps-list-item'>Diplom der ÖÄK für Notfallmedizin</li>
+													<li class='collaps-list-item'>Diplom der ÖÄK für Ernährungsmedizin</li>
+													<li class='collaps-list-item'>Diplom der ÖÄK für Psychosoziale Medizin</li>
+													<li class='collaps-list-item'>Diplom der ÖÄK für Psychosomatische Medizin (in Arbeit)</li>
+													<li class='collaps-list-item'>Fortbildungsdiplom der ÖÄK</li>
+												</ul>
+											</div>
+									 </div>
+								 </div>
+
 
                 </p>
             </div>
-            
+
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
                 <div class="testimonial__author">
                     <img class="lozad testimonial__author-image"
@@ -1169,10 +667,10 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                    Bla
+                	<!-- Hier kann Text eingegeben werden -->
                 </p>
             </div>
-            
+
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
                 <div class="testimonial__author">
                     <img class="lozad testimonial__author-image"
@@ -1186,10 +684,10 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                    bla
+                    <!-- Hier kann Text eingegeben werden -->
                 </p>
             </div>
-            
+
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
                 <div class="testimonial__author">
                     <img class="lozad testimonial__author-image"
@@ -1203,10 +701,10 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                    bla
+                  <!-- Hier kann Text eingegeben werden -->
                 </p>
             </div>
-            
+
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
                 <div class="testimonial__author">
                     <img class="lozad testimonial__author-image"
@@ -1223,7 +721,7 @@ function newWin(url,w,h) {
                     Derzeit in Mütterkarenz
                 </p>
             </div>
-            
+
             <div class="col-12 col-md-4 mb-5 mb-md-0 testimonial">
                 <div class="testimonial__author">
                     <img class="lozad testimonial__author-image"
@@ -1237,17 +735,19 @@ function newWin(url,w,h) {
                     </div>
                 </div>
                 <p>
-                    
+										<!-- Hier kann Text eingegeben werden -->
                 </p>
             </div>
-            
+
         </div>
     </div>
 </section>
 
 
-	
-	
+
+<!--- Die Ordination --->
+
+
 <body onLoad="showSlides();">
 <section class="section rad-animation-group pb-0" id="ordination">
   <div class="container rad-fade-down">
@@ -1257,52 +757,40 @@ function newWin(url,w,h) {
         <h2 align="center">Die Ordination</h2>
         <p class="lead">
           <p class="lead"> <div class="slideshow-container">
-<div class="mySlides"> <div class="numbertext">1 / 8</div> <center><img src="img/ordination/ordi_aussen1.jpg"></center> <div class="mySlides__text">Außenansicht 1</div> </div>
-<div class="mySlides"> <div class="numbertext">2 / 8</div> <center><img src="img/ordination/ordi_aussen2.jpg"></center> <div class="mySlides__text">Außenansicht 2</div> </div>
-<div class="mySlides"> <div class="numbertext">3 / 8</div> <center><img src="img/ordination/ordi1.jpg"></center> <div class="mySlides__text">Infusionsraum 1</div> </div>
-<div class="mySlides"> <div class="numbertext">4 / 8</div> <center><img src="img/ordination/ordi2.jpg"></center> <div class="mySlides__text">Infusionsraum 1</div> </div>
-<div class="mySlides"> <div class="numbertext">5 / 8</div> <center><img src="img/ordination/ordi3.jpg"></center> <div class="mySlides__text">Empfang</div> </div>
-<div class="mySlides"> <div class="numbertext">6 / 8</div> <center><img src="img/ordination/ordi4.jpg"></center> <div class="mySlides__text">Kinderspielecke</div> </div>
-<div class="mySlides"> <div class="numbertext">7 / 8</div> <center><img src="img/ordination/ordi5.jpg"></center> <div class="mySlides__text">Ordination 1</div> </div>
-<div class="mySlides"> <div class="numbertext">8 / 8</div> <center><img src="img/ordination/ordi6.jpg"></center> <div class="mySlides__text">...</div> </div>
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div> <br>
+							<div class="mySlides"> <div class="numbertext">1 / 8</div> <center><img src="img/ordination/ordi_aussen1.jpg"></center> <div class="mySlides__text">Außenansicht 1</div> </div>
+							<div class="mySlides"> <div class="numbertext">2 / 8</div> <center><img src="img/ordination/ordi_aussen2.jpg"></center> <div class="mySlides__text">Außenansicht 2</div> </div>
+							<div class="mySlides"> <div class="numbertext">3 / 8</div> <center><img src="img/ordination/ordi1.jpg"></center> <div class="mySlides__text">Infusionsraum 1</div> </div>
+							<div class="mySlides"> <div class="numbertext">4 / 8</div> <center><img src="img/ordination/ordi2.jpg"></center> <div class="mySlides__text">Infusionsraum 1</div> </div>
+							<div class="mySlides"> <div class="numbertext">5 / 8</div> <center><img src="img/ordination/ordi3.jpg"></center> <div class="mySlides__text">Empfang</div> </div>
+							<div class="mySlides"> <div class="numbertext">6 / 8</div> <center><img src="img/ordination/ordi4.jpg"></center> <div class="mySlides__text">Kinderspielecke</div> </div>
+							<div class="mySlides"> <div class="numbertext">7 / 8</div> <center><img src="img/ordination/ordi5.jpg"></center> <div class="mySlides__text">Ordination 1</div> </div>
+							<div class="mySlides"> <div class="numbertext">8 / 8</div> <center><img src="img/ordination/ordi6.jpg"></center> <div class="mySlides__text">...</div> </div>
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div> <br>
 
-<div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span> <span class="dot" onclick="currentSlide(6)"></span> <span class="dot" onclick="currentSlide(7)"></span> <span class="dot" onclick="currentSlide(8)"></span> </div> </p>
+							<div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span> <span class="dot" onclick="currentSlide(5)"></span> <span class="dot" onclick="currentSlide(6)"></span> <span class="dot" onclick="currentSlide(7)"></span> <span class="dot" onclick="currentSlide(8)"></span> </div> </p>
         </p>
-
-        
     </div>
   </div>
 </section>
 
 
-	
+<!--- Footer --->
 
-	<footer class="footer">
+<footer class="footer">
 <div class="container">
-    
+
 
     <div class="row">
-      <div class="col-">
+      <div class="col-md-12">
         <div class="footer__copy">
-        © Dr.Katherina Lehner &amp; Dr. Evelin Cadamuro, Theme by Raditian. Alle Rechte vorbehalten |
-        </div>
+        © Dr.Katherina Lehner &amp; Dr. Evelin Cadamuro, Theme by <a href="https://radity.com/" target="_blank">Raditian</a>.  Alle Rechte vorbehalten.
+				</div>
       </div>
-      <div class="col-">
-        <div class="footer__right">
-          <a href="https://radity.com/">
-            <img
-              src="img/general/design-and-code-radity.png"
-              srcset="img/general/design-and-code-radity.png 1x, img/general/design-and-code-radity@2x.png 2x"
-              alt="Design &amp; Code - Radity"
-            />
-          </a>
-        </div>
       </div>
     </div>
 
     <div class="row">
-      <div class='col- panel-group'>
+      <div class='col-md-12 panel-group'>
         <div class='panel panel-default'>
           <div class='panel-heading'>
               <h4 class='panel-title-impressum'>
@@ -1310,6 +798,7 @@ function newWin(url,w,h) {
               </h4>
           </div>
             <div id='impressum' class='panel-collapse-impressum collapse'>
+							<p class="lead">
                   <h1 class="impressum__title">Impressum</h1>
                   <p class="impressum_text">Informationspflicht laut &sect;5 E-Commerce Gesetz, &sect;14 Unternehmensgesetzbuch, &sect;63 Gewerbeordnung und Offenlegungspflicht laut &sect;25 Mediengesetz.</p>
                   <p class="impressum_text">Dr. Katharina Lehner, Dr. Evelin Cadamuro, &Auml;rztinnen f&uuml;r Allgemeinmedizin OG<br />Moosstrasse 96, <br />5020 Salzburg, <br />&Ouml;sterreich</p>
@@ -1371,8 +860,9 @@ function newWin(url,w,h) {
                   <li class="impressum_text">Recht, nicht einer ausschlie&szlig;lich auf einer automatisierten Verarbeitung &mdash; einschlie&szlig;lich Profiling &mdash; beruhenden Entscheidung unterworfen zu werden (Artikel 22 DSGVO)</li>
                   </ul>
                   <p class="impressum_text">Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verst&ouml;&szlig;t oder Ihre datenschutzrechtlichen Anspr&uuml;che sonst in einer Weise verletzt worden sind, k&ouml;nnen Sie sich bei der Aufsichtsbeh&ouml;rde beschweren, welche in &Ouml;sterreich die Datenschutzbeh&ouml;rde ist, deren Webseite Sie unter <a class="impressum_text" href="https://www.dsb.gv.at/?tid=121597619">https://www.dsb.gv.at/</a> finden.</p>
-                  <p  class="impressum_text" style="margin-top:15px">Quelle: Erstellt mit dem Datenschutz Generator von <a href="https://www.adsimple.at/seo-suchmaschinenoptimierung/" title="AdSimple&circledR; Suchmaschinenoptimierung" rel="follow noopener" target="_blank">AdSimple&circledR; SEO</a> in Kooperation mit <a href="https://www.meinhaushalt.at/" target="_blank" rel="follow noopener">meinhaushalt.at</a>
+                  <p class="impressum_text" style="margin-top:15px">Quelle: Erstellt mit dem Datenschutz Generator von <a href="https://www.adsimple.at/seo-suchmaschinenoptimierung/" title="AdSimple&circledR; Suchmaschinenoptimierung" rel="follow noopener" target="_blank">AdSimple&circledR; SEO</a> in Kooperation mit <a href="https://www.meinhaushalt.at/" target="_blank" rel="follow noopener">meinhaushalt.at</a>
                   </p>
+								</p>
               </div>
         </div>
       </div>
@@ -1380,62 +870,17 @@ function newWin(url,w,h) {
 </div>
 </footer>
 
-    <script src='js/rad-animations.js'></script>
+
+<!--- Diese Scripts müssen muss hier geladen werden. Steht es ganz oben bei den anderen, dauert der Seitenaufbau ewig und die openingtimes.js wird nicht geladen --->
+<script src='js/rad-animations.js'></script>
+
 <script src='js/library/lozad.min.js'></script>
-<script>
-  window.addEventListener("load", function() {
-    var observer = window.lozad(".lozad", {
-      rootMargin: window.innerHeight / 2 + "px 0px",
-      threshold: 0.01
-    }); 
-    observer.observe();
-  });
-</script>
-<script src='js/library/jquery-3.3.1.slim.min.js'></script>
-<script src='js/library/bootstrap.min.js'></script>
+
+<script src='js/slideshow.js'></script>
+
+<!--- Dieses Script muss hier geladen werden. Steht es ganz oben bei den anderen, lädrt der HeaDER-hINTERGUND NICHT UND DIE OPENINGTIMES:JS WIRD NICHT RICHTIG GELADEN --->
 <script src='js/sticky-header.js'></script>
-<script src='js/library/smooth-scroll.polyfills.min.js'></script>
-<script src='js/library/fontfaceobserver.js'></script>
-<script>
-  (function(w) {
-    
-    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
-      return;
-    }
-    var fontA = new w.FontFaceObserver("Inter", {
-      weight: 300
-    });
-    var fontB = new w.FontFaceObserver("Inter", {
-      weight: 400
-    });
-    var fontC = new w.FontFaceObserver("Inter", {
-      weight: 500
-    });
-    var fontD = new w.FontFaceObserver("Inter", {
-      weight: 600
-    });
-    var fontE = new w.FontFaceObserver("Inter", {
-      weight: 700
-    });
-    var fontF = new w.FontFaceObserver("Inter", {
-      weight: 900
-    });
-    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
-      w.document.documentElement.className += " fonts-loaded";
-    });
-  })(this);
-</script>
-<script>
-  const scroll = new SmoothScroll('a[href*="#"]');
-    $('a.nav-link').on('click', () => {
-      const navbar = $('.navbar-collapse');
-      if (navbar && navbar.hasClass('show')) {
-        $('.navbar-toggler').click();
-      }
-    })
-</script>
 
 </body>
 
 </html>
-

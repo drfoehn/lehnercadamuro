@@ -1,1 +1,644 @@
 /* You can customize theme styles here */
+
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+
+
+/*Allgemein*/
+
+  /* unvisited link */
+  a:link {
+    color: #577590;
+  }
+
+  /* visited link */
+  a:visited {
+    color: #577590;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: #577590;
+  }
+
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+  .display-1{
+      font-family:"Amatic SC"
+  }
+
+
+  .section-title h2{
+    font-family:"Amatic SC";
+  }
+
+  .subheading{
+   font-family:"Amatic SC";
+   position:relative;
+   font-size:27px;
+   font-weight:600;
+   z-index:2;
+   }
+     @media (min-width:992px){
+     .subheading{font-size:35px
+   }
+
+  }
+
+  .subsubheading{
+    font-weight: bold;
+  }
+
+
+  .container{
+    padding-top:24px;
+  }
+
+
+    .achtung {
+      color: #F94144;
+      font-size: 1.4em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .achtung2 {
+      color: #F94144;
+      text-align: center;
+    }
+
+
+
+    .list-group-item{
+      background-color: none;
+    }
+
+    .collaps-list{
+      padding-inline-start: 10px;
+      }
+
+
+/* Ordinationszeiten*/
+
+  #opening-times {
+    margin-bottom: 20px;
+  }
+
+  #opening-times .opening-times-header {
+    height: 3em;
+    text-align: center;
+  }
+
+  #opening-times .opening-box {
+    padding-bottom: 1em;
+  }
+
+  #opening-times .opening-time {
+    border-top: 5px solid #90BE6D;
+    display: block;
+    position: relative;
+    height: 9em;
+    box-shadow: lightgrey 1px 2px 14px;
+    text-align: center;
+  }
+
+  .opening-box.today h2{
+    color: white;
+  }
+
+  .today {
+    border: 10px solid #F94144;
+    border-radius: 3px;
+    border-bottom: 30px solid #F94144;
+    background-color: #90BE6D;
+    color: white;
+    box-shadow: darkgrey 0px 0px 20px 10px;
+  }
+
+  #opening-times .today .opening-time{
+    box-shadow: none;
+  }
+
+  #opening-times .today .opening-time h2{
+    color: white;
+  }
+
+
+  #opening-times .today::after {
+    text-align: center;
+    content: "HEUTE";
+    color: white;
+  }
+
+  #opening-times .opening-time h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #90BE6D;
+    position: absolute;
+    bottom: 10px;
+    font-weight: 700;
+    width: 100%;
+    min-width: 2em;
+    overflow: hidden;
+  }
+
+  #opening-time .times {
+    color: #9fc015;
+    font-weight: bold;
+  }
+
+  #opening-times .opening-time .times {
+    padding-top: 0.5em;
+    font-family: "Amatic SC";
+    font-size: 35px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*Header*/
+
+
+
+  .header .navbar-brand span:first-child{
+    color:#90BE6D !important;
+    }
+
+
+  .header .navbar-light .navbar-nav .nav-link{
+    font-family:"Amatic SC";
+    font-size:"25px" !important;
+    @media (min-width: 992px)
+    {
+      font-family:"Amatic SC";
+      font-size:"25px" !important;
+    }
+  .header .navbar .nav-item .nav-link
+  }
+
+
+
+
+
+/*Titel*/
+
+
+
+  .titelbild{
+    align-items:bottom;
+    width:100%;
+		margin-top:90px;
+		hight: auto;
+  }
+
+	.rad-showcase .container{
+    box-shadow: darkgrey 0 15px 10px -10px;
+  }
+
+  .showcase__subtitle2
+  {
+    font-family:"Amatic SC";
+    font-size:40px;
+    font-weight:600;
+    line-height:normal;
+    color: #90BE6D !important;
+    }
+    @media (min-width:992px)
+    {
+      .showcase__subtitle2{
+        font-size:40px
+        }
+   }
+
+
+
+
+/*Aktuell*/
+
+
+.aktuell_bg{
+  background-image: repeating-linear-gradient(-45deg, #90BE6D, #90BE6D 30px, #90bb6f 30px, #90bb6f 60px);
+  border: 5px solid #F94144;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+
+  .arrow{
+    text-align: center;
+  }
+
+  .arrow::before{
+    content:' \21E8';
+  }
+
+  #aktuell_corona img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+
+
+  #aktuell_corona img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+
+  #aktuell_ordizeit{
+        ;
+  }
+
+
+
+
+/*Kontakt*/
+
+
+
+.kontakt__bgimage {
+	background-image: url("../img/startseite/kontakt.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+  width: 100%;
+}
+
+
+
+
+
+/*Leistung*/
+
+
+.leistung {
+  padding-top:10px;
+}
+
+.leistung__bgimage {
+	background-image: url("../img/startseite/leistung.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+  width: 100%;
+}
+
+
+.leistung .leistung__leistung {
+  }
+
+
+.leistung__zusatzleistung {
+  }
+
+.leistung__beschreibung {
+  line-height:1,57;
+  font-style: italic;
+}
+
+
+
+
+
+/*Patienteninfo*/
+
+.patienteninfo__bgimage {
+	background-image: url("../img/startseite/info.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+  width: 100%;
+}
+
+.lead-termin h5{
+  font-family:"Amatic SC";
+  position:relative;
+  font-size:20px;
+  font-weight:600;
+  z-index:2;
+  }
+  @media (min-width:992px){
+    .leistung__title{font-size:30px}
+  }
+
+
+
+
+
+
+
+.section div[class*=col-] img {
+  max-width: ;
+}
+
+
+
+/*Collapsible*/
+
+  .panel-title a:link{
+  font-family: 'Amatic SC';
+  font-size: 1em;
+  color: #577590;
+}
+
+
+
+
+
+/*Footer*/
+
+.footer .container {
+	display: flex;
+	justify-content: center !important;
+}
+
+.panel-title-impressum {
+	text-align: center;
+}
+
+ .panel-title-impressum a:link{
+  font-family: 'Amatic SC';
+   font-size: 0.7em;
+   color: white;
+	 text-align: center;
+}
+
+ #impressum{
+  color: white;
+ }
+
+ .impressum__title{
+  font-family: 'Amatic SC';
+  color: white;
+ }
+
+
+.impressum_text{
+  fontfamily: 'Open Sans Condensed', sans-serif;;
+  color: white;
+}
+
+
+
+/*Slideshow*/
+
+  .mySlides__text{
+    font-family: 'Amatic SC';
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #90BE6D;
+  }
+
+  .mySlides img{
+    hight:300px;
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rezept .section-title {
+  padding-top: 80px;
+}
+
+
+
+
+
+
+/* CSS vom Theme übernommen*/
+
+
+.air-slider{
+  position:relative;
+  margin: 0 auto;
+  }
+
+.air-slider .slide{
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+  opacity:0;
+  -webkit-transition:1s ease all;
+  transition:1s ease all;background:#ccc}.air-slider .slide img{width:100%;height:100%}.air-slider .active-slide{opacity:1}.air-slider .controls{width:100%;height:50px;top:calc(50% - 25px);left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;position:absolute}.air-slider .controls button{width:50px;height:50px;background:rgba(0,0,0,0.8);color:#fff;border:none;outline:none;cursor:pointer;font-weight:bold}
+
+
+
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
